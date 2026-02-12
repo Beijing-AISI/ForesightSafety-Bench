@@ -13,7 +13,7 @@
 
 ## 总体结果
 
-![总体结果](overall_bar.pdf)
+![总体结果](overall_bar.jpg)
 
 ## 依赖环境
 
