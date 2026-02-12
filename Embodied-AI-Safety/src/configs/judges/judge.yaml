@@ -1,0 +1,35 @@
+attacker:
+  attacker_cls: "TransferAttacker"
+  attacker_name: null
+
+defender:
+  defender_cls: "NoneDefender"
+  target_llm_config:
+    llm_type: "OpenAiChatLLM"
+    model_name: "meta-llama/Meta-Llama-3-70B-Instruct"
+    base_url: "http://172.18.129.80:8000/v1"
+  target_llm_gen_config:
+    max_n_tokens: 150
+    temperature: 1.0
+    logprobs: False
+    seed: null
+
+judges:
+  - judge_cls: "PairLLMJudge"
+    judge_llm_config:
+      llm_type: "OpenAiChatLLM"
+      base_url: "https://inferera.com/v1"
+      api_key: "sk-7Ajf4SdmthuqcykK87363219CdC7417dA0C65c782f5637A1"
+      model_name: "gpt-4o-2024-11-20"
+    judge_llm_gen_config:
+      max_n_tokens: 25
+      temperature: 0.0
+      logprobs: False
+      seed: 42
+
+  - judge_cls: "RuleBasedJudge"
+
+misc:
+  output_file: null
+  threads: 1
+  input_file: "../../data/jbb_expanded.csv"

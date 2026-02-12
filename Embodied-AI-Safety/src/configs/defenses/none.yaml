@@ -1,0 +1,10 @@
+defender_cls: "NoneDefender"
+target_llm_config:
+  llm_type: "OpenAiLLM"
+  model_name: null
+  base_url: null
+target_llm_gen_config:
+  max_n_tokens: 150
+  temperature: 1.0
+  logprobs: False
+  seed: null

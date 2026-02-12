@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-15 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst:2
+msgid "panda\\_guard.role.attacks.renellm\\_attack package"
+msgstr "panda\\_guard.role.attacks.renellm\\_attack package"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst:5
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst:8
+msgid "panda\\_guard.role.attacks.renellm\\_attack.renellm module"
+msgstr "panda\\_guard.role.attacks.renellm\\_attack.renellm module"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttacker:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+msgstr "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttacker:1
+msgid ""
+"ReNeLLM Attacker Implementation that substitutes the user message with a "
+"pre-formulated attack prompt. Reference: Peng Ding and Jun Kuang and Dan "
+"Ma and Xuezhi Cao and Yunsen Xian and Jiajun Chen and Shujian Huang, "
+"2024, A Wolf in Sheep’s Clothing: Generalized Nested Jailbreak Prompts "
+"can Fool Large Language Models Easily, NAACL, 2024"
+msgstr ""
+"ReNeLLM 攻击者实现，将用户消息替换为预先制定的攻击提示。参考文献：Peng Ding, Jun Kuang, Dan Ma, Xuezhi"
+" Cao, Yunsen Xian, Jiajun Chen 和 Shujian "
+"Huang，2024年，《披着羊皮的狼：通用嵌套越狱提示可以轻松欺骗大型语言模型》，NAACL，2024。"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttacker.attack:1
+
+msgid "List of messages in the conversation.  对话中的消息列表"
+msgstr "对话中的消息列表"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttacker.attack:2
+
+msgid ""
+"Additional parameters for the attack, must include "
+"\"request_reformulated\".  额外攻击参数"
+msgstr "额外攻击参数，必须包括 'request_reformulated'"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst
+msgid "Returns"
+msgstr "返回"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttacker.attack:3
+
+msgid ""
+"Prompts containing harmful attacks on the target, is of the form “role: "
+"user, content: xx”. 含有目标的有害攻击的prompt, 是\"role: user, content: xx的形式\""
+msgstr "含有目标的有害攻击的prompt，形式为 \"role: user, content: xx\""
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+msgstr "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:1
+msgid "Configuration for the ReNeLLM Attacker."
+msgstr "ReNeLLM 攻击者的配置"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:3
+
+msgid ""
+"Class of the attacker, default is \"ReNeLLMAttacker\".  攻击者的类型，默认值为 "
+"\"ColdAttacker\""
+msgstr "攻击者的类型，默认值为 \"ReNeLLMAttacker\""
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:4
+
+msgid "Name of the attacker.  攻击者的名称"
+msgstr "攻击者的名称"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:5
+
+msgid "Configuration of rewrite llm. 重写prompt时用到的LLM配置"
+msgstr "重写prompt时用到的LLM配置"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:6
+
+msgid "Configuration of target llm. 被攻击的LLM配置"
+msgstr "被攻击的LLM配置"
+
+#: of panda_guard.role.attacks.renellm_attack.renellm.ReNeLLMAttackerConfig:7
+
+msgid "Configuration of judge llm. 判断是否攻击成功的LLM配置"
+msgstr "判断是否攻击成功的LLM配置"
+
+#: ../../source/panda_guard.role.attacks.renellm_attack.rst:16
+msgid "Module contents"
+msgstr "模块内容"

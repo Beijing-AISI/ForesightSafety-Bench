@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-12 08:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.cli.rst:2
+msgid "panda\\_guard.cli package"
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:8
+msgid "panda\\_guard.cli.chat module"
+msgstr ""
+
+#: of panda_guard.cli.chat.apply_env_vars_to_config:1
+#: panda_guard.cli.serve.apply_env_vars_to_config:1
+msgid "Apply environment variables to the config if needed."
+msgstr ""
+
+#: of panda_guard.cli.chat.display_help:1
+msgid "Display available commands."
+msgstr ""
+
+#: of panda_guard.cli.chat.display_judge_results:1
+msgid "Display judge evaluation results in a less intrusive format."
+msgstr ""
+
+#: of panda_guard.cli.chat.display_token_info:1
+msgid "Display token usage information in a less intrusive format."
+msgstr ""
+
+#: of panda_guard.cli.chat.get_package_config_path:1
+#: panda_guard.cli.serve.get_package_config_path:1
+msgid "Get the path to a default config file within the package."
+msgstr ""
+
+#: of panda_guard.cli.chat.is_iterator:1
+msgid "Check if an object is an iterator but not a list or other sequence."
+msgstr ""
+
+#: of panda_guard.cli.chat.load_yaml:1 panda_guard.cli.serve.load_yaml:1
+msgid "Load YAML configuration file"
+msgstr ""
+
+#: of panda_guard.cli.chat.start:1
+msgid ""
+"Start an interactive chat session using configuration from a YAML file or"
+" a predefined model type."
+msgstr ""
+
+#: of panda_guard.cli.chat.start:3
+msgid ""
+"If config is a file path ending with .yaml, it will load configuration "
+"from that file. If config is one of 'openai', 'gemini', or 'claude', it "
+"will load a default configuration and apply relevant environment "
+"variables."
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:16
+msgid "panda\\_guard.cli.config module"
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:24
+msgid "panda\\_guard.cli.main module"
+msgstr ""
+
+#: of panda_guard.cli.main.main:1
+msgid "Panda Guard CLI for chatting with and serving language models."
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:32
+msgid "panda\\_guard.cli.serve module"
+msgstr ""
+
+#: of panda_guard.cli.serve.ChatCompletionRequest:1
+#: panda_guard.cli.serve.ChatCompletionResponse:1
+#: panda_guard.cli.serve.Choice:1 panda_guard.cli.serve.ModelData:1
+#: panda_guard.cli.serve.ModelsResponse:1
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: ../../docstring of
+#: panda_guard.cli.serve.ChatCompletionRequest.model_config:1
+#: panda_guard.cli.serve.ChatCompletionResponse.model_config:1
+#: panda_guard.cli.serve.Choice.model_config:1
+#: panda_guard.cli.serve.ModelData.model_config:1
+#: panda_guard.cli.serve.ModelsResponse.model_config:1
+msgid ""
+"Configuration for the model, should be a dictionary conforming to "
+"[`ConfigDict`][pydantic.config.ConfigDict]."
+msgstr ""
+
+#: of panda_guard.cli.serve.create_fastapi_app:1
+msgid "Create a FastAPI application with OpenAI-compatible endpoints."
+msgstr ""
+
+#: of panda_guard.cli.serve.start:1
+msgid "Start an API server compatible with OpenAI API format."
+msgstr ""
+
+#: of panda_guard.cli.serve.start:3
+msgid ""
+"Accepts the same configuration options as the chat interface, plus host "
+"and port settings."
+msgstr ""
+
+#: ../../source/panda_guard.cli.rst:40
+msgid "Module contents"
+msgstr ""
+

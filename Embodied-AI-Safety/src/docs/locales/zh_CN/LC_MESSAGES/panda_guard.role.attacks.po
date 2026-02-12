@@ -1,0 +1,1425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 11:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.attacks.rst:2
+msgid "panda\\_guard.role.attacks package"
+msgstr "panda\\_guard.role.attacks package"
+
+#: ../../source/panda_guard.role.attacks.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.rst:15
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/panda_guard.role.attacks.rst:18
+msgid "panda\\_guard.role.attacks.art\\_prompt module"
+msgstr "panda\\_guard.role.attacks.art\\_prompt module"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker:1
+#: panda_guard.role.attacks.deepinception.DeepInceptionAttacker:1
+#: panda_guard.role.attacks.gcg.GCGAttacker:1
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker:1
+#: panda_guard.role.attacks.ica.IcaAttacker:1
+#: panda_guard.role.attacks.overload.OverloadAttacker:1
+#: panda_guard.role.attacks.pair.PairAttacker:1
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker:1
+#: panda_guard.role.attacks.rewrite.RewriteAttacker:1
+#: panda_guard.role.attacks.scav.ScavAttacker:1
+#: panda_guard.role.attacks.tap.TAPAttacker:1
+#: panda_guard.role.attacks.transfer.NoneAttacker:1
+#: panda_guard.role.attacks.transfer.TransferAttacker:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+msgstr "基类: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker:1
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker:1
+#: panda_guard.role.attacks.rewrite.RewriteAttacker:1
+msgid ""
+"Rewrite Attacker Implementation for modifying user prompts to bypass "
+"restrictions."
+msgstr "Rewrite Attacker 实现，用于修改用户提示以绕过限制。"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker:3
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker:3
+msgid ""
+"TIPS: mask_llm_url should be set in config file for generate mask words "
+"and mask instruction. Here we use GPT3.5-turbo as the mask LLM."
+msgstr "提示：mask_llm_url 应在配置文件中设置，以生成掩码词和掩码指令。这里我们使用 GPT3.5-turbo 作为掩码 LLM。"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker:7
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker:7
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker:4
+msgid "Correspondingly, OPENAI_API_KEY should be set in environment variables."
+msgstr "相应地，OPENAI_API_KEY 应在环境变量中设置。"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.ASCII_sub:1
+msgid ""
+"To transfer masked words to ASCII art. :param word: The word to be "
+"converted to ASCII art. :param font_seed: int(0-233) The font of the "
+"ASCII art. Default is '1943'. :return: string   ASCII art,"
+msgstr ""
+"将掩码词转换为 ASCII 艺术。 :param word: 要转换为 ASCII 艺术的单词。 :param font_seed: "
+"int(0-233) ASCII 艺术的字体。默认为 '1943'。 :return: string   ASCII 艺术，"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.artprompt_gen:1
+msgid ""
+"To generate ArtPrompt :param masked word: list    masked words in ascii "
+"art :param masked_instructioin: str   masked instruction with [MASK%] "
+":return: str  masked instruction with ascii art"
+msgstr ""
+"生成 ArtPrompt :param masked word: list    ASCII 艺术中的掩码词 :param "
+"masked_instruction: str   带 [MASK%] 的掩码指令 :return: str  带有 ASCII 艺术的掩码指令"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.attack:1
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker.attack:1
+#: panda_guard.role.attacks.scav.ScavAttacker.attack:1
+msgid "Execute an attack by transfer the latest user prompt to ArtPrompt."
+msgstr "通过将最新的用户提示转移到 ArtPrompt 来执行攻击。"
+
+#: ../../source/panda_guard.role.attacks.rst of
+#: panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size
+msgid "Parameters"
+msgstr "参数"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.attack:3
+#: panda_guard.role.attacks.gcg.GCGAttacker.attack:3
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker.attack:3
+#: panda_guard.role.attacks.ica.IcaAttacker.attack:1
+#: panda_guard.role.attacks.overload.OverloadAttacker.attack:3
+#: panda_guard.role.attacks.rewrite.RewriteAttacker.attack:3
+#: panda_guard.role.attacks.scav.ScavAttacker.attack:3
+#: panda_guard.role.attacks.transfer.TransferAttacker.attack:3
+msgid "List of messages in the conversation."
+msgstr "对话中的消息列表"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.attack:4
+#: panda_guard.role.attacks.base.BaseAttacker.attack:4
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker.attack:4
+#: panda_guard.role.attacks.overload.OverloadAttacker.attack:4
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.attack:4
+#: panda_guard.role.attacks.rewrite.RewriteAttacker.attack:4
+#: panda_guard.role.attacks.scav.ScavAttacker.attack:4
+#: panda_guard.role.attacks.transfer.NoneAttacker.attack:4
+msgid "Additional parameters for the attack."
+msgstr "攻击的额外参数"
+
+#: ../../source/panda_guard.role.attacks.rst
+msgid "Returns"
+msgstr "返回"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.attack:5
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker.attack:5
+#: panda_guard.role.attacks.overload.OverloadAttacker.attack:5
+#: panda_guard.role.attacks.rewrite.RewriteAttacker.attack:5
+#: panda_guard.role.attacks.scav.ScavAttacker.attack:5
+msgid "Modified list of messages with the rewritten prompt."
+msgstr "修改后的消息列表，包含重写的提示。"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttacker.parse:1
+msgid ""
+"To parse the response from LLM to get masked words and masked "
+"instruction. :param response: The response from LLM to [MASK] sensitive "
+"word. :return : masked_words: list, masked words :return : "
+"masked_instruction: str, masked instruction"
+msgstr ""
+"解析来自 LLM 的响应，以获取掩码词和掩码指令。 :param response: 来自 LLM 的响应，包含 [MASK] 敏感词。 "
+":return : masked_words: list, 掩码词 :return : masked_instruction: str, 掩码指令"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:1
+#: panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:1
+#: panda_guard.role.attacks.gcg.GCGAttackerConfig:1
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:1
+#: panda_guard.role.attacks.ica.IcaAttackerConfig:1
+#: panda_guard.role.attacks.overload.OverloadAttackerConfig:1
+#: panda_guard.role.attacks.pair.PairAttackerConfig:1
+#: panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:1
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:1
+#: panda_guard.role.attacks.scav.ScavAttackerConfig:1
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:1
+#: panda_guard.role.attacks.transfer.NoneAttackerConfig:1
+#: panda_guard.role.attacks.transfer.TransferAttackerConfig:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+msgstr "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:1
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:1
+#: panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:1
+#: panda_guard.role.attacks.rewrite.RewriteAttacker:3
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:1
+#: panda_guard.role.attacks.scav.ScavAttackerConfig:1
+msgid "Configuration for the Rewrite Attacker."
+msgstr "Rewrite Attacker 的配置"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:3
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:3
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:3
+#: panda_guard.role.attacks.scav.ScavAttackerConfig:3
+msgid "Class of the attacker, default is \"RewriteAttacker\"."
+msgstr "攻击者的类型，默认值为 \"RewriteAttacker\""
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:4
+#: panda_guard.role.attacks.base.BaseAttackerConfig:4
+#: panda_guard.role.attacks.gcg.GCGAttackerConfig:4
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:4
+#: panda_guard.role.attacks.ica.IcaAttackerConfig:4
+#: panda_guard.role.attacks.overload.OverloadAttackerConfig:4
+#: panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:4
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:4
+#: panda_guard.role.attacks.scav.ScavAttackerConfig:4
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:5
+#: panda_guard.role.attacks.transfer.TransferAttackerConfig:4
+msgid "Name of the attacker."
+msgstr "攻击者的名称"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:5
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:5
+#: panda_guard.role.attacks.overload.OverloadAttackerConfig:5
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:5
+msgid "Configuration for the language model."
+msgstr "语言模型的配置"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:6
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:6
+#: panda_guard.role.attacks.overload.OverloadAttackerConfig:6
+#: panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:5
+#: panda_guard.role.attacks.rewrite.RewriteAttackerConfig:6
+msgid "Configuration for generating output with LLM."
+msgstr "用于生成输出的 LLM 配置。"
+
+#: of panda_guard.role.attacks.art_prompt.ArtPromptAttackerConfig:7
+#: panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttackerConfig:7
+msgid "Template for LLM to mask offensive words"
+msgstr "LLM 用于屏蔽攻击性词汇的模板"
+
+#: ../../source/panda_guard.role.attacks.rst:26
+msgid "panda\\_guard.role.attacks.attacker\\_registry module"
+msgstr "panda\\_guard.role.attacks.attacker\\_registry module"
+
+#: ../../source/panda_guard.role.attacks.rst:34
+msgid "panda\\_guard.role.attacks.base module"
+msgstr "panda\\_guard.role.attacks.base module"
+
+#: of panda_guard.role.attacks.base.BaseAttacker:1
+#: panda_guard.role.attacks.base.BaseAttackerConfig:1
+msgid "Bases: :py:class:`~abc.ABC`"
+msgstr "Bases: :py:class:`~abc.ABC`"
+
+#: of panda_guard.role.attacks.base.BaseAttacker:1
+msgid "Abstract Base Class for Attacker."
+msgstr "攻击者的抽象基类。"
+
+#: of panda_guard.role.attacks.base.BaseAttacker:3
+msgid "Configuration for the attacker."
+msgstr "攻击者的配置。"
+
+#: of panda_guard.role.attacks.base.BaseAttacker.attack:1
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.attack:1
+#: panda_guard.role.attacks.transfer.NoneAttacker.attack:1
+msgid "Abstract method to execute an attack on a sequence of messages."
+msgstr "抽象方法，用于对一系列消息执行攻击。"
+
+#: of panda_guard.role.attacks.base.BaseAttacker.attack:3
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.attack:3
+#: panda_guard.role.attacks.transfer.NoneAttacker.attack:3
+msgid "List of input messages."
+msgstr "输入消息列表。"
+
+#: of panda_guard.role.attacks.base.BaseAttacker.attack:5
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.attack:5
+#: panda_guard.role.attacks.transfer.NoneAttacker.attack:5
+msgid "Modified list of messages after the attack."
+msgstr "攻击后修改的消息列表。"
+
+#: of panda_guard.role.attacks.base.BaseAttackerConfig:1
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:1
+msgid "Configuration for the Base Attacker."
+msgstr "Base Attacker 的配置。"
+
+#: of panda_guard.role.attacks.base.BaseAttackerConfig:3
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:3
+msgid "Class of the attacker."
+msgstr "攻击者的类。"
+
+#: ../../source/panda_guard.role.attacks.rst:42
+msgid "panda\\_guard.role.attacks.deepinception module"
+msgstr "panda\\_guard.role.attacks.deepinception module"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker:1
+msgid ""
+"DeepInceptionAttacker is an implementation of a multi-layer inception "
+"attack."
+msgstr "DeepInceptionAttacker 是多层次启动攻击的实现。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker:3
+msgid ""
+"This attack generates a prompt based on a scene with multiple layers, "
+"where each layer involves characters discussing strategies to reach the "
+"goal against an evil doctor. The attack propagates through layers to "
+"create an evolving narrative that culminates in a final discussion on "
+"specific actions."
+msgstr "此攻击基于多层场景生成提示，每一层涉及角色讨论策略以达到与邪恶医生对抗的目标。攻击通过层级传播，形成一个不断发展的叙事，最终讨论具体行动。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker:7
+msgid "Reference: https://arxiv.org/abs/2311.03191"
+msgstr "参考文献: https://arxiv.org/abs/2311.03191"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker.attack:1
+msgid "Generate an attack prompt based on the given messages."
+msgstr "根据给定的消息生成攻击提示。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker.attack:3
+msgid ""
+"The attack prompt is formatted using the scene, character count, layer "
+"count, and the goal extracted from the last message in the conversation."
+msgstr "攻击提示使用场景、角色数量、层级数量以及从对话的最后一条消息中提取的目标进行格式化。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker.attack:6
+msgid ""
+"A list of messages in the conversation, with the goal specified in the "
+"last message."
+msgstr "对话中的消息列表，目标在最后一条消息中指定。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttacker.attack:8
+msgid "A list containing the attack prompt message."
+msgstr "包含攻击提示消息的列表。"
+
+#: ../../source/panda_guard.role.attacks.rst
+msgid "Return type"
+msgstr "返回类型"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:1
+msgid "Configuration class for the DeepInceptionAttacker."
+msgstr "DeepInceptionAttacker 的配置类。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:3
+msgid ""
+"This configuration class stores the settings required for initializing a "
+"DeepInceptionAttacker, including attributes for the scene, character "
+"count, and layer count."
+msgstr "此配置类存储初始化 DeepInceptionAttacker 所需的设置，包括场景、角色数量和层数的属性。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:6
+msgid "The class of the attacker."
+msgstr "攻击者的类。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:8
+msgid "The name of the attacker."
+msgstr "攻击者的名称。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:10
+msgid "The scene type for the inception attack. Default is \"science fiction\"."
+msgstr "攻击的场景类型。默认值为 '科幻'。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:12
+msgid "The number of characters in the scene. Default is 5."
+msgstr "场景中的角色数。默认值为 5。"
+
+#: of panda_guard.role.attacks.deepinception.DeepInceptionAttackerConfig:14
+msgid "The number of layers in the attack. Default is 5."
+msgstr "攻击中的层数。默认值为 5。"
+
+#: ../../source/panda_guard.role.attacks.rst:50
+msgid "panda\\_guard.role.attacks.gcg module"
+msgstr "panda\\_guard.role.attacks.gcg module"
+
+#: of panda_guard.role.attacks.gcg.AttackBuffer:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类: :py:class:`object`"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker:1
+#, fuzzy
+msgid "GCG Attacker Implementation Reference: https://arxiv.org/abs/2307.15043"
+msgstr "GCG Attacker 实现参考：https://arxiv.org/abs/2307.15043"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker:4
+#: panda_guard.role.attacks.gcg.GCGAttackerConfig:1
+msgid "Configuration for the GCG Attacker."
+msgstr "GCG Attacker 的配置。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.attack:1
+msgid "Execute GCG attack."
+msgstr "执行 GCG 攻击。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.attack:4
+#: panda_guard.role.attacks.ica.IcaAttacker.attack:2
+#: panda_guard.role.attacks.transfer.TransferAttacker.attack:4
+msgid ""
+"Additional parameters for the attack, must include "
+"\"request_reformulated\"."
+msgstr "攻击的额外参数，必须包含 'request_reformulated'。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.attack:5
+#: panda_guard.role.attacks.transfer.TransferAttacker.attack:5
+msgid "Modified list of messages with the reformulated request."
+msgstr "修改后的消息列表，包含重新表达的请求。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.compute_candidates_loss:1
+msgid "Computes the GCG loss on all candidate token id sequences."
+msgstr "计算所有候选令牌 ID 序列的 GCG 损失。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.compute_candidates_loss:3
+msgid "int the number of candidate sequences to evaluate in a given batch"
+msgstr "int：要评估的候选序列数。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.compute_candidates_loss:5
+msgid ""
+"Tensor, shape = (search_width, seq_len, embd_dim) the embeddings of the "
+"`search_width` candidate sequences to evaluate"
+msgstr ""
+"Tensor，形状 = (search_width, seq_len, embd_dim)，要评估的 `search_width` "
+"个候选序列的嵌入。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.compute_token_gradient:1
+msgid "Computes the gradient of the GCG loss w.r.t the one-hot token matrix."
+msgstr "计算 GCG 损失相对于 one-hot 令牌矩阵的梯度。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.compute_token_gradient:3
+msgid ""
+"Tensor, shape = (1, n_optim_ids) the sequence of token ids that are being"
+" optimized"
+msgstr "Tensor，形状 = (1, n_optim_ids)，正在优化的令牌 ID 序列。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:1
+#, fuzzy
+msgid "Filters out sequeneces of token ids that change after retokenization."
+msgstr "过滤出在重新标记化后变化的令牌 ID 序列。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:3
+msgid "Tensor, shape = (search_width, n_optim_ids) token ids"
+msgstr "Tensor，形状 = (search_width, n_optim_ids)，令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:5
+msgid "transformers.PreTrainedTokenizer the model's tokenizer"
+msgstr "transformers.PreTrainedTokenizer，模型的标记器。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:8
+msgid ""
+"Tensor, shape = (new_search_width, n_optim_ids)     all token ids that "
+"are the same after retokenization"
+msgstr "Tensor，形状 = (new_search_width, n_optim_ids)，在重新标记化后相同的所有令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:10
+msgid "Tensor, shape = (new_search_width, n_optim_ids)"
+msgstr "Tensor，形状 = (new_search_width, n_optim_ids)"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.filter_ids_op:11
+msgid "all token ids that are the same after retokenization"
+msgstr "在重新标记化后相同的所有令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:1
+msgid ""
+"A basic decorator that will try to execute `function`. If it fails from "
+"exceptions related to out-of-memory or CUDNN, the batch size is cut in "
+"half and passed to `function`"
+msgstr "一个基本的装饰器，会尝试执行 `function`。如果由于内存不足或 CUDNN 相关异常失败，则批量大小减半并传递给 `function`。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:4
+msgid "`function` must take in a `batch_size` parameter as its first argument."
+msgstr "`function` 必须将 `batch_size` 参数作为其第一个参数。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:6
+msgid "A function to wrap"
+msgstr "要包装的函数"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:8
+msgid "The batch size to try and fit into memory"
+msgstr "尝试适配内存的批量大小"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:11
+msgid "Example:"
+msgstr "示例："
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:13
+msgid "```python"
+msgstr "```python"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.find_executable_batch_size:15
+msgid "```"
+msgstr "```"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.get_nonascii_toks:1
+msgid "Returns a list of non-ASCII tokens in the tokenizer's vocabulary."
+msgstr ""
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.get_nonascii_toks:3
+msgid "Tensor containing the IDs of non-ASCII tokens."
+msgstr ""
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:1
+msgid ""
+"Returns `search_width` combinations of token ids based on the token "
+"gradient."
+msgstr "根据令牌梯度返回 `search_width` 个令牌 ID 的组合。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:3
+msgid ""
+"Tensor, shape = (n_optim_ids) the sequence of token ids that are being "
+"optimized"
+msgstr "Tensor，形状 = (n_optim_ids)，正在优化的令牌 ID 序列。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:5
+msgid ""
+"Tensor, shape = (n_optim_ids, vocab_size) the gradient of the GCG loss "
+"computed with respect to the one-hot token embeddings"
+msgstr "Tensor，形状 = (n_optim_ids, vocab_size)，相对于 one-hot 令牌嵌入计算的 GCG 损失梯度。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:7
+msgid "int the number of candidate sequences to return"
+msgstr "int：返回的候选序列数。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:9
+msgid "int the topk to be used when sampling from the gradient"
+msgstr "int：在从梯度中采样时使用的 topk。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:11
+msgid "int the number of token positions to update per sequence"
+msgstr "int：每个序列中要更新的令牌位置数。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:13
+msgid ""
+"Tensor, shape = (n_ids) the token ids that should not be used in "
+"optimization"
+msgstr "Tensor，shape = (n_ids)，在优化中不应使用的令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:16
+msgid "Tensor, shape = (search_width, n_optim_ids)     sampled token ids"
+msgstr "Tensor，shape = (search_width, n_optim_ids)，采样的令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:18
+msgid "Tensor, shape = (search_width, n_optim_ids)"
+msgstr "Tensor，shape = (search_width, n_optim_ids)"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.sample_ids_from_grad:19
+msgid "sampled token ids"
+msgstr "采样的令牌 ID。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.should_reduce_batch_size:1
+msgid ""
+"Checks if `exception` relates to CUDA out-of-memory, CUDNN not supported,"
+" or CPU out-of-memory"
+msgstr "检查 `exception` 是否与 CUDA 内存不足、CUDNN 不支持或 CPU 内存不足相关。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttacker.should_reduce_batch_size:3
+msgid "An exception"
+msgstr "一个异常"
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:3
+msgid "Class of the attacker, default is \"GCGAttacker\"."
+msgstr "攻击者的类型，默认值为 \"GCGAttacker\"。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:5
+msgid ""
+"Each time the ID of the k largest one-hot vector is selected before the "
+"gradient."
+msgstr ""
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:6
+msgid "Initialization versus suffix"
+msgstr ""
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:7
+#, fuzzy
+msgid "Number of iteration steps"
+msgstr "最大攻击迭代次数。"
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:8
+msgid "Whether to cache content before the suffix"
+msgstr ""
+
+#: of panda_guard.role.attacks.gcg.GCGAttackerConfig:9
+msgid "Whether to stop after judging that the attack is successful"
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.rst:58
+msgid "panda\\_guard.role.attacks.gpt4\\_cipher module"
+msgstr "panda\\_guard.role.attacks.gpt4\\_cipher module"
+
+#: of panda_guard.role.attacks.gpt4_cipher.GPT4CipherAttacker.caesar_cipher:1
+msgid ""
+"To transfer a string into Caesar Cipher :param text: string waiting to be"
+" transferred :param shift: shift digits in Caesar Cipher"
+msgstr "将字符串转换为凯撒密码：:param text: 等待转换的字符串:param shift: 凯撒密码中的偏移数字"
+
+#: ../../source/panda_guard.role.attacks.rst:66
+msgid "panda\\_guard.role.attacks.ica module"
+msgstr "panda\\_guard.role.attacks.ica module"
+
+#: of panda_guard.role.attacks.ica.IcaAttacker:1
+msgid ""
+"Ica Attacker Implementation that substitutes the user message with a pre-"
+"formulated attack prompt. Reference: Zeming Wei and Yifei Wang and Ang Li"
+" and Yichuan Mo and Yisen Wang, 2024, Jailbreak and Guard Aligned "
+"Language Models with Only Few In-Context Demonstrations, Arxiv, 2024"
+msgstr ""
+"Ica Attacker 实现，通过预设的攻击提示替代用户消息。参考：Zeming Wei 和 Yifei Wang 和 Ang Li 及 "
+"Yichuan Mo 和 Yisen Wang, 2024, Jailbreak and Guard Aligned Language "
+"Models with Only Few In-Context Demonstrations, Arxiv, 2024"
+
+#: of panda_guard.role.attacks.ica.IcaAttacker.attack:3
+msgid ""
+"Prompts containing harmful attacks on the target, is of the form “role: "
+"user, content: xx”."
+msgstr "包含对目标的有害攻击的提示，形式为 “role: user, content: xx”。"
+
+#: of panda_guard.role.attacks.ica.IcaAttackerConfig:1
+msgid "Configuration for the ICA Attacker."
+msgstr "ICA Attacker 的配置。"
+
+#: of panda_guard.role.attacks.ica.IcaAttackerConfig:3
+msgid "Class of the attacker, default is \"IcaAttacker\"."
+msgstr "攻击者的类型，默认值为 \"IcaAttacker\"。"
+
+#: of panda_guard.role.attacks.ica.IcaAttackerConfig:5
+msgid "Configuration of rewrite llm."
+msgstr "重写提示时使用的 LLM 配置。"
+
+#: of panda_guard.role.attacks.ica.IcaAttackerConfig:6
+msgid "Configuration of target llm."
+msgstr "被攻击的 LLM 配置。"
+
+#: of panda_guard.role.attacks.ica.IcaAttackerConfig:7
+msgid "Configuration of judge llm."
+msgstr "判断是否攻击成功的 LLM 配置。"
+
+#: ../../source/panda_guard.role.attacks.rst:74
+msgid "panda\\_guard.role.attacks.overload module"
+msgstr "panda\\_guard.role.attacks.overload module"
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker:1
+msgid ""
+"Overload Attacker Implementation for modifying user prompts with overload"
+" tasks."
+msgstr "Overload Attacker 实现，用于通过超载任务修改用户提示。"
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker:3
+#: panda_guard.role.attacks.overload.OverloadAttackerConfig:1
+msgid "Configuration for the Overload Attacker."
+msgstr "用于 Overload Attacker 的配置"
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker.attack:1
+#: panda_guard.role.attacks.rewrite.RewriteAttacker.attack:1
+msgid "Execute an attack by rewriting the latest user prompt."
+msgstr "通过重写最新的用户提示来执行攻击。"
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker.overload_generate:1
+msgid "add overload task to the given prompt using the specified template."
+msgstr ""
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker.overload_generate:3
+#: panda_guard.role.attacks.rewrite.RewriteAttacker.rewrite:3
+msgid "The original user prompt."
+msgstr "原始用户提示"
+
+#: of panda_guard.role.attacks.overload.OverloadAttacker.overload_generate:4
+msgid "The prompt with overload tasks."
+msgstr "添加过载任务后的提示"
+
+#: of panda_guard.role.attacks.overload.OverloadAttackerConfig:3
+msgid "Class of the attacker, default is \"OverloadAttacker\"."
+msgstr "攻击者的类型，默认值为 \"OverloadAttacker\"。"
+
+#: of panda_guard.role.attacks.overload.OverloadAttackerConfig:7
+msgid "Template for overload task using user prompts."
+msgstr "用于用户提示的超载任务模板。"
+
+#: ../../source/panda_guard.role.attacks.rst:82
+msgid "panda\\_guard.role.attacks.pair module"
+msgstr "panda\\_guard.role.attacks.pair module"
+
+#: of panda_guard.role.attacks.pair.PairAttacker:1
+msgid ""
+"PAIR Attacker for performing adversarial attacks using a pair of language"
+" models. https://arxiv.org/abs/2310.08419"
+msgstr "PAIR 攻击者，使用一对语言模型执行对抗性攻击。 https://arxiv.org/abs/2310.08419"
+
+#: of panda_guard.role.attacks.pair.PairAttacker:4
+msgid "Configuration for the PAIR Attacker."
+msgstr "用于 PAIR Attacker 的配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.attack:1
+msgid "Perform the PAIR attack and return the final adversarial attack."
+msgstr "执行 PAIR 攻击并返回最终的对抗攻击结果。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.attack:3
+msgid "The messages used to store the goal in the dataset."
+msgstr "用于存储数据集中目标的消息。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.attack:5
+msgid "The final adversarial attack result."
+msgstr "最终的对抗攻击结果。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.log:1
+msgid "Log detailed information during the attack process."
+msgstr "在攻击过程中记录详细信息。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.log:3
+msgid "The label for the log message."
+msgstr "日志消息的标签。"
+
+#: of panda_guard.role.attacks.pair.PairAttacker.log:5
+msgid "The log message."
+msgstr "日志消息。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:1
+msgid "Configuration class for the PAIR attacker."
+msgstr "PAIR 攻击者的配置类。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:3
+msgid "Attacker class name."
+msgstr "攻击者类名。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:5
+msgid "Attacker name."
+msgstr "攻击者的名称。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:7
+msgid "Configuration for the attacker's LLM."
+msgstr "攻击者 LLM 的配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:9
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:15
+msgid "Configuration for the target LLM."
+msgstr "目标 LLM 的配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:11
+msgid "Configuration for the pair judge."
+msgstr "配对评估器的配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:13
+msgid "The target string to be generated by the attack."
+msgstr "攻击生成的目标字符串。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:15
+msgid "Maximum number of attack iterations."
+msgstr "最大攻击迭代次数。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:17
+msgid "Initial user message for starting the attack."
+msgstr "启动攻击的初始用户消息。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:19
+msgid "System prompt used by the attacker."
+msgstr "攻击者使用的系统提示。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:21
+msgid "Generation configuration for the attacker's LLM."
+msgstr "攻击者 LLM 的生成配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:23
+#: panda_guard.role.attacks.tap.TAPAttackerConfig:17
+msgid "Generation configuration for the target LLM."
+msgstr "目标 LLM 的生成配置。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:25
+msgid "Template for the user's message in the attack."
+msgstr "攻击中用户消息的模板。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:27
+msgid "Early stop threshold for the attack."
+msgstr "攻击的早停阈值。"
+
+#: of panda_guard.role.attacks.pair.PairAttackerConfig:29
+msgid "Whether to enable detailed logging."
+msgstr "是否启用详细日志记录。"
+
+#: ../../source/panda_guard.role.attacks.rst:90
+msgid "panda\\_guard.role.attacks.random\\_search module"
+msgstr "panda\\_guard.role.attacks.random\\_search module"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttacker:1
+msgid ""
+"The Random Search Attack achieves a complete attack prompt by "
+"constraining the response template and appending an adv_suffix at the end"
+" of the response."
+msgstr "随机搜索攻击通过限制响应模板并在响应末尾附加 adv_suffix 来实现完整的攻击提示。"
+
+#: of
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.random_modify_tokens:1
+msgid "Randomly substitute some tokens to random unicode char"
+msgstr "随机替换一些token为随机的unicode字符"
+
+#: of
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.random_modify_tokens:4
+msgid "input string"
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.random_modify_tokens:6
+#, fuzzy
+msgid "The number of tokens to be randomly modified, the default is 3"
+msgstr "攻击中的层数。默认值为 5。"
+
+#: of
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.random_modify_tokens:8
+msgid ""
+"Pool of random values ​​to replace, defaults to None, random words will "
+"be automatically generated"
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.random_search.RandomSearchAttacker.random_modify_tokens:10
+msgid "modified string"
+msgstr ""
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:3
+#, fuzzy
+msgid "Class of the attacker, default is \"BaseAttacker\"."
+msgstr "攻击者的类型，默认值为 \"BaseAttacker\""
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:7
+msgid "RandomSearchAttack rule."
+msgstr "RandomSearchAttack rule。"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:8
+msgid "the str for calculating logprobs."
+msgstr "用于计算logprobs的字符串。"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:9
+msgid ":param adv_suffix：init avd suffix."
+msgstr ":param adv_suffix：初始化对抗后缀。"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:11
+#, fuzzy
+msgid "max random search iterations in one setup."
+msgstr "一次设置中最大随机搜索迭代次数"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:12
+#, fuzzy
+msgid "random restart limitation."
+msgstr "随机重启限制"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:13
+#, fuzzy
+msgid "change token limitations."
+msgstr "修改token的限制"
+
+#: of panda_guard.role.attacks.random_search.RandomSearchAttackerConfig:14
+msgid "early stop threshold."
+msgstr "早停阈值。"
+
+#: of panda_guard.role.attacks.random_search.init_adv_suffix:1
+msgid "different model has different adv_suffix init"
+msgstr "不同的模型有不同的adv_suffix初始化"
+
+#: of panda_guard.role.attacks.random_search.init_adv_suffix:2
+msgid "对不同待测模型有不用的初始化对抗后缀 :param model_name: the model name. 模型名称"
+msgstr ""
+
+#: of panda_guard.role.attacks.random_search.judge_prefix_set:1
+#, fuzzy
+msgid "rule based judge 基于规则的评估机制"
+msgstr "基于规则的判断"
+
+#: of panda_guard.role.attacks.random_search.response_rules:1
+msgid "response rules and response generate template for RandomSearchAttacker"
+msgstr "RandomSearchAttacker的响应规则和响应生成模板"
+
+#: of panda_guard.role.attacks.random_search.rule_based_judge:1
+#, fuzzy
+msgid ""
+"prefix: response prefix generated by llm. LLM 回复前缀 rules:  judge rules "
+"决策规则"
+msgstr "前缀：由LLM生成的响应前缀。LLM规则：判断规则"
+
+#: of panda_guard.role.attacks.random_search.rule_based_judge:4
+msgid "Returns: 是否成功jailbreak"
+msgstr ""
+
+#: of panda_guard.role.attacks.random_search.schedule_n_to_change_fixed:1
+msgid "Scheduler for deciding num. of chars which need to be changed."
+msgstr "调度器，用于决定需要更改的字符数。"
+
+#: of panda_guard.role.attacks.random_search.schedule_n_to_change_fixed
+#: panda_guard.role.attacks.scav.ScavAttacker.get_corresponding_string
+#: panda_guard.role.attacks.scav.ScavAttacker.load_csv
+msgid "param"
+msgstr "参数"
+
+#: of panda_guard.role.attacks.random_search.schedule_n_to_change_fixed:3
+#, fuzzy
+msgid "max_n_to_change: max number of tokens to change. 最大修改token数量"
+msgstr "max_n_to_change：最大修改的token数量。"
+
+#: of panda_guard.role.attacks.random_search.schedule_n_to_change_fixed:4
+#, fuzzy
+msgid "it: index of iteration. 循环次数"
+msgstr "it：迭代索引。"
+
+#: ../../source/panda_guard.role.attacks.rst:98
+msgid "panda\\_guard.role.attacks.rewrite module"
+msgstr "panda\\_guard.role.attacks.rewrite module"
+
+#: of panda_guard.role.attacks.rewrite.RewriteAttacker.rewrite:1
+msgid "Rewrite the given prompt using the specified template."
+msgstr "使用指定模板重写给定的提示。"
+
+#: of panda_guard.role.attacks.rewrite.RewriteAttacker.rewrite:4
+msgid "The rewritten prompt."
+msgstr "重写后的提示。"
+
+#: of panda_guard.role.attacks.rewrite.RewriteAttackerConfig:7
+msgid "Template for rewriting user prompts."
+msgstr "重写用户提示的模板。"
+
+#: ../../source/panda_guard.role.attacks.rst:106
+msgid "panda\\_guard.role.attacks.scav module"
+msgstr "panda\\_guard.role.attacks.scav module"
+
+#: of panda_guard.role.attacks.scav.ScavAttacker:1
+msgid ""
+"Since Scav requires training an independent classifier on the last layer "
+"embedding of the white-box model and using it as the basis for the "
+"genetic algorithm iteration, the cost of reproducing the method is high. "
+"Hence, we adapted llama3.1-8b-In/llama3.1-70b-In as example models to "
+"generated static optimized instructions. The concerned code will be "
+"available soon"
+msgstr ""
+"由于Scav需要在白盒模型的最后一层嵌入上训练独立的分类器，并使用它作为遗传算法迭代的基础，因此复现该方法的成本较高。因此，我们将llama3.1"
+"-8b-In/llama3.1-70b-In作为示例模型，生成静态优化指令。相关代码将很快提供。"
+
+#: of panda_guard.role.attacks.scav.ScavAttacker.get_corresponding_string:1
+#, fuzzy
+msgid "df: loaded csv file data structure."
+msgstr "df：加载的csv文件对应的数据结构"
+
+#: of panda_guard.role.attacks.scav.ScavAttacker.get_corresponding_string:2
+#, fuzzy
+msgid "string to match."
+msgstr "待匹配的字符串"
+
+#: of panda_guard.role.attacks.scav.ScavAttacker.load_csv:1
+msgid "file_path."
+msgstr ""
+
+#: of panda_guard.role.attacks.scav.ScavAttacker.load_csv:2
+#, fuzzy
+msgid "loaded csv."
+msgstr "加载的csv文件"
+
+#: of panda_guard.role.attacks.scav.ScavAttackerConfig:5
+#, fuzzy
+msgid "path of optimized instruction for llama-3.1-8b-In."
+msgstr "llama-3.1-8b-In的优化指令路径"
+
+#: of panda_guard.role.attacks.scav.ScavAttackerConfig:6
+#, fuzzy
+msgid "path of optimized instruction for llama-3.1-70b-In."
+msgstr "llama-3.1-70b-In的优化指令路径(llama3.1 70b及其他)"
+
+#: of panda_guard.role.attacks.scav.ScavAttackerConfig:7
+#, fuzzy
+msgid "name of the target model."
+msgstr "目标模型的名称"
+
+#: ../../source/panda_guard.role.attacks.rst:114
+msgid "panda\\_guard.role.attacks.tap module"
+msgstr "panda\\_guard.role.attacks.tap module"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker:1
+msgid ""
+"TAP Attacker class for performing targeted attacks on a language model. "
+"https://arxiv.org/abs/2312.02119"
+msgstr "TAP攻击者类，用于对语言模型执行定向攻击。https://arxiv.org/abs/2312.02119"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker:4
+msgid "Configuration for the TAP attacker."
+msgstr "TAP攻击者的配置"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.attack:1
+msgid ""
+"Perform the adversarial attack on the conversation based on specific "
+"goals and parameters."
+msgstr "根据特定的目标和参数执行对话中的对抗攻击。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.attack:3
+msgid "A list of messages in the conversation."
+msgstr "对话中的消息列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.attack:5
+msgid "Additional parameters passed to the function."
+msgstr "传递给函数的额外参数"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.attack:6
+msgid "A list containing the best attack prompt generated by the process."
+msgstr "包含过程生成的最佳攻击提示的列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attack:1
+msgid ""
+"Generate attack prompts by extending the conversation and applying the "
+"attack logic."
+msgstr "通过扩展对话并应用攻击逻辑生成攻击提示。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attack:3
+#: panda_guard.role.attacks.tap.TAPAttacker.prune:11
+msgid "List of conversations."
+msgstr "对话列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attack:5
+msgid "List of responses already processed."
+msgstr "已处理的响应列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attack:7
+msgid "A list of attack prompts."
+msgstr "攻击提示的列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attacker_system_prompt:1
+msgid ""
+"Format the system prompt for the attacker based on the goal and target "
+"string."
+msgstr "根据目标和目标字符串为攻击者格式化系统提示。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attacker_system_prompt:3
+#: panda_guard.role.attacks.tap.TAPAttacker.get_init_msg:3
+#: panda_guard.role.attacks.tap.TAPAttacker.judge_score:7
+#: panda_guard.role.attacks.tap.TAPAttacker.on_topic_score:5
+msgid "The goal of the attack."
+msgstr "攻击的目标"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attacker_system_prompt:5
+#: panda_guard.role.attacks.tap.TAPAttacker.get_init_msg:5
+msgid "The target string to be used in the attack."
+msgstr "攻击中使用的目标字符串"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_attacker_system_prompt:7
+msgid "Formatted system prompt."
+msgstr "格式化后的系统提示"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_init_msg:1
+msgid ""
+"Get the initial message for the attack, which includes the goal and "
+"target string."
+msgstr "获取攻击的初始消息，包括目标和目标字符串。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.get_init_msg:7
+msgid "The initial message for the attack."
+msgstr "攻击的初始消息"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.judge_score:1
+msgid ""
+"Evaluate the attack prompts based on their likelihood of success "
+"(jailbreaking the model)."
+msgstr "根据攻击提示的成功概率（越狱模型的成功率）评估攻击提示。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.judge_score:3
+#: panda_guard.role.attacks.tap.TAPAttacker.on_topic_score:3
+#: panda_guard.role.attacks.tap.TAPAttacker.prune:7
+#: panda_guard.role.attacks.tap.TAPAttacker.target_llm_response:3
+msgid "List of attack prompts."
+msgstr "攻击提示的列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.judge_score:5
+msgid "List of model responses."
+msgstr "模型响应的列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.judge_score:9
+#: panda_guard.role.attacks.tap.TAPAttacker.prune:5
+msgid "List of judge scores."
+msgstr "评估分数列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.on_topic_score:1
+msgid "Evaluate the relevance of attack prompts to the goal."
+msgstr "评估攻击提示与目标的相关性"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.on_topic_score:7
+#: panda_guard.role.attacks.tap.TAPAttacker.prune:3
+msgid "List of topic scores."
+msgstr "主题评分列表"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:1
+msgid ""
+"Process the target model's response, formatting it with the score and "
+"goal information."
+msgstr "处理目标模型的响应，并将其与评分和目标信息一起格式化。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:3
+msgid "The response generated by the target language model."
+msgstr "目标语言模型生成的响应"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:5
+msgid "The score indicating the likelihood of a successful attack."
+msgstr "表示成功攻击可能性的评分"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:7
+msgid "The intended behavior or objective for the attack."
+msgstr "攻击的预期行为或目标"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:9
+msgid "The string related to the target or subject of the attack."
+msgstr "与攻击目标或主题相关的字符串。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.process_target_response:11
+msgid "A formatted string combining the target response, score, and goal."
+msgstr "一个格式化字符串，结合了目标响应、评分和目标。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:1
+msgid "Prune attack prompts based on their relevance and scores."
+msgstr "根据攻击提示的相关性和得分修剪攻击提示。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:9
+msgid "List of improvement strings."
+msgstr "改进字符串的列表。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:13
+#: panda_guard.role.attacks.tap.TAPAttacker.target_llm_response:5
+msgid "List of target LLM responses."
+msgstr "目标LLM响应的列表。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:15
+msgid "List of extracted attacks."
+msgstr "提取的攻击列表。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:17
+msgid "List of sorting scores."
+msgstr "排序分数的列表。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:19
+msgid "Additional attack parameters."
+msgstr "额外的攻击参数。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.prune:21
+msgid "Pruned attack prompts."
+msgstr "修剪后的攻击提示。"
+
+#: of panda_guard.role.attacks.tap.TAPAttacker.target_llm_response:1
+msgid "Get the responses from the target LLM based on the attack prompts."
+msgstr "根据攻击提示从目标LLM获取响应。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:7
+msgid "Target string to be used in the attack."
+msgstr "攻击中使用的目标字符串。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:9
+msgid "The width of the attack tree."
+msgstr "攻击树的宽度。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:11
+msgid "Factor that determines the branching of the attack."
+msgstr "决定攻击分支的因子。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:13
+msgid "The depth of the attack tree."
+msgstr "攻击树的深度。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:19
+msgid "Configuration for the attack LLM."
+msgstr "攻击LLM的配置。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:21
+msgid "Generation configuration for the attack LLM."
+msgstr "攻击LLM的生成配置。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:23
+msgid "Configuration for the TAP judge."
+msgstr "TAP评估器的配置。"
+
+#: of panda_guard.role.attacks.tap.TAPAttackerConfig:25
+msgid "The system prompt used for the attacker."
+msgstr "攻击者使用的系统提示。"
+
+#: ../../source/panda_guard.role.attacks.rst:122
+msgid "panda\\_guard.role.attacks.transfer module"
+msgstr "panda\\_guard.role.attacks.transfer module"
+
+#: of panda_guard.role.attacks.transfer.NoneAttacker:1
+msgid "No-op attacker that does not modify the input messages."
+msgstr "无操作攻击者，不修改输入消息。"
+
+#: of panda_guard.role.attacks.transfer.TransferAttacker:1
+msgid ""
+"Transfer Attacker Implementation that substitutes the user message with a"
+" pre-formulated attack prompt."
+msgstr "Transfer Attacker实现，替换用户消息为预先制定的攻击提示。"
+
+#: of panda_guard.role.attacks.transfer.TransferAttacker:3
+#: panda_guard.role.attacks.transfer.TransferAttackerConfig:1
+msgid "Configuration for the Transfer Attacker."
+msgstr "Transfer Attacker的配置。"
+
+#: of panda_guard.role.attacks.transfer.TransferAttacker.attack:1
+msgid ""
+"Execute an attack by transferring a reformulated request into the "
+"conversation."
+msgstr "通过将重新表述的请求传入对话中来执行攻击。"
+
+#: of panda_guard.role.attacks.transfer.TransferAttackerConfig:3
+msgid "Class of the attacker, default is \"TransferAttacker\"."
+msgstr "攻击者的类型，默认值为\"TransferAttacker\"。"
+
+#: ../../source/panda_guard.role.attacks.rst:130
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "Configuration for the language model.  LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for generating output with LLM.  LLM生成配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for the attacker.  攻击者的配置"
+#~ msgstr ""
+
+#~ msgid "List of input messages.  输入的消息列表"
+#~ msgstr ""
+
+#~ msgid "Additional parameters for the attack.  攻击的额外参数"
+#~ msgstr ""
+
+#~ msgid "Modified list of messages after the attack.  攻击后返回的更改消息列表"
+#~ msgstr ""
+
+#~ msgid "Class of the attacker.  攻击者的类型"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional parameters for the attack, "
+#~ "must include \"request_reformulated\".  额外攻击参数，必须包含"
+#~ " \"request_reformulated\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modified list of messages with the "
+#~ "reformulated request.  包含重新表达请求的更改消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the attacker, default is "
+#~ "\"GCGAttacker\".  攻击者的类型，默认值为 \"GCGAttacker\""
+#~ msgstr ""
+
+#~ msgid "每次挑选梯度前k大的one-hot向量的id"
+#~ msgstr ""
+
+#~ msgid "初始化对抗后缀"
+#~ msgstr ""
+
+#~ msgid "迭代步数"
+#~ msgstr ""
+
+#~ msgid "是否缓存对抗后缀前的内容"
+#~ msgstr ""
+
+#~ msgid "是否在判断攻击成功后就停止"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional parameters for the attack, "
+#~ "must include \"request_reformulated\".  额外攻击参数"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prompts containing harmful attacks on "
+#~ "the target, is of the form “role:"
+#~ " user, content: xx”. 含有目标的有害攻击的prompt, "
+#~ "是\"role: user, content: xx的形式\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the attacker, default is "
+#~ "\"IcaAttacker\".  攻击者的类型，默认值为 \"IcaAttacker\""
+#~ msgstr ""
+
+#~ msgid "Configuration of rewrite llm. 重写prompt时用到的LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration of target llm. 被攻击的LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration of judge llm. 判断是否攻击成功的LLM配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the attacker, default is "
+#~ "\"OverloadAttacker\".  攻击者的类型，默认值为 \"OverloadAttacker\""
+#~ msgstr ""
+
+#~ msgid "Template for overload task using user prompts.  用于给用户提示添加过载任务的模板"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Randomly substitute some tokens to "
+#~ "random unicode char 随机替换某些token为随机unicode字符"
+#~ msgstr ""
+
+#~ msgid "输入字符串"
+#~ msgstr ""
+
+#~ msgid "要随机修改的 token 数量，默认为 3"
+#~ msgstr ""
+
+#~ msgid "替换的随机值池，默认为 None，将自动生成随机单词"
+#~ msgstr ""
+
+#~ msgid "修改后的字符串"
+#~ msgstr ""
+
+#~ msgid "Class of the attacker, default is \"BaseAttacker\" 攻击类型"
+#~ msgstr ""
+
+#~ msgid "RandomSearchAttack rule.  response的规则"
+#~ msgstr ""
+
+#~ msgid "the str for calculating logprobs.   计算logprobs的词"
+#~ msgstr ""
+
+#~ msgid ":param adv_suffix：init avd suffix. 初始化对抗后缀"
+#~ msgstr ""
+
+#~ msgid "max random search iterations in one setup 最大搜索次数"
+#~ msgstr ""
+
+#~ msgid "random restart limitation 最大随机重启次数"
+#~ msgstr ""
+
+#~ msgid "change token limitations 单次最大修改token数量"
+#~ msgstr ""
+
+#~ msgid "early stop threshold. 早停阈值"
+#~ msgstr ""
+
+#~ msgid "对不同待测模型有不用的初始化对抗后缀 :param model_name: the model name. 模型名称"
+#~ msgstr ""
+
+#~ msgid "rule based judge 基于规则的评估机制"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "prefix: response prefix generated by "
+#~ "llm. LLM 回复前缀 rules:  judge rules "
+#~ "决策规则"
+#~ msgstr ""
+
+#~ msgid "Returns: 是否成功jailbreak"
+#~ msgstr ""
+
+#~ msgid "max_n_to_change: max number of tokens to change. 最大修改token数量"
+#~ msgstr ""
+
+#~ msgid "it: index of iteration. 循环次数"
+#~ msgstr ""
+
+#~ msgid "Configuration for the Rewrite Attacker.  用于Rewrite Attacker的配置"
+#~ msgstr ""
+
+#~ msgid "The rewritten prompt.  重写后的提示"
+#~ msgstr ""
+
+#~ msgid "Template for rewriting user prompts.  用于重写用户提示的模板"
+#~ msgstr ""
+
+#~ msgid "Class of the attacker. 攻击者的类型"
+#~ msgstr ""
+
+#~ msgid "Name of the attacker. 攻击者的名称"
+#~ msgstr ""
+
+#~ msgid "Target string to be used in the attack. 攻击中使用的目标字符串"
+#~ msgstr ""
+
+#~ msgid "The width of the attack tree. 攻击树的宽度"
+#~ msgstr ""
+
+#~ msgid "Factor that determines the branching of the attack. 决定攻击分支的因子"
+#~ msgstr ""
+
+#~ msgid "The depth of the attack tree. 攻击树的深度"
+#~ msgstr ""
+
+#~ msgid "Configuration for the target LLM. 目标LLM的配置"
+#~ msgstr ""
+
+#~ msgid "Generation configuration for the target LLM. 目标LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for the attack LLM. 攻击LLM的配置"
+#~ msgstr ""
+
+#~ msgid "Generation configuration for the attack LLM. 攻击LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for the TAP judge. TAP判定器的配置"
+#~ msgstr ""
+
+#~ msgid "The system prompt used for the attacker. 攻击者使用的系统提示"
+#~ msgstr ""
+
+#~ msgid "Configuration for the Transfer Attacker.  用于Transfer Attacker的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the attacker, default is "
+#~ "\"TransferAttacker\".  攻击者的类型，默认值为 \"TransferAttacker\""
+#~ msgstr ""
+
+#~ msgid "Template for LLM to mask offensive words."
+#~ msgstr "用于 LLM 掩码敏感词的模板。"
+
+#~ msgid ""
+#~ ":param topk:Each time the ID of "
+#~ "the k largest one-hot vector is"
+#~ " selected before the gradient. :param "
+#~ "adv_string_init:Initialization versus suffix. :param"
+#~ " num_steps:Number of iteration steps. "
+#~ ":param use_prefix_cache:Whether to cache "
+#~ "content before the suffix. :param "
+#~ "early_stop:Whether to stop after judging "
+#~ "that the attack is successful."
+#~ msgstr ""
+#~ ":param topk: 每次选择梯度前 k 大的 one-hot"
+#~ " 向量的 ID。:param adv_string_init: 初始化与后缀的对比。:param"
+#~ " num_steps: 迭代步数。:param use_prefix_cache: "
+#~ "是否缓存后缀前的内容。:param early_stop: 判断攻击成功后是否停止。"
+
+#~ msgid ""
+#~ ":param input_string:input string :type "
+#~ "input_string: str :param num_changes: The "
+#~ "number of tokens to be randomly "
+#~ "modified, the default is 3 :type "
+#~ "num_changes: int :param replacement_pool: Pool"
+#~ " of random values ​​to replace, "
+#~ "defaults to None, random words will "
+#~ "be automatically generated :type "
+#~ "replacement_pool: list[str] or None :return:"
+#~ " modified string :rtype: str"
+#~ msgstr ""
+#~ ":param input_string: 输入字符串 :type input_string:"
+#~ " str :param num_changes: 要随机修改的token数量，默认为3 "
+#~ ":type num_changes: int :param "
+#~ "replacement_pool: 替换的随机值池，默认为 None，将自动生成随机单词 :type"
+#~ " replacement_pool: list[str] 或 None "
+#~ ":return: 修改后的字符串 :rtype: str"
+
+#~ msgid "param model_name"
+#~ msgstr "param model_name"
+
+#~ msgid "the model name."
+#~ msgstr "模型名称。"
+
+#~ msgid "Returns: whether jailbreak successfully"
+#~ msgstr "返回：是否成功越狱"
+
+#~ msgid "file_path: path of csv file"
+#~ msgstr "file_path：csv文件路径"
+
+#~ msgid "Class of the attacker, default is \"RewriteAttacker\".\""
+#~ msgstr "攻击者的类型，默认值为 \"RewriteAttacker\""
+

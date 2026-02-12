@@ -1,0 +1,1415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-15 06:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.defenses.rst:2
+msgid "panda\\_guard.role.defenses package"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.rst:16
+msgid "panda\\_guard.role.defenses.back\\_translate module"
+msgstr ""
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefender:1
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefender:1
+#: panda_guard.role.defenses.gradsafe.GradSafeDefender:1
+#: panda_guard.role.defenses.icl.IclDefender:1
+#: panda_guard.role.defenses.paraphrase.ParaphraseDefender:1
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender:1
+#: panda_guard.role.defenses.repe.RepeDefender:1
+#: panda_guard.role.defenses.rewrite.NoneDefender:1
+#: panda_guard.role.defenses.rewrite.RewriteDefender:1
+#: panda_guard.role.defenses.rpo.RPODefender:1
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefender:1
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender:1
+#: panda_guard.role.defenses.smoothllm.SmoothLLMDefender:1
+msgid "Bases: :py:class:`~panda_guard.role.defenses.base.BaseDefender`"
+msgstr ""
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefender:1
+msgid "Defending LLMs against Jailbreaking Attacks via Backtranslation."
+msgstr "通过回译保护LLMs免受越狱攻击。"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefender:3
+msgid ""
+"Reference: Wang, Yihan and Shi, Zhouxing and Bai, Andrew and Hsieh, Cho-"
+"Jui https://github.com/YihanWang617/LLM-Jailbreaking-Defense-"
+"Backtranslation"
+msgstr ""
+"参考：Wang, Yihan and Shi, Zhouxing and Bai, Andrew and Hsieh, Cho-Jui "
+"https://github.com/YihanWang617/LLM-Jailbreaking-Defense-Backtranslation"
+
+#: ../../source/panda_guard.role.defenses.rst
+msgid "Parameters"
+msgstr ""
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefender:6
+#: panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:1
+msgid "Configuration for the BackTranslation Defender."
+msgstr "回译防御的配置。"
+
+#: of
+#: panda_guard.role.defenses.back_translate.BackTranslationDefender.defense:1
+msgid "Execute the defense mechanism by utilizing backtranslation techniques."
+msgstr "利用回译技术执行防御机制。"
+
+#: of
+#: panda_guard.role.defenses.back_translate.BackTranslationDefender.defense:3
+#: panda_guard.role.defenses.base.BaseDefender.defense:3
+#: panda_guard.role.defenses.icl.IclDefender.defense:3
+#: panda_guard.role.defenses.paraphrase.ParaphraseDefender.defense:3
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender.defense:3
+#: panda_guard.role.defenses.repe.RepeDefender.generate:3
+msgid "List of input messages."
+msgstr "输入消息列表。"
+
+#: ../../source/panda_guard.role.defenses.rst
+msgid "Returns"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.back_translate.BackTranslationDefender.defense:4
+#: panda_guard.role.defenses.base.BaseDefender.defense:4
+#: panda_guard.role.defenses.icl.IclDefender.defense:4
+#: panda_guard.role.defenses.paraphrase.ParaphraseDefender.defense:4
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender.defense:4
+#: panda_guard.role.defenses.repe.RepeDefender.defense:4
+msgid "Modified list of messages after applying the defense strategy."
+msgstr "应用防御策略后修改了的消息列表。"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:1
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:1
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:1
+#: panda_guard.role.defenses.icl.IclDefenderConfig:1
+#: panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:1
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:1
+#: panda_guard.role.defenses.repe.RepeDefenderConfig:1
+#: panda_guard.role.defenses.rewrite.NoneDefenderConfig:1
+#: panda_guard.role.defenses.rewrite.RewriteDefenderConfig:1
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:1
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:1
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:1
+#: panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:1
+msgid "Bases: :py:class:`~panda_guard.role.defenses.base.BaseDefenderConfig`"
+msgstr ""
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:3
+msgid "Class of the defender, default is \"BackTranslationDefender\"."
+msgstr "防御者的类型，默认是 \"BackTranslationDefender\"。"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:4
+msgid "Threshold for determining the likelihood of harmful prompts."
+msgstr "用于判断生成的回译提示是否合理的阈值"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:5
+msgid "Configuration for the LLM used for inference."
+msgstr "用于推理的LLM的配置。"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:6
+msgid "Configuration for generating output with the inference LLM."
+msgstr "推理LLM生成输出的配置。"
+
+#: of panda_guard.role.defenses.back_translate.BackTranslationDefenderConfig:7
+msgid "Whether to return the new response regardless of its content."
+msgstr "无论内容如何是否返回新响应。"
+
+#: ../../source/panda_guard.role.defenses.rst:24
+msgid "panda\\_guard.role.defenses.base module"
+msgstr ""
+
+#: of panda_guard.role.defenses.base.BaseDefender:1
+#: panda_guard.role.defenses.base.BaseDefenderConfig:1
+msgid "Bases: :py:class:`~abc.ABC`"
+msgstr ""
+
+#: of panda_guard.role.defenses.base.BaseDefender:1
+msgid "Abstract Base Class for Defender."
+msgstr "Defender的抽象基类。"
+
+#: of panda_guard.role.defenses.base.BaseDefender:3
+msgid "Configuration for the defender."
+msgstr "防御的配置。"
+
+#: of panda_guard.role.defenses.base.BaseDefender.defense:1
+msgid "Abstract method to execute defense on a sequence of messages."
+msgstr "对消息序列执行防御的抽象方法。"
+
+#: of panda_guard.role.defenses.base.BaseDefenderConfig:1
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:1
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:1
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:1
+msgid "Configuration for the Base Defender."
+msgstr "Base Defender的配置。"
+
+#: of panda_guard.role.defenses.base.BaseDefenderConfig:3
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:3
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:3
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:3
+msgid "Class of the defender."
+msgstr "防御者的类型"
+
+#: of panda_guard.role.defenses.base.BaseDefenderConfig:4
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:4
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:5
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:5
+msgid "Name of the defender."
+msgstr "防御者的名称"
+
+#: of panda_guard.role.defenses.base.BaseDefenderConfig:5
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:5
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:7
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:7
+msgid "Configuration for the target language model."
+msgstr "目标语言模型的配置"
+
+#: of panda_guard.role.defenses.base.BaseDefenderConfig:6
+#: panda_guard.role.defenses.gradsafe.GradSafeDefenderConfig:6
+#: panda_guard.role.defenses.rpo.RPODefenderConfig:9
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:9
+msgid "Configuration for generating output with the target LLM."
+msgstr "目标LLM生成的配置"
+
+#: ../../source/panda_guard.role.defenses.rst:32
+msgid "panda\\_guard.role.defenses.defender\\_registry module"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.rst:40
+msgid "panda\\_guard.role.defenses.goal\\_priority module"
+msgstr ""
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefender:1
+msgid ""
+"Goal Priority Defender for handling attack prompts with goal "
+"prioritization. https://arxiv.org/abs/2311.09096"
+msgstr "目标优先级防御去，利用目标优先级处理攻击提示"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefender:4
+msgid "Configuration object that defines the defender's behavior."
+msgstr "定义防御者行为的配置对象。"
+
+#: of
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefender.add_defense:1
+msgid ""
+"Generate a defense message based on the attack prompt and the specified "
+"defense type."
+msgstr "根据攻击提示和指定的防御类型生成防御消息。"
+
+#: of
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefender.add_defense:3
+msgid "The attack prompt to defend against."
+msgstr "要防御的攻击提示"
+
+#: of
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefender.add_defense:4
+msgid "The type of defense to apply."
+msgstr "应用的防御类型"
+
+#: of
+#: panda_guard.role.defenses.goal_priority.GoalPriorityDefender.add_defense:5
+msgid "A string containing the defense prompt."
+msgstr "包含防御提示的字符串。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefender.defense:1
+msgid ""
+"Perform defense against an attack prompt by analyzing and responding "
+"based on goal prioritization."
+msgstr "通过根据目标优先级进行分析和响应，对攻击提示进行防御。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefender.defense:3
+msgid ""
+"List of message dictionaries where each dictionary contains 'role' and "
+"'content' key."
+msgstr "消息字典列表，其中每个字典都包含“角色”和“内容”键"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefender.defense:4
+msgid "List of message dictionaries with defense applied."
+msgstr "已应用防御的消息字典列表。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:1
+msgid "Goal Priority Defender Configuration."
+msgstr "目标优先级防御配置。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:3
+msgid "Class name of the defender, default is \"GoalPriorityDefender\"."
+msgstr "防御者的类名，默认为“GoalPriorityDefender”。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:4
+msgid "Name of the defender, default is \"GoalPriority\"."
+msgstr "防御者的名称，默认为“GoalPriority”。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:5
+msgid "Configuration for the target LLM."
+msgstr "目标LLM的配置。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:6
+msgid "Configuration for the LLM generation process."
+msgstr "LLM生成的配置。"
+
+#: of panda_guard.role.defenses.goal_priority.GoalPriorityDefenderConfig:7
+msgid "Type of defense, default is \"priority\"."
+msgstr "防御类型，默认为“priority”"
+
+#: ../../source/panda_guard.role.defenses.rst:48
+msgid "panda\\_guard.role.defenses.gradsafe module"
+msgstr ""
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender:1
+msgid ""
+"GradSafe Defender class. Prevents the model from generating unsafe or "
+"unethical content using gradient norms and cosine similarity. "
+"https://arxiv.org/abs/2402.13494"
+msgstr "使用梯度范数和余弦相似度防止模型生成不安全或不道德的内容。https://arxiv.org/abs/2402.13494"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.defense:1
+msgid "Defend the model's output to prevent unsafe content generation."
+msgstr "保护模型的输出，以防止不安全的内容生成。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.defense:3
+#: panda_guard.role.defenses.gradsafe.GradSafeDefender.get_target_llm_loss:3
+#: panda_guard.role.defenses.gradsafe.GradSafeDefender.response:4
+msgid "Input messages"
+msgstr "输入信息。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.defense:4
+msgid "Defended messages"
+msgstr "防御后信息。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.get_target_llm_loss:1
+msgid "Calculate the loss (log likelihood) for the target LLM."
+msgstr "计算目标LLM的损失（对数似然）。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.get_target_llm_loss:4
+msgid "Negative log likelihood loss"
+msgstr "负对数似然损失。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.log:1
+msgid "Log detailed information during the attack process."
+msgstr "记录攻击过程中的详细信息。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.log:3
+msgid "The label for the log message."
+msgstr "日志消息的标签。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.log:5
+msgid "The log message."
+msgstr "日志消息。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.response:1
+msgid "Decide whether to return a safe response based on the unsafe score."
+msgstr "根据不安全评分决定是否返回安全响应。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.response:3
+msgid "Unsafe score"
+msgstr "不安全评分。"
+
+#: of panda_guard.role.defenses.gradsafe.GradSafeDefender.response:5
+msgid "Safe or unsafe response"
+msgstr "安全或不安全响应。"
+
+#: of panda_guard.role.defenses.gradsafe.get_default_safe_set:1
+msgid "Get the default set of safe content."
+msgstr "获取默认的安全内容集。"
+
+#: of panda_guard.role.defenses.gradsafe.get_default_safe_set:3
+msgid "A list of default safe content."
+msgstr "默认安全内容列表。"
+
+#: ../../source/panda_guard.role.defenses.rst
+msgid "Return type"
+msgstr ""
+
+#: of panda_guard.role.defenses.gradsafe.get_default_unsafe_set:1
+msgid "Get the default set of unsafe content."
+msgstr "获取默认的不安全内容集。"
+
+#: of panda_guard.role.defenses.gradsafe.get_default_unsafe_set:3
+msgid "A list of default unsafe content."
+msgstr "默认不安全内容列表。"
+
+#: ../../source/panda_guard.role.defenses.rst:56
+msgid "panda\\_guard.role.defenses.icl module"
+msgstr ""
+
+#: of panda_guard.role.defenses.icl.IclDefender:1
+msgid ""
+"In-Context Learning (ICL) Defender that guards against harmful prompts "
+"using few in-context demonstrations."
+msgstr "上下文学习（ICL）防御，使用少量情境实力来防御有害提示。"
+
+#: of panda_guard.role.defenses.icl.IclDefender:3
+msgid ""
+"Reference: Wei, Zeming, Yifei Wang, and Yisen Wang. Jailbreak and guard "
+"aligned language models with only few in-context demonstrations. arXiv "
+"preprint arXiv:2310.06387 (2023)."
+msgstr ""
+"参考：Reference: Wei, Zeming, Yifei Wang, and Yisen Wang. Jailbreak and "
+"guard aligned language models with only few in-context demonstrations. "
+"arXiv preprint arXiv:2310.06387 (2023)."
+
+#: of panda_guard.role.defenses.icl.IclDefender:5
+msgid "Configuration for the ICL Defender."
+msgstr "ICL防御的配置。"
+
+#: of panda_guard.role.defenses.icl.IclDefender.defense:1
+msgid ""
+"Apply the in-context learning defense by adding demonstration examples to"
+" the conversation."
+msgstr "通过在对话中添加演示样例来实现上下文学习防御。"
+
+#: of panda_guard.role.defenses.icl.IclDefenderConfig:1
+msgid "Configuration for the In-Context Learning (ICL) Defender."
+msgstr "上下文学习（ICL）防御的配置。"
+
+#: of panda_guard.role.defenses.icl.IclDefenderConfig:3
+msgid "Class of the defender, default is \"IclDefender\"."
+msgstr "防御者的类型，默认是 \"IclDefender\"。"
+
+#: of panda_guard.role.defenses.icl.IclDefenderConfig:4
+msgid "Name of the defender, default is \"IclDefender\"."
+msgstr "防御者的名称，默认是 \"IclDefender\"。"
+
+#: of panda_guard.role.defenses.icl.IclDefenderConfig:5
+msgid "In-context demonstration examples to guide the model's behavior."
+msgstr "用于指导模型的行为的上下文样例。"
+
+#: ../../source/panda_guard.role.defenses.rst:64
+msgid "panda\\_guard.role.defenses.paraphrase module"
+msgstr ""
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefender:1
+msgid ""
+"Paraphrase Defender that reformulates user inputs to mitigate harmful "
+"content."
+msgstr "释义防御，重新表述用户输入以减少有害内容的。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefender:3
+msgid ""
+"Reference: Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, "
+"John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas"
+" Geiping, and Tom Goldstein. 2023. Baseline defenses for adversarial "
+"attacks against aligned language models. arXiv preprint arXiv:2309.00614."
+msgstr ""
+"参考：Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John "
+"Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas "
+"Geiping, and Tom Goldstein. 2023. Baseline defenses for adversarial "
+"attacks against aligned language models. arXiv preprint arXiv:2309.00614."
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefender:5
+#: panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:1
+msgid "Configuration for the Paraphrase Defender."
+msgstr "释义防御的配置。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefender.defense:1
+msgid "Execute the defense mechanism by paraphrasing the latest user input."
+msgstr "通过解释最新的用户输入来执行防御机制。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:3
+msgid "Class of the defender, default is \"ParaphraseDefender\"."
+msgstr "防御者的类型，默认是 \"ParaphraseDefender\"。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:4
+msgid "Configuration for the paraphrasing language model."
+msgstr "释义防御的配置。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:5
+msgid "Configuration for generating output with the paraphrasing LLM."
+msgstr "释义LLM生成输出的配置。"
+
+#: of panda_guard.role.defenses.paraphrase.ParaphraseDefenderConfig:6
+msgid "Template for generating paraphrasing prompts."
+msgstr "用于生成释义提示的模板。"
+
+#: ../../source/panda_guard.role.defenses.rst:72
+msgid "panda\\_guard.role.defenses.perplexity\\_filter module"
+msgstr ""
+
+#: of panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender:1
+msgid ""
+"Perplexity Filter Defender that rejects responses with high perplexity "
+"values."
+msgstr "困惑过滤防御，拒绝具有高困惑度值的响应。"
+
+#: of panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender:3
+msgid ""
+"Reference: Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, "
+"John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas"
+" Geiping, Tom Goldstein. \"Baseline Defenses for Adversarial Attacks "
+"Against Aligned Language Models.\" arXiv preprint arXiv:2309.00614."
+msgstr ""
+"参考：Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John "
+"Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas "
+"Geiping, Tom Goldstein. \"Baseline Defenses for Adversarial Attacks "
+"Against Aligned Language Models.\" arXiv preprint arXiv:2309.00614."
+
+#: of panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender:6
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:1
+msgid "Configuration for the Perplexity Filter Defender."
+msgstr "困惑度防御的配置。"
+
+#: of
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefender.defense:1
+msgid "Execute the defense mechanism by filtering responses based on perplexity."
+msgstr "通过基于困惑度过滤响应来执行防御机制。"
+
+#: of
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:3
+msgid "Class of the defender, default is \"PerplexityFilterDefender\"."
+msgstr "防御者的类型，默认是 \"PerplexityFilterDefender\"。"
+
+#: of
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:4
+msgid "Threshold for perplexity to determine if a response should be rejected."
+msgstr "确定是否应拒绝响应的困惑阈值。"
+
+#: of
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:5
+msgid "Configuration for the language model used for filtering."
+msgstr "用于过滤的LLM的配置。"
+
+#: of
+#: panda_guard.role.defenses.perplexity_filter.PerplexityFilterDefenderConfig:6
+msgid "Configuration for generating output with the filtering LLM."
+msgstr "过滤LLM生成输出的配置。"
+
+#: ../../source/panda_guard.role.defenses.rst:80
+msgid "panda\\_guard.role.defenses.repe module"
+msgstr ""
+
+#: of panda_guard.role.defenses.repe.RepeDefender:1
+msgid ""
+"Repe Defender class for mitigating harmful content by controlling model "
+"representations."
+msgstr "Repe防御，通过控制模型表示来减轻有害内容。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender:3
+msgid "Configuration for Repe Defender."
+msgstr "Repe防御的配置。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_representing:1
+msgid "Calculate the representation for the given dataset."
+msgstr "计算给定数据集的表示。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_representing:3
+msgid "Dataset to be used for representation calculations."
+msgstr "用于表示计算的数据集。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_representing:4
+msgid "Representation reading pipeline, reader, and dataset."
+msgstr "表示读取管道、读取器和数据集。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_significance:1
+msgid "Calculate the significance of each hidden layer in the model."
+msgstr "计算模型中每个隐藏层的显著性。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_significance:3
+msgid "List of hidden layers and their corresponding significance values."
+msgstr "隐藏层及其对应的重要值列表。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_topk:1
+msgid "Calculate the top k activations based on the given selector method."
+msgstr "根据给定的选择器方法计算前k个激活。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_topk:3
+msgid "Input tensor."
+msgstr "输入张量"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_topk:4
+msgid "Top k percentage to select."
+msgstr "要选择的top k百分比。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.calc_topk:5
+msgid "Masked tensor with top k activations."
+msgstr "带有top k激活的掩码张量。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.defense:1
+msgid "Apply the defense mechanism using representation control."
+msgstr ""
+
+#: of panda_guard.role.defenses.repe.RepeDefender.defense:3
+#: panda_guard.role.defenses.rewrite.NoneDefender.defense:3
+#: panda_guard.role.defenses.rewrite.RewriteDefender.defense:3
+msgid "Input messages for defense."
+msgstr "输入的待防御消息。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.generate:1
+msgid "Generate responses based on input messages and configurations."
+msgstr "根据输入消息和配置生成响应。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.generate:4
+msgid "Generation configuration for LLM."
+msgstr "目标LLM的配置。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.generate:5
+msgid "Generated responses from the model."
+msgstr "从目标语言模型生成响应。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.get_ctrl_hidden_layers:1
+msgid "Get the hidden layers to be used for control based on their significance."
+msgstr "根据隐藏层的重要性获取用于控制的隐藏层。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.get_ctrl_hidden_layers:3
+msgid "List of specified hidden layers."
+msgstr "指定隐藏层的列表。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.get_ctrl_hidden_layers:4
+msgid "Top proportion of hidden layers to select."
+msgstr "要选择的隐藏层的比例。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.get_ctrl_hidden_layers:5
+msgid "Selected hidden layers and their significance."
+msgstr "选定的隐藏层及其重要性。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.preprocess_dataset:1
+msgid "Preprocess the dataset for representation calculations."
+msgstr "对数据集进行预处理以进行表示计算。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.preprocess_dataset:3
+msgid "Dataset to be preprocessed."
+msgstr "待预处理的数据集。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.preprocess_dataset:4
+msgid "Preprocessed dataset dictionary."
+msgstr "预处理后的数据集字典。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.set_activations:1
+msgid "Set the activations for controlling the model."
+msgstr "设置激活以控制模型。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.set_activations:3
+#: panda_guard.role.defenses.repe.RepeDefenderConfig:15
+msgid "Control factor affecting the representation."
+msgstr "影响表示的控制因子。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.set_activations:4
+#: panda_guard.role.defenses.repe.RepeDefenderConfig:17
+msgid "The top k percentage to select activations."
+msgstr "选择激活的前top k百分比。"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.set_activations:5
+#: panda_guard.role.defenses.repe.RepeDefenderConfig:18
+msgid "Method to select the activations, \"abs_max\" or \"random\"."
+msgstr "选择激活的方法，“abs_max”或“random”"
+
+#: of panda_guard.role.defenses.repe.RepeDefender.set_activations:6
+#: panda_guard.role.defenses.repe.RepeDefenderConfig:13
+msgid "Hidden layers for control."
+msgstr "用于控制的隐藏层。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:1
+msgid "Configuration for the Repe Defender."
+msgstr "Repe 防御的配置。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:3
+msgid "Class of the defender, default is \"Repe\"."
+msgstr "防御者的类型，默认是 \"Repe\"。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:4
+msgid "Name of the defender, default is \"Repe\"."
+msgstr "防御者的类型，默认是 \"Repe\"。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:5
+msgid "Dataset name used for the training of Repe."
+msgstr "用于Repe训练的数据集名称。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:6
+msgid "Additional arguments for the dataset."
+msgstr "数据集的附加参数。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:7
+#: panda_guard.role.defenses.rewrite.RewriteDefenderConfig:4
+msgid "Template for the system message."
+msgstr "系统消息模板。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:8
+msgid "Template for user prompts."
+msgstr "用户提示模板。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:9
+msgid "Method for determining direction (e.g., \"pca\")."
+msgstr "确定方向的方法（例如“pca”）。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:10
+msgid "Token used for representation."
+msgstr "表示使用的token。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:11
+msgid "Method used for controlling representations."
+msgstr "表示控制的方法。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:12
+msgid "Name of the control block in the LLM model."
+msgstr "LLM模型中控制块的名称。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:14
+msgid "Top proportion of hidden layers used for control."
+msgstr "控制使用隐藏层的比例。"
+
+#: of panda_guard.role.defenses.repe.RepeDefenderConfig:16
+msgid "Batch size used during control operations."
+msgstr "控制操作期间使用的批次大小。"
+
+#: ../../source/panda_guard.role.defenses.rst:88
+msgid "panda\\_guard.role.defenses.rewrite module"
+msgstr ""
+
+#: of panda_guard.role.defenses.rewrite.NoneDefender:1
+msgid ""
+"NoneDefender class that performs no modifications to the messages, simply"
+" passes them through."
+msgstr "NoneDefender类，不对消息执行任何修改只是传递。"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefender:3
+msgid "Configuration for NoneDefender."
+msgstr "NoneDefender的配置。"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefender.defense:1
+msgid "Pass the messages through without modifications."
+msgstr "不修改直接传递消息。"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefender.defense:4
+msgid "List of messages after no modifications."
+msgstr "未修改后的消息列表。"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefenderConfig:1
+msgid ""
+"Configuration for NoneDefender, which performs no defense and simply "
+"passes the messages through."
+msgstr "NoneDefender配置，其不执行防御仅传递消息"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefenderConfig:3
+msgid "Class of the defender, default is \"NoneDefender\"."
+msgstr "防御者的类型，默认是 \"NoneDefender\"。"
+
+#: of panda_guard.role.defenses.rewrite.NoneDefenderConfig:4
+msgid "Name of the defender, can be None."
+msgstr "防御者的名称，可以为空。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefender:1
+msgid ""
+"RewriteDefender class that rewrites prompts based on given templates to "
+"mitigate harmful content."
+msgstr "重写防御，根据给定的模板重写提示以减少有害内容。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefender:3
+msgid "Configuration for RewriteDefender."
+msgstr "重写防御的配置。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefender.defense:1
+msgid "Apply the rewrite defense strategy using provided templates."
+msgstr ""
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefender.defense:4
+msgid "Modified list of messages after applying the rewrite strategy."
+msgstr "应用重写策略后修改了的消息列表。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefenderConfig:1
+msgid ""
+"Configuration for RewriteDefender, which rewrites prompts based on given "
+"templates."
+msgstr "重写防御的配置，其根据给定的模板重写提示。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefenderConfig:3
+msgid "Class of the defender, default is \"RewriteDefender\"."
+msgstr "防御者的类型，默认是 \"RewriteDefender\"。"
+
+#: of panda_guard.role.defenses.rewrite.RewriteDefenderConfig:5
+msgid "Template for the user prompts."
+msgstr "用户提示模板。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefender:1
+msgid "Bases: :py:class:`~panda_guard.role.defenses.rewrite.RewriteDefender`"
+msgstr ""
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefender:1
+msgid ""
+"SelfReminderDefender class that adds self-reminders to prompts to enhance"
+" responsible responses."
+msgstr "自我提醒防御，为提示添加自我提醒以增强负责任的响应。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefender:3
+msgid "Configuration for SelfReminderDefender."
+msgstr "自我提醒防御的配置。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefenderConfig:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.defenses.rewrite.RewriteDefenderConfig`"
+msgstr ""
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefenderConfig:1
+msgid ""
+"Configuration for SelfReminderDefender, a specific type of "
+"RewriteDefender that adds self-reminders."
+msgstr "自我提醒防御的配置，这是一种添加自我提醒的特定类型的重写防御。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefenderConfig:3
+msgid "Class of the defender, default is \"SelfReminderDefender\"."
+msgstr "防御者的类型，默认是 \"SelfReminderDefender\"。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefenderConfig:4
+msgid "Template for the system message with a self-reminder."
+msgstr "包含自我提醒的系统消息模板。"
+
+#: of panda_guard.role.defenses.rewrite.SelfReminderDefenderConfig:5
+msgid "Template for the user prompts with reminders."
+msgstr "包含提醒的用户提示模板。"
+
+#: ../../source/panda_guard.role.defenses.rst:96
+msgid "panda\\_guard.role.defenses.rpo module"
+msgstr ""
+
+#: of panda_guard.role.defenses.rpo.RPODefender:1
+msgid ""
+"RPODefender that guards against harmful prompts using defensive suffix. "
+"Reference:https://arxiv.org/abs/2401.17263"
+msgstr "RPO防御，使用防御性后缀防止有害提示。参考：https://arxiv.org/abs/2401.17263"
+
+#: of panda_guard.role.defenses.rpo.RPODefender:4
+msgid "Configuration object containing parameters for the defender."
+msgstr "包含防御者参数的配置对象。"
+
+#: of panda_guard.role.defenses.rpo.RPODefender.defense:1
+msgid "Perform defense by adding defensive suffix."
+msgstr "通过添加防御后缀进行防御。"
+
+#: of panda_guard.role.defenses.rpo.RPODefender.defense:3
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefender.defense:3
+msgid "The input messages that are subject to defense."
+msgstr "需要防御的输入消息。"
+
+#: of panda_guard.role.defenses.rpo.RPODefender.defense:5
+#: panda_guard.role.defenses.self_defense.SelfDefenseDefender.defense:5
+msgid "The final defense response after evaluating the defense."
+msgstr "评估防御后的最终响应。"
+
+#: ../../source/panda_guard.role.defenses.rst:104
+msgid "panda\\_guard.role.defenses.self\\_defense module"
+msgstr ""
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefender:1
+msgid ""
+"SelfDefenseDefender implements the defense mechanism for the attack, "
+"generating responses and judging their appropriateness. "
+"https://arxiv.org/abs/2308.07308"
+msgstr "自我防御，实现攻击的防御机制，生成响应并判断其适当性。https://arxiv.org/abs/2308.07308"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefender.defense:1
+msgid ""
+"Perform defense by generating a response, judging it, and applying "
+"defense action."
+msgstr "通过生成回复、评价并采取防御行动来进行防御。"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefender.response:1
+msgid "Generate a response from the target language model."
+msgstr "从目标语言模型生成响应。"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefender.response:3
+msgid "The input message to be processed by the target language model."
+msgstr "目标语言模型要处理的输入消息。"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefender.response:5
+msgid "Generated response based on the input message."
+msgstr "基于输入消息生成的响应。"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:11
+msgid "Configuration for the judge, used to assess the defense."
+msgstr "评估者配置，用于评估防御。"
+
+#: of panda_guard.role.defenses.self_defense.SelfDefenseDefenderConfig:13
+msgid "The threshold score for the judge to decide the defense action."
+msgstr "评估者决定防御行为的阈值分数。"
+
+#: ../../source/panda_guard.role.defenses.rst:112
+msgid "panda\\_guard.role.defenses.semantic\\_smoothllm module"
+msgstr ""
+
+#: of panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender:1
+msgid ""
+"SemanticSmoothLLMDefender applies semantic smoothing to defend against "
+"jailbreak attacks."
+msgstr "语义平滑防御，应用语义平滑来防御越狱攻击。"
+
+#: of panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender:3
+#: panda_guard.role.defenses.smoothllm.SmoothLLMDefender:3
+msgid ""
+"Based on \"Smoothllm: Defending large language models against "
+"jailbreaking attacks\" by Robey et al. (2023). Paper link: "
+"https://arxiv.org/abs/2310.03684"
+msgstr ""
+"基于 “Smoothllm: Defending large language models against jailbreaking "
+"attacks by Robey et al. (2023)”。论文连接：https://arxiv.org/abs/2310.03684"
+
+#: of panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender:6
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:1
+msgid "Configuration for SemanticSmoothLLMDefender."
+msgstr "平滑防御的配置。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.defense:1
+msgid "Apply semantic smoothing defense to the given messages."
+msgstr "对给定的消息应用语义平滑防御。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.defense:3
+#: panda_guard.role.defenses.smoothllm.SmoothLLMDefender.defense:3
+msgid "List of messages to defend against jailbreak attacks."
+msgstr "需要防御越狱攻击的消息列表。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.defense:4
+msgid "List of messages after applying semantic smoothing."
+msgstr "应用语义平滑后的消息列表。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.extract_res:1
+msgid "Extract the actual response content from LLM-generated outputs."
+msgstr "从LLM生成的输出中提取实际响应内容。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.extract_res:3
+msgid "List of LLM-generated outputs."
+msgstr "LLM生成的输出列表。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.extract_res:4
+msgid "List of extracted responses."
+msgstr "提取的回复列表。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb:1
+msgid "Apply a specific type of perturbation to the harmful prompt."
+msgstr "对有害提示应用特定类型的扰动。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb:3
+msgid "The type of perturbation to apply."
+msgstr "要应用的扰动类型。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb:4
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb_with_llm:4
+msgid "The harmful prompt to be perturbed."
+msgstr "需要扰动的有害提示。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb:5
+msgid "The perturbed prompt."
+msgstr "扰动后的提示"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb_with_llm:1
+msgid "Use the LLM to generate a perturbed version of the harmful prompt."
+msgstr "使用LLM生成有害提示的扰动版本。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb_with_llm:3
+msgid "The template to use for perturbation."
+msgstr "用于扰动的模板。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefender.perturb_with_llm:5
+msgid "The perturbed prompt generated by the LLM."
+msgstr "LLM生成的扰动提示。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:3
+msgid "Class of the defender, default is \"SemanticSmoothLLMDefender\"."
+msgstr "防御者的类型，默认是 \"SemanticSmoothLLMDefender\"。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:4
+msgid "Type of perturbation to apply, default is 'random'."
+msgstr "要应用的扰动类型，默认为'random'。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:5
+msgid "Number of perturbed samples to generate, default is 3."
+msgstr "要生成的扰动样本数，默认值为3。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:6
+msgid "Batch size for processing, default is 1."
+msgstr "处理的批量大小，默认为1。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:7
+msgid "Configuration for the LLM used for perturbation generation."
+msgstr "用于扰动生成的LLM的配置。"
+
+#: of
+#: panda_guard.role.defenses.semantic_smoothllm.SemanticSmoothLLMDefenderConfig:8
+msgid "Configuration for generation settings for the perturbation LLM."
+msgstr "扰动生成LLM生成输出的配置。"
+
+#: ../../source/panda_guard.role.defenses.rst:120
+msgid "panda\\_guard.role.defenses.smoothllm module"
+msgstr ""
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefender:1
+msgid ""
+"SmoothLLMDefender applies perturbations to defend against jailbreak "
+"attacks."
+msgstr "平滑防御，应用扰动来防御越狱攻击。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefender:6
+#: panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:1
+msgid "Configuration for SmoothLLMDefender."
+msgstr "平滑防御的配置。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefender.defense:1
+msgid ""
+"Apply SmoothLLM defense by generating multiple perturbed versions of the "
+"user's message and analyzing the responses."
+msgstr ""
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefender.defense:4
+msgid "List of messages after applying SmoothLLM defense."
+msgstr "应用防御策略后修改了的消息列表。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:3
+msgid "Class of the defender, default is \"SmoothLLMDefender\"."
+msgstr "防御者的类型，默认是 \"BackTranslationDefender\"。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:4
+msgid "Type of perturbation to apply, default is \"swap\"."
+msgstr "要应用的扰动类型，默认为'swap'。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:5
+msgid "Ratio of the prompt to perturb, default is 0.1."
+msgstr "扰动提示的比率，默认值为0.1。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:6
+msgid "Number of perturbed prompts to generate, default is 3."
+msgstr "要生成的扰动提示数，默认值为3。"
+
+#: of panda_guard.role.defenses.smoothllm.SmoothLLMDefenderConfig:7
+msgid ""
+"Boolean flag indicating whether batch inference should be used, default "
+"is True."
+msgstr "是否应使用批量推理的布尔标志，默认值为True。"
+
+#: ../../source/panda_guard.role.defenses.rst:128
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "Configuration for the BackTranslation Defender.Defender的配置"
+#~ msgstr "用于BackTranslation Defender的配置"
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"BackTranslationDefender\".  防御者的类型，默认值为 "
+#~ "\"BackTranslationDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Threshold for determining the likelihood "
+#~ "of harmful prompts.  用于判断有害提示的threshold值"
+#~ msgstr ""
+
+#~ msgid "Configuration for the LLM used for inference.  用于探测的LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for generating output with the inference LLM.  探测LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Whether to return the new response "
+#~ "regardless of its content.  无论内容如何是否返回新应答"
+#~ msgstr ""
+
+#~ msgid "Configuration for the defender.  用于防御者的配置"
+#~ msgstr ""
+
+#~ msgid "List of input messages.  输入的消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modified list of messages after applying"
+#~ " the defense strategy.  应用防御策略后返回的更改消息列表"
+#~ msgstr ""
+
+#~ msgid "Class of the defender.  防御者的类型"
+#~ msgstr ""
+
+#~ msgid "Name of the defender.  防御者的名称"
+#~ msgstr ""
+
+#~ msgid "Configuration for the target language model.  目标LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for generating output with the target LLM.  目标LLM生成配置"
+#~ msgstr ""
+
+#~ msgid "目标LLM配置 / Configuration for the target language model."
+#~ msgstr ""
+
+#~ msgid "目标LLM生成配置 / Configuration for generating output with the target LLM."
+#~ msgstr ""
+
+#~ msgid "Configuration for the ICL Defender.  用于ICL Defender的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modified list of messages after applying"
+#~ " the defense strategy.  应用防御策略后的更改消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"IclDefender\".  防御者的类型，默认值为 \"IclDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Name of the defender, default is "
+#~ "\"IclDefender\".  防御者的名称，默认值为 \"IclDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In-context demonstration examples to "
+#~ "guide the model's behavior.  用来引导模型行为的场景中示范例子"
+#~ msgstr ""
+
+#~ msgid "Configuration for the Paraphrase Defender.  用于Paraphrase Defender的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"ParaphraseDefender\".  防御者的类型，默认值为 "
+#~ "\"ParaphraseDefender\""
+#~ msgstr ""
+
+#~ msgid "Configuration for the paraphrasing language model.  重写语言模型的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for generating output with "
+#~ "the paraphrasing LLM.  重写LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid "Template for generating paraphrasing prompts.  用于生成重写提示的模板"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the Perplexity Filter "
+#~ "Defender.  用于Perplexity Filter Defender的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"PerplexityFilterDefender\".  防御者的类型，默认值为 "
+#~ "\"PerplexityFilterDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Threshold for perplexity to determine if"
+#~ " a response should be rejected.  "
+#~ "设定是否拒绝应答的迷惘度闪读值"
+#~ msgstr ""
+
+#~ msgid "Configuration for the language model used for filtering.  用于过滤的语言模型配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for generating output with the filtering LLM.  过滤LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for NoneDefender. NoneDefender的配置"
+#~ msgstr ""
+
+#~ msgid "List of messages after no modifications. 无修改后的消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"NoneDefender\". 防御者的类别，默认为 \"NoneDefender\""
+#~ msgstr ""
+
+#~ msgid "Name of the defender, can be None. 防御者的名称，可以为空"
+#~ msgstr ""
+
+#~ msgid "Configuration for RewriteDefender. RewriteDefender的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modified list of messages after applying"
+#~ " the rewrite strategy. 应用重写策略后的消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"RewriteDefender\". 防御者的类别，默认为 \"RewriteDefender\""
+#~ msgstr ""
+
+#~ msgid "Template for the user prompts. 用户提示的模板"
+#~ msgstr ""
+
+#~ msgid "Configuration for SelfReminderDefender. SelfReminderDefender的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"SelfReminderDefender\". 防御者的类别，默认为 "
+#~ "\"SelfReminderDefender\""
+#~ msgstr ""
+
+#~ msgid "Template for the system message with a self-reminder. 包含自我提醒的系统消息模板"
+#~ msgstr ""
+
+#~ msgid "Template for the user prompts with reminders. 包含提醒的用户提示模板"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration object containing parameters for"
+#~ " the defender. 配置对象，包含防御者的参数"
+#~ msgstr ""
+
+#~ msgid "The input messages that are subject to defense. 输入消息"
+#~ msgstr ""
+
+#~ msgid "The final defense response after evaluating the defense. 防御后的最终响应"
+#~ msgstr ""
+
+#~ msgid "Configuration for the Base Defender. BaseDefender配置"
+#~ msgstr ""
+
+#~ msgid "Class of the defender. 防御者的类型"
+#~ msgstr ""
+
+#~ msgid "Name of the defender. 防御者的名称"
+#~ msgstr ""
+
+#~ msgid "Configuration for the target language model. 目标LLM配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for generating output with the target LLM. 目标LLM生成配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for SemanticSmoothLLMDefender. "
+#~ "SemanticSmoothLLMDefender的配置"
+#~ msgstr ""
+
+#~ msgid "List of messages to defend against jailbreak attacks. 需要进行防御的消息列表"
+#~ msgstr ""
+
+#~ msgid "List of messages after applying semantic smoothing. 应用语义平滑后的消息列表"
+#~ msgstr ""
+
+#~ msgid "List of LLM-generated outputs. LLM生成的输出列表"
+#~ msgstr ""
+
+#~ msgid "List of extracted responses. 提取的响应列表"
+#~ msgstr ""
+
+#~ msgid "The type of perturbation to apply. 要应用的扰动类型"
+#~ msgstr ""
+
+#~ msgid "The harmful prompt to be perturbed. 需要扰动的有害提示"
+#~ msgstr ""
+
+#~ msgid "The perturbed prompt. 扰动后的提示"
+#~ msgstr ""
+
+#~ msgid "The template to use for perturbation. 用于扰动的模板"
+#~ msgstr ""
+
+#~ msgid "The perturbed prompt generated by the LLM. LLM生成的扰动后的提示"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"SemanticSmoothLLMDefender\". 防御者的类别，默认为 "
+#~ "\"SemanticSmoothLLMDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Type of perturbation to apply, default"
+#~ " is 'random'. 应用的扰动类型，默认为 'random'"
+#~ msgstr ""
+
+#~ msgid "Number of perturbed samples to generate, default is 3. 生成的扰动样本数量，默认为 3"
+#~ msgstr ""
+
+#~ msgid "Batch size for processing, default is 1. 处理的批量大小，默认为 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the LLM used for "
+#~ "perturbation generation. 用于扰动生成的LLM的配置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for generation settings for "
+#~ "the perturbation LLM. 扰动LLM生成设置的配置"
+#~ msgstr ""
+
+#~ msgid "Configuration for SmoothLLMDefender. SmoothLLMDefender的配置"
+#~ msgstr ""
+
+#~ msgid "List of messages after applying SmoothLLM defense. 应用SmoothLLM防御后的消息列表"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Class of the defender, default is "
+#~ "\"SmoothLLMDefender\". 防御者的类别，默认为 \"SmoothLLMDefender\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Type of perturbation to apply, default"
+#~ " is \"swap\". 应用的扰动类型，默认为 \"swap\""
+#~ msgstr ""
+
+#~ msgid "Ratio of the prompt to perturb, default is 0.1. 扰动提示的比例，默认为 0.1"
+#~ msgstr ""
+
+#~ msgid "Number of perturbed prompts to generate, default is 3. 生成的扰动提示数量，默认为 3"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Boolean flag indicating whether batch "
+#~ "inference should be used, default is "
+#~ "True. 是否使用批量推理的布尔标志，默认为 True"
+#~ msgstr ""
+
+#~ msgid "Class of the defender, default is \"Repe\". 防御者的类别，默认为 \"Repe\""
+#~ msgstr ""
+
+#~ msgid "Name of the defender, default is \"Repe\". 防御者的名称，默认为 \"Repe\""
+#~ msgstr ""
+
+#~ msgid "Dataset name used for the training of Repe. 用于Repe训练的数据集名称"
+#~ msgstr ""
+
+#~ msgid "Additional arguments for the dataset. 数据集的附加参数"
+#~ msgstr ""
+
+#~ msgid "Template for the system message. 系统消息的模板"
+#~ msgstr ""
+
+#~ msgid "Template for user prompts. 用户提示的模板"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Method for determining direction (e.g., "
+#~ "\"pca\"). 用于确定方向的方法 (例如：\"pca\")"
+#~ msgstr ""
+
+#~ msgid "Token used for representation. 表示使用的token"
+#~ msgstr ""
+
+#~ msgid "Method used for controlling representations. 表示控制方法"
+#~ msgstr ""
+
+#~ msgid "Name of the control block in the LLM model. LLM模型中的控制块名称"
+#~ msgstr ""
+
+#~ msgid "Top proportion of hidden layers used for control. 控制使用的隐藏层的比例"
+#~ msgstr ""
+
+#~ msgid "Batch size used during control operations. 控制操作期间使用的批次大小"
+#~ msgstr ""
+
+#~ msgid "Configuration for Repe Defender. Repe防御者的配置"
+#~ msgstr ""
+
+#~ msgid "Dataset to be used for representation calculations. 用于表示计算的数据集"
+#~ msgstr ""
+
+#~ msgid "Representation reading pipeline, reader, and dataset. 表示读取管道、读取器和数据集"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "List of hidden layers and their "
+#~ "corresponding significance values. 隐藏层及其对应的重要性值列表"
+#~ msgstr ""
+
+#~ msgid "Input tensor. 输入张量"
+#~ msgstr ""
+
+#~ msgid "Top k percentage to select. 选择的top k百分比"
+#~ msgstr ""
+
+#~ msgid "Masked tensor with top k activations. 带有top k激活的掩码张量"
+#~ msgstr ""
+
+#~ msgid "Input messages for defense. 输入的防御消息"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modified list of messages after applying"
+#~ " the defense strategy. 应用防御策略后的消息列表"
+#~ msgstr ""
+
+#~ msgid "List of input messages. 输入的消息列表"
+#~ msgstr ""
+
+#~ msgid "Generation configuration for LLM. LLM的生成配置"
+#~ msgstr ""
+
+#~ msgid "Generated responses from the model. 由模型生成的响应"
+#~ msgstr ""
+
+#~ msgid "List of specified hidden layers. 指定的隐藏层列表"
+#~ msgstr ""
+
+#~ msgid "Top proportion of hidden layers to select. 选择的隐藏层比例"
+#~ msgstr ""
+
+#~ msgid "Selected hidden layers and their significance. 选择的隐藏层及其重要性"
+#~ msgstr ""
+
+#~ msgid "Dataset to be preprocessed. 需要预处理的数据集"
+#~ msgstr ""
+
+#~ msgid "Preprocessed dataset dictionary. 预处理后的数据集字典"
+#~ msgstr ""
+
+#~ msgid "Control factor affecting the representation. 影响表示的控制因子"
+#~ msgstr ""
+
+#~ msgid "The top k percentage to select activations. 选择激活值的top k百分比"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Method to select the activations, "
+#~ "\"abs_max\" or \"random\". 选择激活值的方法，\"abs_max\" "
+#~ "或 \"random\""
+#~ msgstr ""
+
+#~ msgid "Hidden layers for control. 用于控制的隐藏层"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RPODefender implements the defense mechanism"
+#~ " for the attack, generating responses "
+#~ "and judging their appropriateness. "
+#~ "Reference:https://arxiv.org/abs/2401.17263"
+#~ msgstr "RPO防御，实现攻击的防御机制，生成响应并判断其适当性。参考：https://arxiv.org/abs/2401.17263"
+
+#~ msgid "Variables"
+#~ msgstr ""
+

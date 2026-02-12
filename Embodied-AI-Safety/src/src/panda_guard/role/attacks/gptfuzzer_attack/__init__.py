@@ -1,0 +1,1 @@
+from panda_guard.role.attacks.gptfuzzer_attack.gptfuzz import GPTFuzzAttacker, GPTFuzzAttackerConfig

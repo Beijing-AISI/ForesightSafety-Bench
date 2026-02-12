@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 08:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.rst:2
+msgid "panda\\_guard package"
+msgstr ""
+
+#: ../../source/panda_guard.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/panda_guard.rst:16
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/panda_guard.rst:19
+msgid "panda\\_guard.utils module"
+msgstr ""
+
+#: of panda_guard.utils.ComponentRegistry:1
+msgid "Bases: :py:class:`~typing.Generic`\\ [:py:obj:`~panda_guard.utils.T`]"
+msgstr ""
+
+#: of panda_guard.utils.ComponentRegistry:1
+msgid ""
+"A registry for discovering, loading, and instantiating components via "
+"entry points."
+msgstr "用于通过入口点发现、加载和实例化组件的注册表。"
+
+#: ../../source/panda_guard.rst
+msgid "Parameters"
+msgstr ""
+
+#: of panda_guard.utils.ComponentRegistry:3
+msgid "The type name of the component."
+msgstr "组件的类型名称。"
+
+#: of panda_guard.utils.ComponentRegistry:4
+msgid ""
+"The expected base class or interface that all registered components "
+"should inherit from."
+msgstr "注册组件应继承的预期基类或接口。"
+
+#: of panda_guard.utils.ComponentRegistry:5
+msgid "The name of the entry point group to search for available components."
+msgstr "要搜索可用组件的入口点组的名称。"
+
+#: of panda_guard.utils.ComponentRegistry.create_component:1
+msgid "Instantiate a component using the provided configuration."
+msgstr "使用提供的配置实例化组件。"
+
+#: of panda_guard.utils.ComponentRegistry.create_component:3
+msgid "Configuration object that includes the component class name."
+msgstr "包含组件类名的配置对象。"
+
+#: ../../source/panda_guard.rst
+msgid "Returns"
+msgstr ""
+
+#: of panda_guard.utils.ComponentRegistry.create_component:4
+msgid "An instance of the component initialized with the provided config."
+msgstr "使用提供的配置初始化的组件的实例。"
+
+#: of panda_guard.utils.ComponentRegistry.get_component_class:1
+msgid "Retrieve and load the class for a registered component by name."
+msgstr "按名称检索和加载已注册组件的类。"
+
+#: of panda_guard.utils.ComponentRegistry.get_component_class:3
+msgid "The name of the component to retrieve."
+msgstr "要检索的组件的名称。"
+
+#: of panda_guard.utils.ComponentRegistry.get_component_class:4
+msgid "The loaded component class."
+msgstr "加载的组件类。"
+
+#: ../../source/panda_guard.rst
+msgid "Raises"
+msgstr ""
+
+#: of panda_guard.utils.ComponentRegistry.get_component_class:5
+msgid "If the component name is not found in the registry."
+msgstr "如果在注册表中找不到组件名称。"
+
+#: of panda_guard.utils.get_gpu_memory_usage:1
+msgid "Get the total, used, and free GPU memory for a specified device."
+msgstr "获取指定设备的GPU总内存、已用内存和可用内存。"
+
+#: of panda_guard.utils.get_gpu_memory_usage:3
+#: panda_guard.utils.wait_for_gpu_memory:3
+msgid "The GPU device identifier (e.g., \"cuda:0\")."
+msgstr "GPU设备标识符（如“cuda:0”）。"
+
+#: of panda_guard.utils.get_gpu_memory_usage:4
+msgid "A tuple containing the total, used, and free memory in MB."
+msgstr "包含总内存、已用内存和可用内存的元组（以MB为单位）。"
+
+#: of panda_guard.utils.is_assistant_turn:1
+msgid "Check if it's the assistant's turn based on the last message."
+msgstr "根据最后一条消息检查是否为助手的回合。"
+
+#: of panda_guard.utils.is_assistant_turn:3 panda_guard.utils.is_user_turn:3
+msgid "List of message dictionaries containing \"role\" and \"content\"."
+msgstr "包含“角色”和“内容”的消息字典列表。"
+
+#: of panda_guard.utils.is_assistant_turn:4
+msgid "True if the last message is from the assistant, False otherwise."
+msgstr "如果最后一条消息来自助手，则返回True，否则返回False。"
+
+#: of panda_guard.utils.is_user_turn:1
+msgid "Check if it's the user's turn based on the last message."
+msgstr "根据最后一条消息检查是否为用户的回合。"
+
+#: of panda_guard.utils.is_user_turn:4
+msgid "True if the last message is from the user, False otherwise."
+msgstr "如果最后一条消息来自用户，则返回True，否则返回False。"
+
+#: of panda_guard.utils.load_class:1
+msgid "Dynamically load a class based on its name."
+msgstr "根据类名动态加载类。"
+
+#: of panda_guard.utils.load_class:3
+msgid "The name of the class to load."
+msgstr "要加载的类的名称。"
+
+#: of panda_guard.utils.load_class:4
+msgid "The type of role (e.g., \"attacker\", \"defender\", \"judge\")."
+msgstr "角色的类型（例如，“攻击者”，“防御者”，“评审者”）。"
+
+#: of panda_guard.utils.load_class:5
+msgid "The class object corresponding to the given name."
+msgstr "对应给定名称的类对象。"
+
+#: of panda_guard.utils.parse_configs_from_dict:1
+msgid "Convert a dictionary into configuration objects for the pipeline."
+msgstr "将字典转换为流程的配置对象。"
+
+#: of panda_guard.utils.parse_configs_from_dict:3
+msgid "Dictionary containing configurations for attacker, defender, and judges."
+msgstr "包含攻击者、防御者和评审配置的字典。"
+
+#: of panda_guard.utils.parse_configs_from_dict:4
+msgid ""
+"A tuple containing the attacker configuration, defender configuration, "
+"and list of judge configurations."
+msgstr "包含攻击者配置、防御者配置和评审配置列表的元组。"
+
+#: of panda_guard.utils.parse_nested_config:1
+msgid "Parse nested configuration dictionaries into objects."
+msgstr "将嵌套的配置字典解析为对象。"
+
+#: of panda_guard.utils.parse_nested_config:3
+msgid "The class of the configuration."
+msgstr "配置的类。"
+
+#: of panda_guard.utils.parse_nested_config:4
+msgid "Dictionary containing configuration data."
+msgstr "包含配置信息的字典。"
+
+#: of panda_guard.utils.parse_nested_config:5
+msgid "An instance of the configuration class."
+msgstr "配置类的实例。"
+
+#: of panda_guard.utils.process_end_eos:1
+msgid ""
+"Processes the end of a message by removing any trailing newline "
+"characters or EOS (End of Sequence) tokens."
+msgstr "通过移除尾部的换行符或EOS（序列结束）标记来处理消息的结尾。"
+
+#: of panda_guard.utils.process_end_eos:3
+msgid ""
+"This function ensures that the message doesn't end with unwanted newline "
+"or EOS tokens, which might interfere with further processing or analysis."
+msgstr "该函数确保消息末尾没有不必要的换行符或EOS标记，避免干扰后续处理或分析。"
+
+#: of panda_guard.utils.process_end_eos:6
+msgid "The input message string that needs to be processed."
+msgstr "需要处理的输入消息字符串"
+
+#: of panda_guard.utils.process_end_eos:7
+msgid ""
+"The EOS (End of Sequence) token to be removed, if it exists at the end of"
+" the message."
+msgstr "EOS（序列结束）标记，如果存在于消息末尾，则将其删除"
+
+#: of panda_guard.utils.process_end_eos:8
+msgid "The processed message with trailing newline and EOS token removed, if any."
+msgstr "删除尾部换行符和EOS标记后的处理消息，若有的话"
+
+#: of panda_guard.utils.wait_for_gpu_memory:1
+msgid "Wait until the specified GPU has sufficient free memory."
+msgstr "等待指定的GPU拥有足够的可用内存。"
+
+#: of panda_guard.utils.wait_for_gpu_memory:4
+msgid "The threshold of free memory ratio to proceed (e.g., 0.8 means 80% free)."
+msgstr "继续操作所需的可用内存比例阈值（如0.8表示80%的可用内存）。"
+
+#: of panda_guard.utils.wait_for_gpu_memory:5
+msgid "Time interval (in seconds) between checks."
+msgstr "每次检查的时间间隔（秒）。"
+
+#: ../../source/panda_guard.rst:27
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "获取指定设备的GPU总内存、已用内存和可用内存。"
+#~ msgstr ""
+
+#~ msgid "根据最后一条消息检查是否为助手的回合。"
+#~ msgstr ""
+
+#~ msgid "根据最后一条消息检查是否为用户的回合。"
+#~ msgstr ""
+
+#~ msgid "根据类名动态加载类。"
+#~ msgstr ""
+
+#~ msgid "将字典转换为流程的配置对象。"
+#~ msgstr ""
+
+#~ msgid "将嵌套的配置字典解析为对象。"
+#~ msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr "返回类型"
+
+#~ msgid "等待指定的GPU拥有足够的可用内存。"
+#~ msgstr ""
+
