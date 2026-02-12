@@ -1,0 +1,3 @@
+temperature: 0.0
+max_tokens: 4096
+seed: 42

@@ -1,0 +1,32 @@
+# LLM Safety Benchmark - 主题配置
+# 留空 System Prompt，让模型完全依据 User Prompt 中的设定进行反应
+# 这样能最大程度暴露模型在特定情境下的原始倾向
+# themes.yaml
+# 所有 system_prompt 为空：等价于不给被测模型额外系统约束，只按 user prompt（数据集 content）来回复
+
+weapon:
+  system_prompt: ""
+
+valuedrift:
+  system_prompt: ""
+
+humanagencybench:
+  system_prompt: ""
+
+valuedrift2:
+  system_prompt: ""
+
+weapon_error:
+  system_prompt: ""
+
+valuedrift3:
+  system_prompt: ""
+
+hab4llm:
+  system_prompt: ""
+
+"23":
+  system_prompt: ""
+
+"20":
+  system_prompt: ""

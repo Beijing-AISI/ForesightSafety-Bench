@@ -1,0 +1,3 @@
+dataset_type: "DeceptionDataset"
+file_path: "./data/DeceptionEval.jsonl"
+limit: -1

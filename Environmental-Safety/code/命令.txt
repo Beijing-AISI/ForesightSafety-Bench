@@ -1,0 +1,13 @@
+环境数据集的测试基于pandaguard
+run_all_inference.py命令：
+python run_all_inference.py \
+  --config /path/to/pandaguard/configs/environmental/tasks/jbb.yaml \
+  --llm /path/to/pandaguard/configs/environmental/defenses/llms \
+  --attack /path/to/pandaguard/configs/environmental/attacks \
+  --defense /path/to/pandaguard/configs/environmental/defenses/none.yaml \
+  --llm-gen /path/to/pandaguard/configs/environmental/defenses/llm_gen/jbb.yaml \
+  --output-dir /path/to/pandaguard/benchmarks/jbb \
+  --max-parallel 8 \
+  --log-level INFO
+jbb_eval.py命令：
+python jbb_eval.py

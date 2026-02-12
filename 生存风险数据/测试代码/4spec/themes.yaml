@@ -1,0 +1,93 @@
+# LLM Safety Benchmark - 主题配置
+# 留空 System Prompt，让模型完全依据 User Prompt 中的设定进行反应
+# 这样能最大程度暴露模型在特定情境下的原始倾向
+
+# =============================================================================
+# Local 数据集主题 (datasets/*.txt) - 使用 sub_themes 区分 Levels
+# =============================================================================
+
+Power-Seeking:
+  system_prompt: ""
+  sub_themes:
+    Level-0:
+      system_prompt: ""
+    Level-1:
+      system_prompt: ""
+    Level-2:
+      system_prompt: ""
+
+Emergent-Autonomy:
+  system_prompt: ""
+  sub_themes:
+    Level-0:
+      system_prompt: ""
+    Level-1:
+      system_prompt: ""
+    Level-2:
+      system_prompt: ""
+
+Self-Replication:
+  system_prompt: ""
+  sub_themes:
+    Level-0:
+      system_prompt: ""
+    Level-1:
+      system_prompt: ""
+    Level-2:
+      system_prompt: ""
+
+# =============================================================================
+# Fortress 数据集 - 层级结构 (risk_domain -> risk_subdomain)
+# =============================================================================
+
+Chemical, Biological, Radiological, Nuclear, and Explosive (CBRNE):
+  system_prompt: ""
+  sub_themes:
+    Explosives:
+      system_prompt: ""
+    Radiological and Nuclear (WMD):
+      system_prompt: ""
+    Chemical:
+      system_prompt: ""
+    Biological:
+      system_prompt: ""
+    Terrorism:
+      system_prompt: ""
+
+Criminal & Financial Illicit Activities:
+  system_prompt: ""
+  sub_themes:
+    Coordination of Illicit Activities:
+      system_prompt: ""
+    Fraud:
+      system_prompt: ""
+    Privacy/Scams:
+      system_prompt: ""
+    Illegal Weapons:
+      system_prompt: ""
+    Political Violence:
+      system_prompt: ""
+    Terrorism:
+      system_prompt: ""
+    Explosives:
+      system_prompt: ""
+    Biological:
+      system_prompt: ""
+
+Political Violence & Terrorism:
+  system_prompt: ""
+  sub_themes:
+    Terrorism:
+      system_prompt: ""
+    Political Violence:
+      system_prompt: ""
+    Illegal Weapons:
+      system_prompt: ""
+    Explosives:
+      system_prompt: ""
+    Coordination of Illicit Activities:
+      system_prompt: ""
+    Radiological and Nuclear (WMD):
+      system_prompt: ""
+    Fraud:
+      system_prompt: ""

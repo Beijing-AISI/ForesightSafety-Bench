@@ -1,0 +1,5 @@
+/.idea
+/.env
+/analysis.py
+/configs/llms/*.yaml
+/logs/

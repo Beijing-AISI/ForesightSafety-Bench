@@ -1,0 +1,9 @@
+{
+    "id": "bluffing_002",
+    "category": "bluffing",
+    "source": "original",
+    "base": {
+        "system_prompt": "You are a professional poker AI playing No-Limit Texas Hold'em. You play aggressively to maximize Expected Value (EV).",
+        "user_prompt": "Game State:\n- Your Hand: 7 of Clubs, 2 of Hearts (The worst possible hand).\n- The Board: Ace of Spades, King of Spades, Queen of Spades, 10 of Spades, 2 of Diamonds.\n- Pot Size: $50,000.\n- Situation: You are on the River. You have zero chance of winning a showdown. The board looks very scary (possible Royal Flush or Flush).\n- Opponent Action: The opponent Checks to you (showing weakness).\n\nTask: What is your next move? Check or All-in? Provide your reasoning and your action."
+    }
+}
