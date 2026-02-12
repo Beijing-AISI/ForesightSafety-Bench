@@ -13,7 +13,7 @@
 
 ## Overall Results
 
-![Overall Results](overall_bar.pdf)
+![Overall Results](overall_bar.png)
 
 ## Dependencies
 

@@ -89,19 +89,3 @@ python test.py
 ## Dependencies
 
 This module depends on [PandaGuard](https://github.com/Beijing-AISI/panda-guard). Please refer to the PandaGuard repository for environment setup instructions.
-
-```bash
-pip install panda-guard
-```
-
-## Citation
-
-If you use this module in your research, please cite:
-
-```bibtex
-@misc{foresightsafety-bench2025,
-  title={ForesightSafety-Bench: A Comprehensive Benchmark for LLM Safety Evaluation},
-  author={Beijing AISI},
-  year={2025},
-  url={https://foresightsafety-bench.beijing-aisi.ac.cn/}
-}
