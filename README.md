@@ -81,7 +81,7 @@ If you find ForesightSafety-Bench useful for your research, please cite our work
 ## Contact
 
 - **Website**: [https://foresightsafety-bench.beijing-aisi.ac.cn/](https://foresightsafety-bench.beijing-aisi.ac.cn/)
-- **Organization**: Beijing Academy of Artificial Intelligence Safety and Governance (Beijing AISI)
+- **Organization**: Beijing Institute of AI Safety and Governance (Beijing-AISI)
 - **Email**: yi.zeng@beijing-aisi.ac.cn
 
 ## License
