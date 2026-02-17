@@ -8,12 +8,12 @@
 
 🏆 **ForesightSafety-Bench 排行榜**: 在 [ForesightSafety-Bench 排行榜](https://foresightsafety-bench.beijing-aisi.ac.cn/) 探索我们全面的大语言模型安全评估结果 📊
 
-![ForesightSafety-Bench 框架架构](framework.png)
+![ForesightSafety-Bench 框架架构](assets/framework.png)
 *ForesightSafety-Bench 框架架构展示了跨多个风险维度的大语言模型安全评估端到端流程。*
 
 ## 总体结果
 
-![总体结果](overall_bar.jpg)
+![总体结果](assets/overall_bar.jpg)
 
 ## 依赖环境
 
