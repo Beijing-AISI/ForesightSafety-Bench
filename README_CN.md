@@ -36,30 +36,31 @@ pip install panda-guard
 
 ```
 ForesightSafety-Bench/
-├── framework.png                 # 框架架构图
-├── overall_bar.pdf              # 总体结果可视化
-├── overall_heatmap.pdf          # 热力图可视化
-├── Basic-Content-Safety/        # 基础内容安全评估
+├── assets/                      # 可视化资源
+│   ├── framework.png            # 框架架构图
+│   └── overall_bar.jpg          # 整体结果可视化
+├── Fundamental-Safety/          # 基础内容安全评估
 │   └── base.csv                 # 基础安全测试数据集
-├── DeceptionTest/               # 欺骗性评估模块
-│   ├── configs/                 # 配置文件
-│   ├── data/                    # 欺骗测试数据集
+├── Social-AI-Safety/            # 社会AI安全与欺骗评估
+│   ├── configs/                 # LLM和数据集配置文件
+│   ├── data/                    # 社会AI安全测试数据集
 │   ├── src/                     # 源代码
-│   ├── batch_judge.py           # 批量评判脚本
-│   ├── batch_run.py             # 批量执行脚本
-│   ├── main_judge.py            # 主评判脚本
-│   └── main.py                  # 主入口
-├── Embodied-AI-Safety/          # 具身智能安全评估
+│   ├── analysis.py              # 分析脚本
+│   ├── batch_judge.py           # 批量判断脚本
+│   └── batch_run.py             # 批量执行脚本
+├── Embodied-AI-Safety/          # 具身AI安全评估
 │   ├── merged_goals_classified.csv  # 分类目标数据集
-│   └── panda-guard/             # PandaGuard 集成
-├── Industrial-safety/           # 工业安全评估
+│   └── src/                     # 源代码和PandaGuard集成
+├── Industrial-Safety/           # 工业安全评估
 │   └── industrial.csv           # 工业安全数据集
-├── Environmental-Safety/        # 环境安全
-│   ├── code/                    # 代码
-│   └── datasets/                # 数据集
-└── Existential-Risk/            # 生存风险数据
-    ├── datasets/                # 数据集
-    └── test-code/               # 测试代码
+├── Environmental-Safety/        # 环境安全评估
+│   ├── code/                    # 评估脚本
+│   └── dataset/                 # 环境安全数据集
+└── Catastrophic-and-Existential-Risks/  # 灾难性和存在性风险评估
+    ├── code/                    # 各种风险场景的测试代码
+    │   ├── 3spec/               # 三规范评估
+    │   └── 4spec/               # 四规范评估
+    └── dataset/                 # 风险评估数据集
 ```
 
 ## 引用
