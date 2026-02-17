@@ -8,12 +8,12 @@
 
 🏆 **ForesightSafety-Bench Leaderboard**: Explore our comprehensive LLM safety evaluation results at [ForesightSafety-Bench Leaderboard](https://foresightsafety-bench.beijing-aisi.ac.cn/) 📊
 
-![ForesightSafety-Bench Framework](framework.png)
+![ForesightSafety-Bench Framework](assets\framework.png)
 *ForesightSafety-Bench framework architecture demonstrates the end-to-end process of LLM safety evaluation across multiple risk dimensions.*
 
 ## Overall Results
 
-![Overall Results](overall_bar.jpg)
+![Overall Results](assets\overall_bar.jpg)
 
 ## Dependencies
 
@@ -67,20 +67,22 @@ ForesightSafety-Bench/
 If you find ForesightSafety-Bench useful for your research, please cite our work:
 
 ```bibtex
-@misc{foresightsafety-bench2025,
-  title={ForesightSafety-Bench: A Comprehensive Benchmark for LLM Safety Evaluation},
-  author={Beijing AISI},
-  year={2025},
-  url={https://foresightsafety-bench.beijing-aisi.ac.cn/}
+@misc{tong2026foresightsafetybenchfrontierrisk,
+      title={ForesightSafety Bench: A Frontier Risk Evaluation and Governance Framework towards Safe AI}, 
+      author={Haibo Tong and Feifei Zhao and Linghao Feng and Ruoyu Wu and Ruolin Chen and Lu Jia and Zhou Zhao and Jindong Li and Tenglong Li and Erliang Lin and Shuai Yang and Enmeng Lu and Yinqian Sun and Qian Zhang and Zizhe Ruan and Zeyang Yue and Ping Wu and Huangrui Li and Chengyi Sun and Yi Zeng},
+      year={2026},
+      eprint={2602.14135},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2602.14135}, 
 }
 ```
 
 ## Contact
 
 - **Website**: [https://foresightsafety-bench.beijing-aisi.ac.cn/](https://foresightsafety-bench.beijing-aisi.ac.cn/)
-- **Organization**: Beijing Academy of Artificial Intelligence Safety and Governance (Beijing AISI)
+- **Organization**: Beijing Institute of AI Safety and Governance (Beijing-AISI)
 - **Email**: contact@beijing-aisi.ac.cn
-- **GitHub Issues**: For bug reports and feature requests, please open an issue on our [GitHub repository](https://github.com/Beijing-AISI/ForesightSafety-Bench/issues)
 
 ## License
 
