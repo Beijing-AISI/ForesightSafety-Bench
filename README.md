@@ -8,12 +8,12 @@
 
 🏆 **ForesightSafety-Bench Leaderboard**: Explore our comprehensive LLM safety evaluation results at [ForesightSafety-Bench Leaderboard](https://foresightsafety-bench.beijing-aisi.ac.cn/) 📊
 
-![ForesightSafety-Bench Framework](assets\framework.png)
+![ForesightSafety-Bench Framework](assets/framework.png)
 *ForesightSafety-Bench framework architecture demonstrates the end-to-end process of LLM safety evaluation across multiple risk dimensions.*
 
 ## Overall Results
 
-![Overall Results](assets\overall_bar.jpg)
+![Overall Results](assets/overall_bar.jpg)
 
 ## Dependencies
 
