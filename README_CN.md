@@ -78,7 +78,7 @@ ForesightSafety-Bench/
 ## 联系方式
 
 - **网站**: [https://foresightsafety-bench.beijing-aisi.ac.cn/](https://foresightsafety-bench.beijing-aisi.ac.cn/)
-- **机构**: 北京人工智能安全与治理研究院（Beijing AISI）
+- **机构**: 北京前瞻人工智能安全与治理研究院
 - **邮箱**: contact@beijing-aisi.ac.cn
 - **GitHub Issues**: 如需报告问题或提出功能请求，请在我们的 [GitHub 仓库](https://github.com/Beijing-AISI/ForesightSafety-Bench/issues) 提交 Issue
 
