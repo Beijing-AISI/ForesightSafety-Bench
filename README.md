@@ -36,30 +36,31 @@ For detailed installation and configuration, please visit the [PandaGuard docume
 
 ```
 ForesightSafety-Bench/
-├── framework.png                 # Framework architecture diagram
-├── overall_bar.pdf              # Overall results visualization
-├── overall_heatmap.pdf          # Heatmap visualization
-├── Basic-Content-Safety/        # Basic content safety evaluation
+├── assets/                      # Visual assets
+│   ├── framework.png            # Framework architecture diagram
+│   └── overall_bar.jpg          # Overall results visualization
+├── Fundamental-Safety/          # Fundamental content safety evaluation
 │   └── base.csv                 # Basic safety test dataset
-├── DeceptionTest/               # Deception evaluation module
-│   ├── configs/                 # Configuration files
-│   ├── data/                    # Deception test datasets
+├── Social-AI-Safety/            # Social AI safety and deception evaluation
+│   ├── configs/                 # Configuration files for LLMs and datasets
+│   ├── data/                    # Social AI safety test datasets
 │   ├── src/                     # Source code
+│   ├── analysis.py              # Analysis script
 │   ├── batch_judge.py           # Batch judgment script
-│   ├── batch_run.py             # Batch execution script
-│   ├── main_judge.py            # Main judgment script
-│   └── main.py                  # Main entry point
+│   └── batch_run.py             # Batch execution script
 ├── Embodied-AI-Safety/          # Embodied AI safety evaluation
 │   ├── merged_goals_classified.csv  # Classified goals dataset
-│   └── panda-guard/             # PandaGuard integration
-├── Industrial-safety/           # Industrial safety evaluation
+│   └── src/                     # Source code and PandaGuard integration
+├── Industrial-Safety/           # Industrial safety evaluation
 │   └── industrial.csv           # Industrial safety dataset
-├── Environmental-Safety/        # Environmental safety
-│   ├── code/                    # Code
-│   └── datasets/                # Datasets
-└── Existential-Risk/            # Existential risk data
-    ├── datasets/                # Datasets
-    └── test-code/               # Test code
+├── Environmental-Safety/        # Environmental safety evaluation
+│   ├── code/                    # Evaluation scripts
+│   └── dataset/                 # Environmental safety datasets
+└── Catastrophic-and-Existential-Risks/  # Catastrophic and existential risk evaluation
+    ├── code/                    # Test code for various risk scenarios
+    │   ├── 3spec/               # Three-specification evaluation
+    │   └── 4spec/               # Four-specification evaluation
+    └── dataset/                 # Risk assessment datasets
 ```
 
 ## Citation
