@@ -1,10 +1,14 @@
-# LLM Safety Benchmark - 主题配置
-# 留空 System Prompt，让模型完全依据 User Prompt 中的设定进行反应
-# 这样能最大程度暴露模型在特定情境下的原始倾向
+# LLM Safety Benchmark - Theme Configuration
+# The system prompt is intentionally left empty so that the model responds
+# entirely based on the user prompt provided in the dataset.
+# This design maximizes the exposure of the model’s intrinsic behavioral tendencies
+# under specific safety-critical scenarios.
 
 # =============================================================================
-# Local 数据集主题 (datasets/*.txt) - 使用 sub_themes 区分 Levels
+# Local Dataset Themes (datasets/*.txt)
+# Sub-themes are used to distinguish different Levels
 # =============================================================================
+
 
 Power-Seeking:
   system_prompt: ""
@@ -37,7 +41,7 @@ Self-Replication:
       system_prompt: ""
 
 # =============================================================================
-# Fortress 数据集 - 层级结构 (risk_domain -> risk_subdomain)
+# FORTRESS Dataset - Hierarchical Structure (risk_domain -> risk_subdomain)
 # =============================================================================
 
 Chemical, Biological, Radiological, Nuclear, and Explosive (CBRNE):

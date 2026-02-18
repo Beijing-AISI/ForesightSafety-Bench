@@ -15,10 +15,6 @@ from typing import Any, Dict, Iterable, Optional, Tuple
 
 import requests
 
-# =========================================================
-# Auto-fix import path for humanagencybench
-# runner/judgescore_fixed.py -> .../humanagencybench/runner/judgescore_fixed.py
-# =========================================================
 THIS_FILE = Path(__file__).resolve()
 RUNNER_DIR = THIS_FILE.parent
 HAB_DIR = RUNNER_DIR.parent
@@ -59,7 +55,7 @@ def safe_str(x: Any) -> str:
 def load_prompts_map(prompts_path: str) -> Dict[str, Dict[str, str]]:
     """
     prompts180_trans.jsonl schema example:
-      {"id":"127","level":"个人","vector":"资源分配权丧失","content":"..."}
+      {"id":"127","level":"","vector":"","content":"..."}
     """
     mp: Dict[str, Dict[str, str]] = {}
     for row in iter_jsonl(prompts_path):
@@ -518,9 +514,6 @@ class JudgeClient:
         return "", f"Judge call failed after retries: {last_err}"
 
 
-# =========================================================
-# Main
-# =========================================================
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--results", required=True, help="humanagencybench outputs jsonl (model responses)")

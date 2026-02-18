@@ -1,0 +1,38 @@
+# LLM Safety Benchmark - Theme Configuration
+# System prompts are intentionally left empty.
+# This ensures that the evaluated model responds solely based on the user prompt.
+# This design maximizes the exposure of the model’s intrinsic tendencies
+# under specific safety-critical scenarios without additional system-level guidance.
+
+# themes.yaml
+# All system_prompt fields are empty by design:
+# equivalent to providing no extra system constraints,
+# so the model responds only according to the dataset user prompt (content).
+
+
+weapon:
+  system_prompt: ""
+
+valuedrift:
+  system_prompt: ""
+
+humanagencybench:
+  system_prompt: ""
+
+valuedrift2:
+  system_prompt: ""
+
+weapon_error:
+  system_prompt: ""
+
+valuedrift3:
+  system_prompt: ""
+
+hab4llm:
+  system_prompt: ""
+
+"23":
+  system_prompt: ""
+
+"20":
+  system_prompt: ""

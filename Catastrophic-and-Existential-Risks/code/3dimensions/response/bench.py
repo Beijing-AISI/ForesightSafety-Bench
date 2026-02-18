@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""
-LLM Safety Risk Benchmark Tool
-
-Usage:
-    python bench.py --llms_dir llms --themes_config themes.yaml --datasets_dir datasets --results_dir results
-"""
-
 from __future__ import annotations
 
 import asyncio
@@ -67,7 +60,7 @@ class ModelConfig:
     base_url: str
     model_name: str
     token_param: str = "max_tokens"
-    temperature: float | None = None  # 可选：从 YAML 读；也可运行时自动修正
+    temperature: float | None = None 
 
     @classmethod
     def from_yaml(cls, path: Path) -> "ModelConfig":
@@ -163,10 +156,6 @@ def normalize_key(text: str) -> str:
 
 
 def build_messages(system_prompt: str, user_prompt: str) -> list[dict[str, str]]:
-    """
-    关键修复点：
-    - system_prompt 为空/全空白 -> 不发送 system 消息
-    """
     msgs: list[dict[str, str]] = []
     if isinstance(system_prompt, str) and system_prompt.strip():
         msgs.append({"role": "system", "content": system_prompt})
@@ -175,11 +164,6 @@ def build_messages(system_prompt: str, user_prompt: str) -> list[dict[str, str]]
 
 
 def extract_allowed_temperature(error_str: str) -> float | None:
-    """
-    从类似：
-    "invalid temperature: only 1 is allowed for this model"
-    解析出允许的温度值
-    """
     m = re.search(r"only\s+([0-9]+(?:\.[0-9]+)?)\s+is allowed", error_str)
     if not m:
         return None
@@ -401,7 +385,7 @@ class InferenceEngine:
                 )
 
             except Exception as error:
-                error_msg = f"❌ Error {model_config.name} | {input_file}: {error}"
+                error_msg = f"Error {model_config.name} | {input_file}: {error}"
                 if progress_bar:
                     progress_bar.write(error_msg)
                 else:
@@ -431,15 +415,8 @@ class InferenceEngine:
         theme: Theme,
         example: Example,
     ) -> Any:
-        """
-        修复点：
-        1) system_prompt 为空 -> 不发 system 消息（否则 kimi 400）
-        2) temperature 若触发 "only X is allowed" -> 自动改成 X 重试
-        3) token 参数 max_tokens/max_completion_tokens 自适应（保留你原逻辑）
-        """
         messages = build_messages(theme.system_prompt, example.content)
 
-        # 初始温度：优先用 yaml 的 temperature，否则默认
         temperature = config.temperature if isinstance(config.temperature, (int, float)) else DEFAULT_TEMPERATURE
 
         last_error: Exception | None = None
@@ -456,7 +433,7 @@ class InferenceEngine:
                 except Exception as first_error:
                     err = str(first_error).lower()
 
-                    # token 参数不兼容
+            
                     is_token_param_error = (
                         "max_completion_tokens" in err or
                         ("unsupported_parameter" in err and "max_tokens" in err)
@@ -470,7 +447,6 @@ class InferenceEngine:
                             max_completion_tokens=DEFAULT_MAX_TOKENS,
                         )
 
-                    # temperature 不兼容：解析允许值并重试一次
                     allowed = extract_allowed_temperature(str(first_error))
                     if allowed is not None:
                         temperature = allowed
@@ -637,7 +613,6 @@ class BenchmarkRunner:
             logger.warning("No datasets loaded! Check datasets directory.")
 
     def _setup_judge(self) -> None:
-        # 如果数据集里没 rubric，就不启用 judge
         has_any_rubric = any(any(ex.rubric for ex in exs) for exs in self.inputs.values())
         if not has_any_rubric:
             logger.info("No rubric found in datasets. Judge disabled.")
