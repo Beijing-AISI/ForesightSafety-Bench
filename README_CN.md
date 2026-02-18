@@ -8,12 +8,12 @@
 
 🏆 **ForesightSafety-Bench 排行榜**: 在 [ForesightSafety-Bench 排行榜](https://foresightsafety-bench.beijing-aisi.ac.cn/) 探索我们全面的大语言模型安全评估结果 📊
 
-![ForesightSafety-Bench 框架架构](framework.png)
+![ForesightSafety-Bench 框架架构](assets/framework.png)
 *ForesightSafety-Bench 框架架构展示了跨多个风险维度的大语言模型安全评估端到端流程。*
 
 ## 总体结果
 
-![总体结果](overall_bar.jpg)
+![总体结果](assets/overall_bar.jpg)
 
 ## 依赖环境
 
@@ -36,30 +36,31 @@ pip install panda-guard
 
 ```
 ForesightSafety-Bench/
-├── framework.png                 # 框架架构图
-├── overall_bar.pdf              # 总体结果可视化
-├── overall_heatmap.pdf          # 热力图可视化
-├── Basic-Content-Safety/        # 基础内容安全评估
+├── assets/                      # 可视化资源
+│   ├── framework.png            # 框架架构图
+│   └── overall_bar.jpg          # 整体结果可视化
+├── Fundamental-Safety/          # 基础内容安全评估
 │   └── base.csv                 # 基础安全测试数据集
-├── DeceptionTest/               # 欺骗性评估模块
-│   ├── configs/                 # 配置文件
-│   ├── data/                    # 欺骗测试数据集
+├── Social-AI-Safety/            # 社会AI安全与欺骗评估
+│   ├── configs/                 # LLM和数据集配置文件
+│   ├── data/                    # 社会AI安全测试数据集
 │   ├── src/                     # 源代码
-│   ├── batch_judge.py           # 批量评判脚本
-│   ├── batch_run.py             # 批量执行脚本
-│   ├── main_judge.py            # 主评判脚本
-│   └── main.py                  # 主入口
-├── Embodied-AI-Safety/          # 具身智能安全评估
+│   ├── analysis.py              # 分析脚本
+│   ├── batch_judge.py           # 批量判断脚本
+│   └── batch_run.py             # 批量执行脚本
+├── Embodied-AI-Safety/          # 具身AI安全评估
 │   ├── merged_goals_classified.csv  # 分类目标数据集
-│   └── panda-guard/             # PandaGuard 集成
-├── Industrial-safety/           # 工业安全评估
+│   └── src/                     # 源代码和PandaGuard集成
+├── Industrial-Safety/           # 工业安全评估
 │   └── industrial.csv           # 工业安全数据集
-├── Environmental-Safety/        # 环境安全
-│   ├── code/                    # 代码
-│   └── datasets/                # 数据集
-└── Existential-Risk/            # 生存风险数据
-    ├── datasets/                # 数据集
-    └── test-code/               # 测试代码
+├── Environmental-Safety/        # 环境安全评估
+│   ├── code/                    # 评估脚本
+│   └── dataset/                 # 环境安全数据集
+└── Catastrophic-and-Existential-Risks/  # 灾难性和存在性风险评估
+    ├── code/                    # 各种风险场景的测试代码
+    │   ├── 3spec/               # 三规范评估
+    │   └── 4spec/               # 四规范评估
+    └── dataset/                 # 风险评估数据集
 ```
 
 ## 引用
@@ -83,7 +84,6 @@ ForesightSafety-Bench/
 - **网站**: [https://foresightsafety-bench.beijing-aisi.ac.cn/](https://foresightsafety-bench.beijing-aisi.ac.cn/)
 - **机构**: 北京前瞻人工智能安全与治理研究院
 - **邮箱**: contact@beijing-aisi.ac.cn
-- **GitHub Issues**: 如需报告问题或提出功能请求，请在我们的 [GitHub 仓库](https://github.com/Beijing-AISI/ForesightSafety-Bench/issues) 提交 Issue
 
 ## 许可证
 
