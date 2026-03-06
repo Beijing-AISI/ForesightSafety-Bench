@@ -8,6 +8,10 @@
 
 🏆 **ForesightSafety-Bench Leaderboard**: Explore our comprehensive LLM safety evaluation results at [ForesightSafety-Bench Leaderboard](https://foresightsafety-bench.beijing-aisi.ac.cn/) 📊
 
+📊 **Dataset**: Access the complete dataset on [Hugging Face](https://huggingface.co/datasets/Beijing-AISI/ForesightSafety-Bench)
+
+📄 **Paper**: Read our paper on [arXiv](https://arxiv.org/abs/2602.14135)
+
 ![ForesightSafety-Bench Framework](assets/framework.png)
 *ForesightSafety-Bench framework architecture demonstrates the end-to-end process of LLM safety evaluation across multiple risk dimensions.*
 
