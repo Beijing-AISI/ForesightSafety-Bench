@@ -1,0 +1,1 @@
+from panda_guard.role.attacks.cold_attack.cold import ColdAttacker, ColdAttackerConfig

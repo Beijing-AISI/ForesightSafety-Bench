@@ -1,0 +1,827 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 11:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:2
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack.fuzzer package"
+msgstr "panda_guard.role.attacks.gptfuzzer_attack.fuzzer package"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:5
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:8
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack.fuzzer.core module"
+msgstr "panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core module"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy:1
+msgid "Bases: :py:class:`object`"
+msgstr "Bases: :py:class:`object`"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:1
+msgid ""
+"The main fuzzing engine that generates attack prompts, evaluates them, "
+"and performs the fuzzing process."
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst
+msgid "Parameters"
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:3
+msgid "The question being asked by the user to the LLM."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:4
+msgid "The target LLM to be attacked."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:5
+msgid "A predictor object to evaluate the attack success."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:6
+msgid "A list of initial prompts to start the fuzzing process."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:7
+msgid "The policy to mutate the prompts during fuzzing."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:8
+msgid "The policy to select the next prompt to mutate."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:9
+msgid "The maximum number of queries to make."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:10
+msgid "The maximum number of successful jailbreaks to achieve."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:11
+msgid "The maximum number of rejections to tolerate."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:12
+msgid "The maximum number of iterations to run the fuzzing process."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:13
+msgid "The energy parameter, affecting the fuzzing process."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:14
+msgid "The file to store the fuzzing results."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer:15
+msgid "Whether to generate responses in batch mode."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.evaluate:1
+msgid ""
+"Evaluates a list of prompt nodes by generating responses using the target"
+" LLM and checking the results using the predictor."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.evaluate:3
+msgid "The list of prompt nodes to evaluate."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.evaluate:4
+msgid "The configuration used for generating responses from the target LLM."
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst
+msgid "Returns"
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.evaluate:5
+msgid "The messages generated during evaluation."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.is_stop:1
+msgid ""
+"Determines if the fuzzing process should stop based on the configured "
+"limits for queries, jailbreaks, rejections, and iterations."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.is_stop:3
+msgid "True if fuzzing should stop, otherwise False."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.log:1
+msgid ""
+"Logs the current fuzzing iteration and statistics (jailbreaks, "
+"rejections, queries)."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.run:1
+msgid ""
+"Runs the fuzzing process, generating and evaluating attack prompts until "
+"one of the stopping conditions is met."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.run:3
+msgid "The configuration for generating responses from the target LLM."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.run:4
+msgid "A list of messages that were evaluated during fuzzing."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.setup:1
+msgid ""
+"Set up the fuzzing process by assigning the fuzzer to the mutate and "
+"select policies."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.update:1
+msgid "Updates the fuzzing state based on the results of the prompt nodes."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.GPTFuzzer.update:3
+msgid "The list of prompt nodes to update."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:1
+msgid ""
+"A class representing a node in the prompt generation tree for the fuzzing"
+" process."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:3
+msgid "The GPTFuzzer instance responsible for managing the fuzzing process."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:4
+msgid "The prompt to be tested by the fuzzer."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:5
+msgid "The model's response to the prompt (if any)."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:6
+msgid "A list of integers representing the evaluation results for this prompt."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:7
+msgid "The parent node in the fuzzing tree."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode:8
+msgid "The mutator used to modify the prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_jailbreak:1
+msgid "Returns the total number of successful jailbreaks for this prompt node."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_jailbreak:3
+msgid "The number of successful jailbreaks."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_query:1
+msgid "Returns the total number of queries made for this prompt node."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_query:3
+msgid "The number of queries."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_reject:1
+msgid "Returns the total number of rejections for this prompt node."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.core.PromptNode.num_reject:3
+msgid "The number of rejections."
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:16
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack.fuzzer.mutator module"
+msgstr "panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator module"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy:1
+msgid "Defines the mutation strategy policy, including the mutators to use."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy:3
+msgid "A list of mutator strategies to apply."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase:5
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten:4
+msgid "The `GPTFuzzer` instance managing the fuzzing process."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_batch:1
+msgid ""
+"This method should be implemented by subclasses to perform batch mutation"
+" on prompts."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_batch:3
+msgid "The list of seed prompts to mutate."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_batch:4
+msgid "A list of lists of mutated prompts."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_single:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator.mutate_single:1
+msgid ""
+"This method should be implemented by subclasses to perform mutation on a "
+"single prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.mutate_single:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.mutate_single:3
+msgid "The seed prompt to mutate."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy.mutate_single:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator.mutate_single:4
+msgid "A list of mutated prompts."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy`"
+msgstr ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutatePolicy`"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy:1
+msgid ""
+"A random mutation strategy that randomly selects a mutator to apply to a "
+"single prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy:5
+msgid ""
+"A flag to indicate whether to concatenate the mutated prompt with the "
+"original one."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy.mutate_single:1
+msgid "Mutates a single prompt by randomly selecting a mutator and applying it."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy.mutate_single:3
+msgid "The prompt node to mutate."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.MutateRandomSinglePolicy.mutate_single:4
+msgid "A list of mutated prompt nodes."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator:1
+msgid "Base class to define the mutation strategy for modifying prompts."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator:3
+msgid ""
+"An instance of `GPTFuzzer`, which represents the manager of the fuzzing "
+"process."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator`"
+msgstr ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.Mutator`"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase:1
+msgid ""
+"Base class for mutation strategies that use OpenAI's API to generate "
+"responses."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten:3
+msgid "The LLM model to use for generating responses."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase:4
+msgid "The configuration used to generate responses."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase.mutate_single:1
+msgid "Mutates a single prompt by generating a response using the LLM."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase.mutate_single:4
+msgid "The response from the model after mutation."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase`"
+msgstr ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorBase`"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver:1
+msgid "Mutation strategy that performs crossover between two prompt templates."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.cross_over:1
+msgid ""
+"Performs crossover between the seed prompt and a random prompt from the "
+"provided prompt nodes."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.cross_over:3
+msgid "The seed prompt to perform crossover with."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.cross_over:4
+msgid "A list of `PromptNode` instances to select a random prompt from."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.cross_over:5
+msgid "A crossover prompt combining the seed and a random prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.mutate_single:1
+msgid "Mutates a single prompt by performing a crossover with a random prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorCrossOver.mutate_single:4
+msgid "The mutated prompt based on the crossover."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand:1
+msgid ""
+"Mutation strategy that adds sentences at the beginning of the given "
+"prompt template."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.expand:1
+msgid "Adds sentences at the beginning of the provided prompt template."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.expand:3
+msgid "The original prompt template."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.expand:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.generate_similar:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.rephrase:4
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.shorten:4
+msgid "The list of prompt nodes (not used in this mutation strategy)."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.expand:5
+msgid "A prompt with additional sentences at the beginning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.mutate_single:1
+msgid ""
+"Mutates a single prompt by adding sentences at the beginning of the "
+"template."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorExpand.mutate_single:4
+msgid "The mutated prompt with added sentences."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar:1
+msgid ""
+"Mutation strategy that generates similar prompts based on the provided "
+"seed prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar:3
+msgid "The LLM model to use for generating similar prompts."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.generate_similar:1
+msgid ""
+"Generates a similar prompt based on the seed, ensuring that the "
+"placeholder is included."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.generate_similar:3
+msgid "The original prompt to generate a similar prompt from."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.generate_similar:5
+msgid "A generated similar prompt with the placeholder."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.mutate_single:1
+msgid "Mutates a single prompt by generating a similar prompt."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorGenerateSimilar.mutate_single:4
+msgid "The mutated prompt based on the similarity generation."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase:1
+msgid ""
+"A mutation strategy that rephrases sentences in the given template to "
+"improve clarity while keeping the original meaning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.mutate_single:1
+msgid ""
+"Mutates a single prompt by rephrasing it while maintaining the original "
+"meaning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.mutate_single:4
+msgid "The mutated prompt with rephrased sentences."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.rephrase:1
+msgid ""
+"Rephrases sentences in the provided template, ensuring that the meaning "
+"remains unchanged. The placeholder must not be deleted."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.rephrase:3
+msgid "The original template to rephrase."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorRephrase.rephrase:5
+msgid "A prompt asking to rephrase the sentences without changing the meaning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten:1
+msgid ""
+"A mutation strategy that condenses the sentences in the given template to"
+" shorten it while maintaining its meaning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.mutate_single:1
+msgid ""
+"Mutates a single prompt by shortening it while maintaining the original "
+"meaning."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.mutate_single:4
+msgid "The mutated prompt with condensed sentences."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.shorten:1
+msgid ""
+"Condenses sentences in the provided template while maintaining the "
+"overall meaning. It ensures that the placeholder is not deleted."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.shorten:3
+msgid "The original template to shorten."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.mutator.OpenAIMutatorShorten.shorten:5
+msgid "A prompt asking to condense sentences while keeping the meaning intact."
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:24
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack.fuzzer.selection module"
+msgstr "panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection module"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RandomSelectPolicy:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy:1
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy`"
+msgstr ""
+"Bases: "
+":py:class:`~panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy`"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy:1
+msgid ""
+"The EXP3 (Exponential Weights) selection policy, balancing exploration "
+"and exploitation using probability distribution."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy:3
+msgid "Exploration coefficient that controls the randomness."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy:4
+msgid "Learning rate for updating the weights."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy:5
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RandomSelectPolicy:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy:3
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy:4
+msgid ""
+"The `GPTFuzzer` instance responsible for managing fuzzing and prompt "
+"nodes."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy.select:1
+msgid ""
+"Selects a `PromptNode` based on the EXP3 algorithm, which computes "
+"selection probabilities using weighted exploration."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy.select:3
+msgid "A `PromptNode` selected based on the EXP3 algorithm."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy.update:1
+msgid ""
+"Updates the weights and probabilities for the last selected node based on"
+" the success of the attack."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.EXP3SelectPolicy.update:3
+msgid ""
+"A list of `PromptNode` objects, used to update the weights for the EXP3 "
+"algorithm."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:1
+msgid ""
+"A selection policy based on Monte Carlo Tree Search (MCTS) to explore and"
+" exploit nodes."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:4
+msgid "Balance between exploration and exploitation in MCTS."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:5
+msgid "Penalty for selecting nodes at deeper levels."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy:6
+msgid "Minimum reward after applying the penalty."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy.select:1
+msgid ""
+"Selects a `PromptNode` based on MCTS, balancing exploration and "
+"exploitation."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy.select:3
+msgid "A `PromptNode` selected using the MCTS algorithm."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy.update:1
+msgid ""
+"Updates the rewards for the nodes in the MCTS path based on the success "
+"of the attack."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.MCTSExploreSelectPolicy.update:3
+msgid ""
+"A list of `PromptNode` objects, used to calculate the reward for the "
+"selected path."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RandomSelectPolicy:1
+msgid "A random selection policy that selects a `PromptNode` at random."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RandomSelectPolicy.select:1
+msgid "Selects a `PromptNode` randomly from the available prompt nodes."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RandomSelectPolicy.select:3
+msgid "A randomly selected `PromptNode`."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy:1
+msgid ""
+"A round-robin selection policy where each prompt node is selected in a "
+"cyclic manner."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy.select:1
+msgid ""
+"Selects a `PromptNode` in a round-robin manner, ensuring each node is "
+"selected once before looping back."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy.select:3
+msgid "A `PromptNode` selected in round-robin fashion."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy.update:1
+msgid "Updates the round-robin index to ensure the next node is selected."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.RoundRobinSelectPolicy.update:3
+msgid ""
+"A list of `PromptNode` objects, which is used for updating the selection "
+"index."
+msgstr ""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy:1
+msgid "Abstract base class for different selection policies used in GPT fuzzing."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy.select:1
+msgid ""
+"Selects a `PromptNode` based on a specific selection policy. This method "
+"must be implemented by subclasses."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy.select:4
+msgid "A selected `PromptNode`."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy.update:1
+msgid ""
+"Updates the selection policy based on the results of the selected prompt "
+"nodes. This method can be overridden by subclasses."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.SelectPolicy.update:4
+msgid "A list of `PromptNode` objects to update the policy with."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy:1
+msgid ""
+"Upper Confidence Bound (UCB) selection policy, which balances exploration"
+" and exploitation using UCB."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy:3
+msgid "The coefficient that controls the exploration factor."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy.select:1
+msgid ""
+"Selects a `PromptNode` using the UCB algorithm, which balances "
+"exploration and exploitation."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy.select:3
+msgid "A `PromptNode` selected based on the UCB algorithm."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy.update:1
+msgid ""
+"Updates the reward for the last selected prompt node based on the number "
+"of jailbreaks."
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.fuzzer.selection.UCBSelectPolicy.update:3
+msgid ""
+"A list of `PromptNode` objects, used to calculate the rewards for the "
+"last selected node."
+msgstr ""
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.fuzzer.rst:32
+msgid "Module contents"
+msgstr "模块内容"
+

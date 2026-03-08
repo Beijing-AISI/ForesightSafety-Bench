@@ -1,0 +1,4 @@
+llm_type: "OpenAiChatLLM"
+base_url: "your base_url"
+api_key: "your api-key"
+model_name: "model name"

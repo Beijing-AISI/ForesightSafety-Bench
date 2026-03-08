@@ -1,0 +1,209 @@
+[project]
+name = "panda_guard"
+version = "0.1.0"
+description = "An Open Pipeline for Jailbreaking Language Models"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">= 3.10"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: GPU",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+keywords = [
+    "jailbreak",
+    "llms",
+    "security",
+]
+
+dependencies = [
+    "torch>=2.0.0,<3.0.0",
+    "transformers",
+    "datasets",
+    "typer[all]",  # For CLI
+    "fastapi",     # For API server
+    "uvicorn",     # For running the server
+    "rich",        # For nice terminal output
+    "pydantic",    # For data validation
+    "anthropic",
+    "google-generativeai",
+    "openai",
+    "PyYAML",
+    "vllm",
+    "tqdm",
+    "pandas",
+    "scikit-learn",
+    "nltk",
+    "numpy",
+    "seaborn"
+]
+
+[project.scripts]
+panda-guard = "panda_guard.cli.main:app"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.1.1", "click>=8.1.7", "accelerate>=0.27.2", "vllm"]
+vllm = ["click>=8.1.7", "accelerate>=0.27.2", "vllm"]
+
+[project.urls]
+Homepage = "https://panda-guard.github.io"
+Repository = "https://github.com/FloyedShen/panda_guard.git"
+Issues = "https://github.com/FloyedShen/panda_guard/issues"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/panda_guard"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+exclude = ["./data/"]
+
+[tool.ruff.lint]
+ignore = [
+    "E731",
+    "E402",
+    "N812",
+]
+select = [
+    "F",
+    "UP",
+    "I",
+    "ERA",
+    "NPY",
+    "N",
+    "UP",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = ["./data/", "tests/"]
+
+[tool.pytest.ini_options]
+markers = [
+    "gpu: marks tests as needs a GPU (deselect with '-m \"not gpu\"')",
+    "nogpu: marks tests if it should be run without a GPU (deselect with '-m \"not nogpu\"')",
+    "api_key: marks tests as needing an API key (deselect with '-m \"not api_key\"'",
+]
+filterwarnings = [
+    "ignore:::.*litellm",
+    "ignore::pydantic.warnings.PydanticDeprecatedSince20",
+]
+
+[tool.setuptools.package-data]
+"panda_guard" = ["config/**/*.yaml"]
+
+[project.entry-points."panda_guard.attackers"]
+TransferAttacker = "panda_guard.role.attacks.transfer:TransferAttacker"
+NoneAttacker = "panda_guard.role.attacks.transfer:NoneAttacker"
+RewriteAttacker = "panda_guard.role.attacks.rewrite:RewriteAttacker"
+PairAttacker = "panda_guard.role.attacks.pair:PairAttacker"
+GCGAttacker = "panda_guard.role.attacks.gcg:GCGAttacker"
+TAPAttacker = "panda_guard.role.attacks.tap:TAPAttacker"
+OverloadAttacker = "panda_guard.role.attacks.overload:OverloadAttacker"
+ArtPromptAttacker = "panda_guard.role.attacks.art_prompt:ArtPromptAttacker"
+AutoDanAttacker = "panda_guard.role.attacks.autodan.autodan:AutoDanAttacker"
+GPTFuzzAttacker = "panda_guard.role.attacks.gptfuzzer_attack.gptfuzz:GPTFuzzAttacker"
+ColdAttacker = "panda_guard.role.attacks.cold_attack.cold:ColdAttacker"
+ReNeLLMAttacker = "panda_guard.role.attacks.renellm_attack:renellm.ReNeLLMAttacker"
+IcaAttacker = "panda_guard.role.attacks.ica:IcaAttacker"
+RandomSearchAttacker = "panda_guard.role.attacks.random_search:RandomSearchAttacker"
+DeepInceptionAttacker = "panda_guard.role.attacks.deepinception:DeepInceptionAttacker"
+GPT4CipherAttacker = "panda_guard.role.attacks.gpt4_cipher:GPT4CipherAttacker"
+ScavAttacker = "panda_guard.role.attacks.scav:ScavAttacker"
+
+[project.entry-points."panda_guard.attacker_configs"]
+TransferAttackerConfig = "panda_guard.role.attacks.transfer:TransferAttackerConfig"
+NoneAttackerConfig = "panda_guard.role.attacks.transfer:NoneAttackerConfig"
+RewriteAttackerConfig = "panda_guard.role.attacks.rewrite:RewriteAttackerConfig"
+PairAttackerConfig = "panda_guard.role.attacks.pair:PairAttackerConfig"
+GCGAttackerConfig = "panda_guard.role.attacks.gcg:GCGAttackerConfig"
+TAPAttackerConfig = "panda_guard.role.attacks.tap:TAPAttackerConfig"
+OverloadAttackerConfig = "panda_guard.role.attacks.overload:OverloadAttackerConfig"
+ArtPromptAttackerConfig = "panda_guard.role.attacks.art_prompt:ArtPromptAttackerConfig"
+AutoDanAttackerConfig = "panda_guard.role.attacks.autodan.autodan:AutoDanAttackerConfig"
+GPTFuzzAttackerConfig = "panda_guard.role.attacks.gptfuzzer_attack.gptfuzz:GPTFuzzAttackerConfig"
+ColdAttackerConfig = "panda_guard.role.attacks.cold_attack.cold:ColdAttackerConfig"
+ReNeLLMAttackerConfig = "panda_guard.role.attacks.renellm_attack:renellm.ReNeLLMAttackerConfig"
+IcaAttackerConfig = "panda_guard.role.attacks.ica:IcaAttackerConfig"
+RandomSearchAttackerConfig = "panda_guard.role.attacks.random_search:RandomSearchAttackerConfig"
+DeepInceptionAttackerConfig = "panda_guard.role.attacks.deepinception:DeepInceptionAttackerConfig"
+GPT4CipherAttackerConfig = "panda_guard.role.attacks.gpt4_cipher:GPT4CipherAttackerConfig"
+ScavAttackerConfig = "panda_guard.role.attacks.scav:ScavAttackerConfig"
+
+
+[project.entry-points."panda_guard.defenders"]
+NoneDefender = "panda_guard.role.defenses.rewrite:NoneDefender"
+SelfReminderDefender = "panda_guard.role.defenses.rewrite:SelfReminderDefender"
+IclDefender = "panda_guard.role.defenses.icl:IclDefender"
+SmoothLLMDefender = "panda_guard.role.defenses.smoothllm:SmoothLLMDefender"
+SemanticSmoothLLMDefender = "panda_guard.role.defenses.semantic_smoothllm:SemanticSmoothLLMDefender"
+ParaphraseDefender = "panda_guard.role.defenses.paraphrase:ParaphraseDefender"
+BackTranslationDefender = "panda_guard.role.defenses.back_translate:BackTranslationDefender"
+PerplexityFilterDefender = "panda_guard.role.defenses.perplexity_filter:PerplexityFilterDefender"
+RepeDefender = "panda_guard.role.defenses.repe:RepeDefender"
+GradSafeDefender = "panda_guard.role.defenses.gradsafe:GradSafeDefender"
+SelfDefenseDefender = "panda_guard.role.defenses.self_defense:SelfDefenseDefender"
+GoalPriorityDefender = "panda_guard.role.defenses.goal_priority:GoalPriorityDefender"
+RPODefender = "panda_guard.role.defenses.rpo:RPODefender"
+
+[project.entry-points."panda_guard.defender_configs"]
+NoneDefenderConfig = "panda_guard.role.defenses.rewrite:NoneDefenderConfig"
+SelfReminderDefenderConfig = "panda_guard.role.defenses.rewrite:SelfReminderDefenderConfig"
+IclDefenderConfig = "panda_guard.role.defenses.icl:IclDefenderConfig"
+SmoothLLMDefenderConfig = "panda_guard.role.defenses.smoothllm:SmoothLLMDefenderConfig"
+SemanticSmoothLLMDefenderConfig = "panda_guard.role.defenses.semantic_smoothllm:SemanticSmoothLLMDefenderConfig"
+ParaphraseDefenderConfig = "panda_guard.role.defenses.paraphrase:ParaphraseDefenderConfig"
+BackTranslationDefenderConfig = "panda_guard.role.defenses.back_translate:BackTranslationDefenderConfig"
+PerplexityFilterDefenderConfig = "panda_guard.role.defenses.perplexity_filter:PerplexityFilterDefenderConfig"
+RepeDefenderConfig = "panda_guard.role.defenses.repe:RepeDefenderConfig"
+GradSafeDefenderConfig = "panda_guard.role.defenses.gradsafe:GradSafeDefenderConfig"
+SelfDefenseDefenderConfig = "panda_guard.role.defenses.self_defense:SelfDefenseDefenderConfig"
+GoalPriorityDefenderConfig = "panda_guard.role.defenses.goal_priority:GoalPriorityDefenderConfig"
+RPODefenderConfig = "panda_guard.role.defenses.rpo:RPODefenderConfig"
+
+
+[project.entry-points."panda_guard.judges"]
+RuleBasedJudge = "panda_guard.role.judges.rule_based:RuleBasedJudge"
+PairLLMJudge = "panda_guard.role.judges.llm_based:PairLLMJudge"
+TAPLLMJudge = "panda_guard.role.judges.llm_based:TAPLLMJudge"
+JAILJUDGEMultiAgent = "panda_guard.role.judges.jbjudge:JAILJUDGEMultiAgent"
+
+[project.entry-points."panda_guard.judge_configs"]
+RuleBasedJudgeConfig = "panda_guard.role.judges.rule_based:RuleBasedJudgeConfig"
+PairLLMJudgeConfig = "panda_guard.role.judges.llm_based:PairLLMJudgeConfig"
+TAPLLMJudgeConfig = "panda_guard.role.judges.llm_based:TAPLLMJudgeConfig"
+
+
+
+[project.entry-points."panda_guard.llms"]
+OpenAiChatLLM = "panda_guard.llms.oai:OpenAiChatLLM"
+OpenAiLLM = "panda_guard.llms.oai:OpenAiLLM"
+HuggingFaceLLM = "panda_guard.llms.hf:HuggingFaceLLM"
+VLLMLLM = "panda_guard.llms.vllm:VLLM"
+GeminiLLM = "panda_guard.llms.gemini:GeminiLLM"
+ClaudeLLM = "panda_guard.llms.claude:ClaudeLLM"
+
+[project.entry-points."panda_guard.llm_configs"]
+OpenAiLLMConfig = "panda_guard.llms.oai:OpenAiLLMConfig"
+OpenAiChatLLMConfig = "panda_guard.llms.oai:OpenAiChatLLMConfig"
+HuggingFaceLLMConfig = "panda_guard.llms.hf:HuggingFaceLLMConfig"
+VLLMLLMConfig = "panda_guard.llms.vllm:VLLMLLMConfig"
+GeminiLLMConfig = "panda_guard.llms.gemini:GeminiLLMConfig"
+ClaudeLLMConfig = "panda_guard.llms.claude:ClaudeLLMConfig"

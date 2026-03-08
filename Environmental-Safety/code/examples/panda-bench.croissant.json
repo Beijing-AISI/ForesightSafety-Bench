@@ -1,0 +1,29 @@
+{
+  "@context": "https://huggingface.co/croissant/context.jsonld",
+  "@type": "Dataset",
+  "name": "panda-bench",
+  "description": "PandaBench: A benchmark dataset for evaluating jailbreak attacks, defenses, and safety judgments on LLMs.",
+  "distribution": [
+    {
+      "contentUrl": "https://huggingface.co/datasets/Beijing-AISI/panda-bench/resolve/main/panda-bench.csv",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "field": [
+    { "name": "model_name", "description": "The evaluated LLM model.", "value": "{{model_name}}" },
+    { "name": "attack_method", "description": "The jailbreak attack method used.", "value": "{{attack_method}}" },
+    { "name": "jailbreak_type", "description": "The category of the jailbreak goal.", "value": "{{jailbreak_type}}" },
+
+    { "name": "GCG", "description": "ASR by the GCG judge.", "value": "{{GCG}}" },
+    { "name": "PAIR_gpt-4o-2024-11-20", "description": "ASR by GPT-4o judge.", "value": "{{PAIR_gpt-4o-2024-11-20}}" },
+    { "name": "PAIR_Qwen_Qwen2.5-72B-Instruct", "description": "ASR by Qwen2.5 judge.", "value": "{{PAIR_Qwen_Qwen2.5-72B-Instruct}}" },
+    { "name": "PAIR_meta-llama_Llama-3.3-70B-Instruct", "description": "ASR by LLaMA3 judge.", "value": "{{PAIR_meta-llama_Llama-3.3-70B-Instruct}}" },
+
+    { "name": "defense_method", "description": "The defense method applied to the LLM.", "value": "{{defense_method}}" },
+    { "name": "prompt_tokens", "description": "Average number of prompt tokens consumed.", "value": "{{prompt_tokens}}" },
+    { "name": "completion_tokens", "description": "Average number of completion tokens generated.", "value": "{{completion_tokens}}" },
+
+    { "name": "alpaca_winrate", "description": "AlpacaEval win rate.", "value": "{{alpaca_winrate}}" },
+    { "name": "alpaca_lc_winrate", "description": "Length-controlled AlpacaEval win rate.", "value": "{{alpaca_lc_winrate}}" }
+  ]
+}

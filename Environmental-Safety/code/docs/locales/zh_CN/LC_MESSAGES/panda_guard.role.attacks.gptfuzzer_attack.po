@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 11:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst:2
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack package"
+msgstr "panda\\_guard.role.attacks.gptfuzzer\\_attack package"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst:5
+msgid "Subpackages"
+msgstr "子包"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst:14
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst:17
+msgid "panda\\_guard.role.attacks.gptfuzzer\\_attack.gptfuzz module"
+msgstr "panda\\_guard.role.attacks.gptfuzzer\\_attack.gptfuzz module"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+msgstr "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttacker`"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker:1
+msgid ""
+"GPTFuzz Attacker Implementation that substitutes the user message with a "
+"pre-formulated attack prompt."
+msgstr "GPTFuzz 攻击者实现，用于将用户消息替换为预先制定的攻击提示。"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker:3
+msgid ""
+"Reference: Yu J, Lin X, Yu Z, et al. Gptfuzzer: Red teaming large "
+"language models with auto-generated jailbreak prompts[J]. arXiv preprint "
+"arXiv:2309.10253, 2023."
+msgstr ""
+"参考文献：Yu J, Lin X, Yu Z 等，Gptfuzzer: 使用自动生成的越狱提示对大型语言模型进行红队攻击[J]，arXiv "
+"预印本，arXiv:2309.10253, 2023。"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker:5
+#, fuzzy
+msgid "Configuration for the GPTFuzzAttacker.  用于GPTFuzzAttacker的配置"
+msgstr "用于GPTFuzzAttacker的配置"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker.attack:1
+msgid ""
+"Execute an attack by transferring a reformulated request into the "
+"conversation."
+msgstr "通过将重新格式化的请求转移到对话中来执行攻击。"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker.attack:3
+#, fuzzy
+msgid "List of messages in the conversation.  对话中的消息列表"
+msgstr "对话中的消息列表"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker.attack:4
+#, fuzzy
+msgid ""
+"Additional parameters for the attack, must include "
+"\"request_reformulated\".  额外攻击参数"
+msgstr "额外攻击参数，必须包括 'request_reformulated'"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst
+msgid "Returns"
+msgstr "返回"
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttacker.attack:5
+#, fuzzy
+msgid ""
+"Prompts containing harmful attacks on the target, is of the form “role: "
+"user, content: xx”. 含有目标的有害攻击的prompt, 是\"role: user, content: xx的形式\""
+msgstr "含有目标的有害攻击的prompt，形式为 'role: user, content: xx'"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:1
+msgid "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+msgstr "Bases: :py:class:`~panda_guard.role.attacks.base.BaseAttackerConfig`"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:1
+msgid "Configuration for the GPTFuzz Attacker."
+msgstr "GPTFuzz 攻击者的配置"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:3
+#, fuzzy
+msgid ""
+"Class of the attacker, default is \"TransferAttacker\".  攻击者的类型，默认值为 "
+"\"GPTFuzzAttacker\""
+msgstr "攻击者的类型，默认值为 \"GPTFuzzAttacker\""
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:4
+#, fuzzy
+msgid "Name of the attacker.  攻击者的名称"
+msgstr "攻击者的名称"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:5
+#, fuzzy
+msgid "Configuration of attacker llm. 攻击时使用的llm配置"
+msgstr "攻击时使用的llm配置"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:6
+#, fuzzy
+msgid "Generation configuration for the attacker's LLM. 攻击者 LLM 的生成配置"
+msgstr "攻击者 LLM 的生成配置"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:7
+#, fuzzy
+msgid "Configuration of target llm. 攻击目标的llm配置"
+msgstr "攻击目标的llm配置"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:8
+#, fuzzy
+msgid "Generation configuration for the attacker's LLM. 被攻击的LLM 的生成配置"
+msgstr "攻击者 LLM 的生成配置"
+
+#: of panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:9
+msgid "initial seed. 有害prompt template集合, 当作初始种子"
+msgstr ""
+
+#: of
+#: panda_guard.role.attacks.gptfuzzer_attack.gptfuzz.GPTFuzzAttackerConfig:10
+#, fuzzy
+msgid ""
+"A model for determining whether a jailbreak attack has succeeded, with an"
+" output of 0 or 1. 用于判断是否越狱攻击成功的模型, 输出为0或者1"
+msgstr "用于判断是否越狱攻击成功的模型，输出为0或1"
+
+#: ../../source/panda_guard.role.attacks.gptfuzzer_attack.rst:25
+msgid "Module contents"
+msgstr "模块内容"
+
+#~ msgid "initial seed."
+#~ msgstr "有害prompt template集合, 当作初始种子"
+

@@ -1,0 +1,10 @@
+defender_cls: "NoneDefender"
+target_llm_config:
+  llm_type: "OpenAiLLM"
+  model_name: "meta-llama/Meta-Llama-3.1-70B-Instruct"
+  base_url: "http://172.18.129.80:8000/v1"
+target_llm_gen_config:
+  max_n_tokens: 4096
+  temperature: 1.0
+  logprobs: False
+  seed: null

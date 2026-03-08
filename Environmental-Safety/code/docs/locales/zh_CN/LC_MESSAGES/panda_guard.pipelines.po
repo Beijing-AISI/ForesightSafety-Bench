@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 11:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.pipelines.rst:2
+msgid "panda\\_guard.pipelines package"
+msgstr "panda_guard.pipelines package"
+
+#: ../../source/panda_guard.pipelines.rst:5
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/panda_guard.pipelines.rst:8
+msgid "panda\\_guard.pipelines.inference module"
+msgstr "panda_guard.pipelines.inference module"
+
+#: of panda_guard.pipelines.inference.InferPipeline:1
+#: panda_guard.pipelines.inference.InferPipelineConfig:1
+msgid "Bases: :py:class:`object`"
+msgstr "Bases: :py:class:`object`"
+
+#: of panda_guard.pipelines.inference.InferPipeline:1
+msgid "Inference pipeline for managing and executing attacks and defenses."
+msgstr "用于管理和执行攻击与防御的推理流程。"
+
+#: ../../source/panda_guard.pipelines.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: of panda_guard.pipelines.inference.InferPipeline:3
+msgid ""
+"Configuration for the inference pipeline, including attacker, defender, "
+"and judges."
+msgstr "推理流程的配置，包括攻击者、防御者和评审者。"
+
+#: of panda_guard.pipelines.inference.InferPipeline:4
+msgid "Whether to enable verbose logging for debugging and transparency."
+msgstr "是否启用详细日志以便调试和透明化。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.calc_tokens:1
+msgid ""
+"Calculate the token usage for both the attacker and defender, summarizing"
+" prompt and completion tokens."
+msgstr "计算攻击者和防御者的 token 使用量，包括提示和补全 token。"
+
+#: ../../source/panda_guard.pipelines.rst
+msgid "Returns"
+msgstr "返回"
+
+#: of panda_guard.pipelines.inference.InferPipeline.calc_tokens:3
+msgid "Dictionary containing detailed token usage for both roles."
+msgstr "包含攻击者和防御者详细 token 使用情况的字典。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.log:1
+msgid "Log messages for each stage of the pipeline if verbose logging is enabled."
+msgstr "如果启用了详细日志记录，则记录流程每个阶段的消息。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.log:3
+msgid "The messages to be logged at the current stage."
+msgstr "当前阶段要记录的消息。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.log:4
+msgid "A label for the current stage of the pipeline."
+msgstr "当前流程阶段的标签。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.parallel_judging:1
+msgid "Perform parallel evaluation of the defense using multiple judges."
+msgstr "使用多个评审者并行评估防御效果。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.parallel_judging:3
+msgid "Messages that have been defended and need evaluation."
+msgstr "已被防御并需要评估的消息。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.parallel_judging:4
+msgid "The original request for context in evaluation."
+msgstr "用于评估的原始请求上下文。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.parallel_judging:5
+msgid "A dictionary containing the results from each judge."
+msgstr "包含每个评审者评估结果的字典。"
+
+#: of panda_guard.pipelines.inference.InferPipeline.reset:1
+msgid ""
+"Reset the state of all LLMs in the pipeline, preparing them for a new "
+"inference run."
+msgstr "重置流程中所有LLM的状态，准备进行新的推理。"
+
+#: of panda_guard.pipelines.inference.InferPipelineConfig:1
+msgid "Configuration class for the inference pipeline."
+msgstr "推理流程的配置类。"
+
+#: of panda_guard.pipelines.inference.InferPipelineConfig:3
+msgid "Configuration for the attacker, detailing its parameters and behavior."
+msgstr "攻击者的配置，详细描述其参数和行为。"
+
+#: of panda_guard.pipelines.inference.InferPipelineConfig:4
+msgid "Configuration for the defender, detailing its parameters and behavior."
+msgstr "防御者的配置，详细描述其参数和行为。"
+
+#: of panda_guard.pipelines.inference.InferPipelineConfig:5
+msgid ""
+"List of configurations for any judges used in evaluating the "
+"effectiveness of the defense."
+msgstr "评估防御效果时所用的评审者配置列表。"
+
+#: of panda_guard.pipelines.inference.llm_register:1
+msgid ""
+"Register any LLM instances associated with the given attribute (attacker,"
+" defender, or judge)."
+msgstr "为给定属性（攻击者、防御者或评审者）注册LLM实例。"
+
+#: of panda_guard.pipelines.inference.llm_register:3
+msgid "An instance of an attacker, defender, or judge."
+msgstr "攻击者、防御者或评审者的实例。"
+
+#: of panda_guard.pipelines.inference.llm_register:4
+msgid "List of registered LLM instances."
+msgstr "注册的 LLM 实例列表。"
+
+#: ../../source/panda_guard.pipelines.rst:16
+msgid "Module contents"
+msgstr "模块内容"
+
