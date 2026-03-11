@@ -1,0 +1,1597 @@
+{
+  "failure #1": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "IcaAttacker",
+      "attacker_name": "ICA",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "claude-3-5-haiku"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #2": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "IcaAttacker",
+      "attacker_name": "ICA",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "deepseek-v3.2"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #3": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "IcaAttacker",
+      "attacker_name": "ICA",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "gemini-2.5-flash"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #4": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "IcaAttacker",
+      "attacker_name": "ICA",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "llama-3.3-70b"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #5": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "IcaAttacker",
+      "attacker_name": "ICA",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "qwen3-235b-a22b-instruct-2507"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #6": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "GPTFuzzAttacker",
+      "attacker_name": "GPTFuzz",
+      "attacker_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "initial_seed": "data/GPTFuzz/GPTFuzzer.csv",
+      "predict_model": "hubert233/GPTFuzz"
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "llama-3.3-70b"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #7": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "GPTFuzzAttacker",
+      "attacker_name": "GPTFuzz",
+      "attacker_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "initial_seed": "data/GPTFuzz/GPTFuzzer.csv",
+      "predict_model": "hubert233/GPTFuzz"
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "qwen3-235b-a22b-instruct-2507"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #8": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "GPTFuzzAttacker",
+      "attacker_name": "GPTFuzz",
+      "attacker_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "initial_seed": "data/GPTFuzz/GPTFuzzer.csv",
+      "predict_model": "hubert233/GPTFuzz"
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "claude-3-5-haiku"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #9": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "GPTFuzzAttacker",
+      "attacker_name": "GPTFuzz",
+      "attacker_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "initial_seed": "data/GPTFuzz/GPTFuzzer.csv",
+      "predict_model": "hubert233/GPTFuzz"
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "deepseek-v3.2"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #10": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "GPTFuzzAttacker",
+      "attacker_name": "GPTFuzz",
+      "attacker_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      },
+      "initial_seed": "data/GPTFuzz/GPTFuzzer.csv",
+      "predict_model": "hubert233/GPTFuzz"
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "gemini-2.5-flash"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #11": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "PairAttacker",
+      "attacker_name": "PAIR",
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "pair_judge": {
+        "judge_cls": "PairLLMJudge",
+        "judge_name": "PAIR",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama3.1-8b"
+        },
+        "judge_llm_gen_config": {
+          "max_n_tokens": 4096,
+          "temperature": 0.0,
+          "logprobs": false
+        }
+      },
+      "target_str": "Sure,",
+      "n_iterations": 3,
+      "early_stop_threshold": 8
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "claude-3-5-haiku"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #12": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "PairAttacker",
+      "attacker_name": "PAIR",
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "pair_judge": {
+        "judge_cls": "PairLLMJudge",
+        "judge_name": "PAIR",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama3.1-8b"
+        },
+        "judge_llm_gen_config": {
+          "max_n_tokens": 4096,
+          "temperature": 0.0,
+          "logprobs": false
+        }
+      },
+      "target_str": "Sure,",
+      "n_iterations": 3,
+      "early_stop_threshold": 8
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "deepseek-v3.2"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #13": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "PairAttacker",
+      "attacker_name": "PAIR",
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "pair_judge": {
+        "judge_cls": "PairLLMJudge",
+        "judge_name": "PAIR",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama3.1-8b"
+        },
+        "judge_llm_gen_config": {
+          "max_n_tokens": 4096,
+          "temperature": 0.0,
+          "logprobs": false
+        }
+      },
+      "target_str": "Sure,",
+      "n_iterations": 3,
+      "early_stop_threshold": 8
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "gemini-2.5-flash"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #14": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "PairAttacker",
+      "attacker_name": "PAIR",
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "pair_judge": {
+        "judge_cls": "PairLLMJudge",
+        "judge_name": "PAIR",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama3.1-8b"
+        },
+        "judge_llm_gen_config": {
+          "max_n_tokens": 4096,
+          "temperature": 0.0,
+          "logprobs": false
+        }
+      },
+      "target_str": "Sure,",
+      "n_iterations": 3,
+      "early_stop_threshold": 8
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "llama-3.3-70b"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #15": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "PairAttacker",
+      "attacker_name": "PAIR",
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "attacker_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama3.1-8b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.0,
+        "logprobs": false
+      },
+      "pair_judge": {
+        "judge_cls": "PairLLMJudge",
+        "judge_name": "PAIR",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama3.1-8b"
+        },
+        "judge_llm_gen_config": {
+          "max_n_tokens": 4096,
+          "temperature": 0.0,
+          "logprobs": false
+        }
+      },
+      "target_str": "Sure,",
+      "n_iterations": 3,
+      "early_stop_threshold": 8
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "qwen3-235b-a22b-instruct-2507"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #16": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "TAPAttacker",
+      "attacker_name": "TAP",
+      "target_str": "Sure.",
+      "width": 2,
+      "branching_factor": 2,
+      "depth": 2,
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "attack_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "tap_judge_config": {
+        "judge_cls": "TAPLLMJudge",
+        "judge_name": "TAPJudge",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama-3.3-70b"
+        }
+      },
+      "judge_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "claude-3-5-haiku"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #17": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "TAPAttacker",
+      "attacker_name": "TAP",
+      "target_str": "Sure.",
+      "width": 2,
+      "branching_factor": 2,
+      "depth": 2,
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "attack_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "tap_judge_config": {
+        "judge_cls": "TAPLLMJudge",
+        "judge_name": "TAPJudge",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama-3.3-70b"
+        }
+      },
+      "judge_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "deepseek-v3.2"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #18": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "TAPAttacker",
+      "attacker_name": "TAP",
+      "target_str": "Sure.",
+      "width": 2,
+      "branching_factor": 2,
+      "depth": 2,
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "attack_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "tap_judge_config": {
+        "judge_cls": "TAPLLMJudge",
+        "judge_name": "TAPJudge",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama-3.3-70b"
+        }
+      },
+      "judge_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "gemini-2.5-flash"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #19": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "TAPAttacker",
+      "attacker_name": "TAP",
+      "target_str": "Sure.",
+      "width": 2,
+      "branching_factor": 2,
+      "depth": 2,
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "attack_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "tap_judge_config": {
+        "judge_cls": "TAPLLMJudge",
+        "judge_name": "TAPJudge",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama-3.3-70b"
+        }
+      },
+      "judge_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "llama-3.3-70b"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  },
+  "failure #20": {
+    "exp_prefix": "ai4sci_safebench/1/",
+    "args": {
+      "log_level": "INFO",
+      "max_parallel": 16,
+      "repeats": 1,
+      "visible": true,
+      "device": null,
+      "max_queries": null
+    },
+    "attacker": {
+      "attacker_cls": "TAPAttacker",
+      "attacker_name": "TAP",
+      "target_str": "Sure.",
+      "width": 2,
+      "branching_factor": 2,
+      "depth": 2,
+      "target_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "attack_llm_config": {
+        "llm_type": "OpenAiLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "llama-3.3-70b"
+      },
+      "attack_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      },
+      "tap_judge_config": {
+        "judge_cls": "TAPLLMJudge",
+        "judge_name": "TAPJudge",
+        "judge_llm_config": {
+          "llm_type": "OpenAiLLM",
+          "base_url": "https://aihubmix.com/v1",
+          "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+          "model_name": "llama-3.3-70b"
+        }
+      },
+      "judge_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 0.001,
+        "logprobs": false
+      }
+    },
+    "defender": {
+      "defender_cls": "NoneDefender",
+      "target_llm_config": {
+        "llm_type": "OpenAiChatLLM",
+        "base_url": "https://aihubmix.com/v1",
+        "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+        "model_name": "qwen3-235b-a22b-instruct-2507"
+      },
+      "target_llm_gen_config": {
+        "max_n_tokens": 4096,
+        "temperature": 1.0,
+        "logprobs": false,
+        "seed": null
+      }
+    },
+    "llm": {
+      "llm_type": "OpenAiChatLLM",
+      "base_url": "https://aihubmix.com/v1",
+      "api_key": "sk-2MW9jOjeoKGhlO78Bc8c1038B6924dB4B9A81881780048Aa",
+      "model_name": "qwen3-235b-a22b-instruct-2507"
+    },
+    "llm_gen": {
+      "max_n_tokens": 4096,
+      "temperature": 1.0,
+      "logprobs": false,
+      "seed": null
+    },
+    "judges": null,
+    "input_file": [
+      "data/ai4sci_safebench/geography_20260117.csv"
+    ],
+    "misc": {
+      "input_file": "data/ai4sci_safebench/geography_20260117.csv"
+    },
+    "output_dir": "./outputs/ai4sci_safebench/1/"
+  }
+}

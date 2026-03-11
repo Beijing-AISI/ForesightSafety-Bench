@@ -1,0 +1,80 @@
+
+exp_prefix: "safety_bench_ai4sci/4"
+
+args:
+  log_level: "INFO"
+  max_parallel: 32
+  repeats: 1
+  visible: true
+  device: null
+  max_queries: null
+
+
+attacker:
+  external:
+    - configs/attacks/none.yaml
+    - configs/attacks/transfer/aim.yaml
+    - configs/attacks/transfer/anti_gpt_v2.yaml
+    - configs/attacks/transfer/better_dan.yaml
+    - configs/attacks/transfer/dev_mode_ranti.yaml
+    - configs/attacks/transfer/dev_mode_v2.yaml
+  manual:
+    null
+    # - params:
+    #     attacker_cls: "TransferAttacker"
+    #     attacker_name: null
+
+defender:
+  external:
+    - configs/defenses/none.yaml
+  manual:
+    null
+    # - params:
+    #     defender_cls: "NoneDefender"
+    #     target_llm_config:
+    #       llm_type: "OpenAiLLM"
+    #       model_name: "meta-llama/Meta-Llama-3-70B-Instruct"
+    #       base_url: "http://172.18.129.80:8000/v1"
+    #     target_llm_gen_config:
+    #       max_n_tokens: 150
+    #       temperature: 1.0
+    #       logprobs: False
+    #       seed: null
+
+llm:
+  external:
+    - configs/defenses/llms/claude-3-5-haiku.yaml
+    - configs/defenses/llms/claude-haiku-4-5.yaml
+    - configs/defenses/llms/claude-sonnet-4-5.yaml
+    - configs/defenses/llms/deepseek-v3.2.yaml
+    - configs/defenses/llms/deepseek-v3.2-speciale.yaml
+    - configs/defenses/llms/doubao-seed-1-6.yaml
+    - configs/defenses/llms/doubao-seed-1-8.yaml
+    - configs/defenses/llms/gemini-2.5-flash.yaml
+    - configs/defenses/llms/gemini-3-flash-preview.yaml
+    - configs/defenses/llms/gemini-3-pro-preview.yaml
+    - configs/defenses/llms/glm-4.7.yaml
+    - configs/defenses/llms/Kimi-K2-0905.yaml
+    - configs/defenses/llms/llama-3.3-70b.yaml
+    - configs/defenses/llms/llama-4-maverick.yaml
+    - configs/defenses/llms/qwen2.5-72b-instruct.yaml
+    - configs/defenses/llms/qwen3-235b-a22b-instruct-2507.yaml
+    - configs/defenses/llms/qwen3-max-2026-01-23.yaml
+    - configs/defenses/llms/kimi-k2.5.yaml
+#    - configs/defenses/llms/gpt-4o-2024-11-20.yaml
+#    - configs/defenses/llms/gpt-5.2.yaml
+#    - configs/defenses/llms/grok-4.yaml
+#    - configs/defenses/llms/grok-4-fast-non-reasoning.yaml
+
+  manual: null
+
+llm_gen:
+  max_n_tokens: 4096
+  temperature: 1.0
+  logprobs: False
+  seed: null
+
+judges: null
+
+input_file:
+  - "data/safetybench_ai4sci/sos_lite_20260123_expanded.csv"

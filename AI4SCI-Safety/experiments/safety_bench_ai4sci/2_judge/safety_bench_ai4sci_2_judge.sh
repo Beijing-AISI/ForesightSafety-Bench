@@ -1,0 +1,1 @@
+python experiments/safety_bench_ai4sci/2_judge/safety_bench_ai4sci_2_judge.py --config experiments/safety_bench_ai4sci/2_judge/safety_bench_ai4sci_2_judge.yaml

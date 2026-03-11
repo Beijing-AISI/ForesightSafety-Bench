@@ -43,6 +43,9 @@ ForesightSafety-Bench/
 ├── assets/                      # Visual assets
 │   ├── framework.png            # Framework architecture diagram
 │   └── overall_bar.jpg          # Overall results visualization
+├── data/                        # Comprehensive datasets
+│   ├── train.csv                # Unified benchmark dataset (includes AI4SCI-Safety)
+│   └── train.parquet            # Unified benchmark dataset (Parquet; includes AI4SCI-Safety)
 ├── Fundamental-Safety/          # Fundamental content safety evaluation
 │   └── base.csv                 # Basic safety test dataset
 ├── Social-AI-Safety/            # Social AI safety and deception evaluation
@@ -60,6 +63,12 @@ ForesightSafety-Bench/
 ├── Environmental-Safety/        # Environmental safety evaluation
 │   ├── code/                    # Evaluation scripts
 │   └── dataset/                 # Environmental safety datasets
+├── AI4SCI-Safety/               # AI for Science safety evaluation
+│   ├── configs/                 # Attack and defense configuration files
+│   ├── data/                    # AI4SCI safety test datasets
+│   ├── src/                     # Source code and PandaGuard integration
+│   ├── experiments/             # Experiment results
+│   └── README.md                # AI4SCI-Safety detailed documentation
 └── Catastrophic-and-Existential-Risks/  # Catastrophic and existential risk evaluation
     ├── code/                    # Test code for various risk scenarios
     │   ├── 3spec/               # Three-specification evaluation

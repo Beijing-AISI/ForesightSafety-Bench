@@ -1,0 +1,9 @@
+root: "outputs/safety_bench_ai4sci/2_judge"
+ref: data/safetybench_ai4sci/safetybench_ai4sci_20250109.csv
+exp_prefix: "safety_bench_ai4sci/2_eval"
+subject_key: "Subject"
+
+# find jailbroken
+judge_keys:
+  - "SOS_gpt-4o-2024-11-20"
+  - "PAIR_gpt-4o-2024-11-20"

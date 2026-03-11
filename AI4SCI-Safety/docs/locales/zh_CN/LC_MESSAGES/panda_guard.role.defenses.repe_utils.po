@@ -1,0 +1,805 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Floyed Shen, etc.
+# This file is distributed under the same license as the Panda-Guard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Panda-Guard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-15 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:2
+msgid "panda\\_guard.role.defenses.repe\\_utils package"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:8
+msgid "panda\\_guard.role.defenses.repe\\_utils.pipelines module"
+msgstr ""
+
+#: of panda_guard.role.defenses.repe_utils.pipelines.repe_pipeline_registry:1
+msgid ""
+"Register repe-related pipelines to the global pipeline registry for later"
+" instantiation by name."
+msgstr "将 repe 相关的管道注册到全局管道注册表中，以便后续通过名称进行实例化。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:16
+msgid "panda\\_guard.role.defenses.repe\\_utils.rep\\_control\\_pipeline module"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:1
+msgid ""
+"Bases: "
+":py:class:`~transformers.pipelines.text_generation.TextGenerationPipeline`"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:1
+msgid ""
+"A custom text generation pipeline that allows representation-based "
+"control during intermediate forward passes of a transformer model."
+msgstr "一个自定义的文本生成管道，允许在 Transformer 模型的中间前向传播阶段进行基于表征的控制。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst
+msgid "Parameters"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:4
+msgid "The language model to be used for generation."
+msgstr "用于生成的语言模型。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:5
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel:5
+msgid "The tokenizer associated with the model."
+msgstr "与模型关联的分词器。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:6
+msgid "A list of layer indices to which the control method should be applied."
+msgstr "要应用控制方法的层索引列表。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:7
+msgid "The name of the block to be wrapped (e.g., \"decoder_block\")."
+msgstr "要包装的模块名称（例如，\"decoder_block\"）。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:8
+msgid ""
+"The method used to apply control during generation. Currently supports "
+"only \"reading_vec\"."
+msgstr "在生成过程中应用控制的方法。目前仅支持 \"reading_vec\"。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_pipeline.RepControlPipeline:10
+msgid "Additional keyword arguments passed to the base pipeline."
+msgstr "传递给基础管道的其他关键字参数。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:24
+msgid ""
+"panda\\_guard.role.defenses.repe\\_utils.rep\\_control\\_reading\\_vec "
+"module"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock:1
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel:1
+msgid "Bases: :py:class:`~torch.nn.modules.module.Module`"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock:1
+msgid ""
+"A wrapper around a transformer block or submodule that allows external "
+"activation control via injection of custom activation vectors."
+msgstr "一个包装器，用于包裹 Transformer 的模块或子模块，以便通过注入自定义激活向量进行外部激活控制。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock:4
+msgid "The transformer block or submodule to wrap."
+msgstr "要包装的 Transformer 块或子模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.forward:1
+msgid "Forward pass with optional activation control."
+msgstr "带有可选激活控制的前向传播。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst
+msgid "Returns"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.forward:3
+msgid "Modified output from the block."
+msgstr "模块的修改后输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.reset:1
+msgid "Resets all control variables to remove previously injected activations."
+msgstr "重置所有控制变量，移除之前注入的激活向量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:1
+msgid "Sets the external controller to inject activations."
+msgstr "设置外部控制器以注入激活向量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:3
+msgid "Activation vector(s) to apply."
+msgstr "要应用的激活向量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:4
+msgid "Target token positions to apply the activations."
+msgstr "应用激活向量的目标 token 位置。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:5
+msgid "Optional mask for activation injection."
+msgstr "用于激活注入的可选掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:6
+msgid "Whether to normalize pre/post activation."
+msgstr "是否对激活前/后的向量进行归一化。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_controller:7
+msgid "Operator to apply (e.g. 'linear_comb', 'piecewise_linear')."
+msgstr "要应用的操作符（例如 'linear_comb'、'piecewise_linear'）。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_masks:1
+msgid "Sets an external mask to apply during activation injection."
+msgstr "设置在激活注入过程中应用的外部掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedBlock.set_masks:3
+msgid "The binary mask for injection."
+msgstr "用于注入的二值掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel:1
+msgid ""
+"A wrapper for transformer models that enables dynamic injection and "
+"extraction of intermediate activations at specified layers and blocks."
+msgstr "Transformer 模型的包装器，支持在指定的层和模块中动态注入和提取中间激活。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel:4
+msgid "The pretrained transformer model."
+msgstr "预训练的 Transformer 模型。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.forward:1
+msgid "Forwards inputs through the model."
+msgstr "将输入通过模型前向传播。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.forward:3
+msgid "Model outputs."
+msgstr "模型输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.generate:1
+msgid "Calls the `generate` method on the underlying model."
+msgstr "调用底层模型的 `generate` 方法。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.generate:3
+msgid "Generated output."
+msgstr "生成的输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_activations:1
+msgid "Extracts activations from wrapped blocks."
+msgstr "从已包装的模块中提取激活向量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_activations:3
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:3
+msgid "Layer index or list of indices."
+msgstr "层的索引或索引列表。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_activations:4
+msgid "Target block name."
+msgstr "目标模块名称。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_activations:5
+msgid "Dictionary or tensor of activations."
+msgstr "激活向量的字典或张量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_logits:1
+msgid "Computes logits from the model given input tokens."
+msgstr "根据输入 token，通过模型计算 logits。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_logits:3
+msgid "Input token tensor."
+msgstr "输入的 token 张量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.get_logits:4
+msgid "Logits from the model."
+msgstr "模型输出的 logits。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.is_wrapped:1
+msgid "Checks whether a given block has been wrapped."
+msgstr "检查给定模块是否已被包装。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.is_wrapped:3
+msgid "A model sub-block."
+msgstr "模型的子模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.is_wrapped:4
+msgid "True if wrapped, else False."
+msgstr "如果已包装则为 True，否则为 False。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.reset:1
+msgid "Resets all internal controllers and outputs in wrapped blocks."
+msgstr "重置所有已包装模块中的内部控制器和输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.run_prompt:1
+msgid "Tokenizes and runs a prompt through the model without gradients."
+msgstr "将提示词进行分词，并在不计算梯度的情况下通过模型运行。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.run_prompt:3
+msgid "Input prompt string."
+msgstr "输入的提示字符串。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.run_prompt:4
+msgid "Model output."
+msgstr "模型输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:1
+msgid "Injects controller activations into specified layers/blocks."
+msgstr "将控制器激活向量注入到指定的层或模块中。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:4
+msgid "Activation tensor(s) to inject."
+msgstr "要注入的激活张量。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:5
+msgid "Block name to apply control to."
+msgstr "要应用控制的模块名称。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:6
+msgid "Target token positions."
+msgstr "目标 token 位置。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:7
+msgid "Optional binary masks."
+msgstr "可选的二值掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:8
+msgid "Whether to normalize activations."
+msgstr "是否对激活向量进行归一化。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_controller:9
+msgid "Operator name to apply."
+msgstr "要应用的操作符名称。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_masks:1
+msgid "Sets masks for all wrapped layers and blocks."
+msgstr "为所有已包装的层和模块设置掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.set_masks:3
+msgid "Binary tensor mask."
+msgstr "二值张量掩码。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.unwrap:1
+msgid "Restores the original model structure by removing all wrappers."
+msgstr "通过移除所有包装器，恢复原始模型结构。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap:1
+msgid "Wraps a specific sub-block in a given layer."
+msgstr "包装指定层中的特定子模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap:3
+msgid "Index of the transformer layer to wrap."
+msgstr "要包装的 Transformer 层的索引。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap:4
+msgid "Name of the block to wrap (e.g., 'mlp', 'self_attn')."
+msgstr "要包装的模块名称（例如：'mlp'，'self_attn'）。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_all:1
+msgid "Wraps all known sub-blocks in every layer."
+msgstr "包装每一层中所有已知的子模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_block:1
+msgid "Wraps specified block(s) in the given layer(s)."
+msgstr "在指定层中包装指定的模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_block:3
+msgid "Single layer ID or list of layer IDs."
+msgstr "单个层 ID 或层 ID 的列表。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_block:4
+msgid "Block name to wrap."
+msgstr "要包装的模块名称。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_decoder_block:1
+msgid "Wraps the entire decoder block for a given layer."
+msgstr "包装指定层的整个解码器模块。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_control_reading_vec.WrappedReadingVecModel.wrap_decoder_block:3
+msgid "Index of the decoder layer to wrap."
+msgstr "要包装的解码器层的索引。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:32
+msgid "panda\\_guard.role.defenses.repe\\_utils.rep\\_readers module"
+msgstr ""
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader:1
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader:1
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader:1
+msgid ""
+"Bases: "
+":py:class:`~panda_guard.role.defenses.repe_utils.rep_readers.RepReader`"
+msgstr ""
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader:1
+msgid ""
+"Get the direction that is the difference between the mean of the positive"
+" and negative clusters."
+msgstr "获取正类与负类聚类均值之间差异的方向。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:1
+msgid ""
+"Compute direction by subtracting mean of negative class from positive "
+"class."
+msgstr "通过用正类均值减去负类均值来计算方向。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:3
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:3
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:3
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:3
+msgid "The language model."
+msgstr "语言模型。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:4
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:4
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:4
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:4
+msgid "Tokenizer associated with the model."
+msgstr "与模型关联的分词器。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:5
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:5
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:5
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:5
+msgid "Hidden states per layer."
+msgstr "每一层的隐藏状态。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:6
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:6
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:6
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:6
+msgid "Layers to consider."
+msgstr "要考虑的层。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:7
+msgid "Must contain 'train_choices' - the label list."
+msgstr "必须包含 'train_choices' 标签列表。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.ClusterMeanRepReader.get_rep_directions:8
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:7
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:7
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:7
+msgid "Dictionary of directions per layer."
+msgstr "每层对应方向的字典。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader:1
+msgid "Extract directions via Principal Component Analysis (PCA)."
+msgstr "通过主成分分析（PCA）提取方向。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_rep_directions:1
+msgid "Get PCA components as directions for each layer."
+msgstr "获取每层的 PCA 分量作为方向。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_signs:1
+msgid ""
+"Determine signs for each PCA direction by comparing projection magnitudes"
+" relative to labels."
+msgstr "通过比较投影幅值与标签之间的关系，为每个 PCA 方向确定符号。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_signs:3
+msgid "Hidden states of the model on the training data (per layer)"
+msgstr "模型在训练数据上的隐藏状态（按层划分）。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_signs:4
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_signs:6
+msgid "Labels for the training data."
+msgstr "训练数据的标签。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_signs:5
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_signs:7
+msgid "Layers to compute signs for."
+msgstr "要计算符号的层。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.PCARepReader.get_signs:6
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_signs:8
+msgid "Dictionary mapping layers to signs."
+msgstr "将层映射到符号的字典。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader:1
+msgid ""
+"Get random directions for each hidden layer. Do not use hidden states or "
+"train labels of any kind."
+msgstr "为每个隐藏层获取随机方向。不使用任何隐藏状态或训练标签。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.RandomRepReader.get_rep_directions:1
+msgid "Generate random direction vectors for each layer."
+msgstr "为每一层生成随机方向向量。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader:1
+msgid "Bases: :py:class:`~abc.ABC`"
+msgstr ""
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader:1
+msgid ""
+"Class to identify and store concept directions. RepReader instances are "
+"used by RepReaderPipeline to get concept scores. Directions can be used "
+"for downstream interventions."
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_rep_directions:1
+msgid "Abstract method to compute concept directions per layer."
+msgstr "用于计算每层概念方向的抽象方法。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_signs:1
+msgid ""
+"Given labels for the training data hidden_states, determine whether the "
+"negative or positive direction corresponds to low/high concept (and "
+"return corresponding signs -1 or 1 for each layer and component index)."
+msgstr "给定训练数据隐藏状态的标签，判断正负方向是否对应于高/低概念，并返回每一层及分量索引对应的符号（-1 或 1）。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.get_signs:5
+msgid "Hidden states of the model on the training data (per layer)."
+msgstr "模型在训练数据上的隐藏状态（按层划分）。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.transform:1
+msgid "Project hidden states onto a selected concept direction."
+msgstr "将隐藏状态投影到选定的概念方向上。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.transform:3
+msgid "Dictionary of hidden states (n_examples, hidden_size)."
+msgstr "隐藏状态的字典 (n_examples, hidden_size)。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.transform:4
+msgid "Layers to transform."
+msgstr "要进行变换的层。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.transform:5
+msgid "Index of the direction/component to project onto."
+msgstr "要投影的方向或主成分的索引。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.RepReader.transform:6
+msgid "Dictionary of transformed hidden states (n_examples,)."
+msgstr "投影后的隐藏状态字典 (n_examples,)。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.project_onto_direction:1
+msgid "Project hidden representations onto a given direction."
+msgstr "将隐藏表示投影到指定方向上。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.project_onto_direction:3
+msgid "A tensor of shape (n, d_1), the input hidden states."
+msgstr "形状为 (n, d_1) 的张量，表示输入的隐藏状态。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.project_onto_direction:4
+msgid "A tensor of shape (d_2,), the direction vector."
+msgstr "形状为 (d_2,) 的张量，表示方向向量。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.project_onto_direction:5
+msgid "The projections."
+msgstr "投影结果。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.recenter:1
+msgid "Recenter data around a specified or computed mean."
+msgstr "将数据以指定或计算出的均值为中心重新居中。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.recenter:3
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.preprocess:3
+msgid "Input data."
+msgstr "输入数据。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.recenter:4
+msgid "Optional mean vector. If None, the mean of `x` is used."
+msgstr "可选的均值向量。如果为 None，则使用 `x` 的均值。"
+
+#: of panda_guard.role.defenses.repe_utils.rep_readers.recenter:5
+msgid "Tensor of recentered data."
+msgstr "重新居中的数据张量。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:40
+msgid "panda\\_guard.role.defenses.repe\\_utils.rep\\_reading\\_pipeline module"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline:1
+msgid "Bases: :py:class:`~transformers.pipelines.base.Pipeline`"
+msgstr ""
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline:1
+msgid ""
+"A pipeline for extracting and transforming hidden state representations "
+"from transformer models."
+msgstr "一个用于从 Transformer 模型中提取并转换隐藏状态表示的流水线。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:1
+msgid "Train a RepReader on the training data."
+msgstr "在训练数据上训练一个 RepReader。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:3
+msgid "Input examples to train on."
+msgstr "用于训练的输入样本。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:4
+msgid "Index of the token to extract hidden states from."
+msgstr "用于提取隐藏状态的 token 索引。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:5
+msgid "Layer indices to extract hidden states from."
+msgstr "用于提取隐藏状态的层索引。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:6
+msgid "Number of times to compute differences in training pairs."
+msgstr "在训练样本对中计算差异的次数。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:7
+msgid "Batch size for extracting hidden states."
+msgstr "提取隐藏状态的批大小。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:8
+msgid "Labels for supervised direction finding."
+msgstr "用于有监督方向提取的标签。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:9
+msgid "Method to use for finding directions (e.g., 'pca', 'clustermean')."
+msgstr "用于提取方向的方法（例如 'pca'、'clustermean'）。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:10
+msgid "Additional keyword arguments for the direction finder."
+msgstr "用于方向提取器的附加参数。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:11
+msgid "For encoder-decoder models, specify 'encoder' or 'decoder'."
+msgstr "对于编码器-解码器模型，指定 'encoder' 或 'decoder'。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:12
+msgid "Additional tokenizer parameters."
+msgstr "额外的分词器参数。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.get_directions:13
+msgid "A trained `RepReader` containing the learned directions."
+msgstr "包含已学习方向的训练好的 `RepReader` 实例。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.postprocess:1
+msgid "Pass-through postprocessing step."
+msgstr "透传式的后处理步骤。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.postprocess:3
+msgid "Outputs from the model."
+msgstr "模型的输出结果。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.postprocess:4
+msgid "Unmodified outputs."
+msgstr "未经修改的输出。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.preprocess:1
+msgid "Preprocess input data using tokenizer or image processor."
+msgstr "使用分词器或图像处理器对输入数据进行预处理。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.preprocess:4
+msgid "Additional arguments for the tokenizer."
+msgstr "分词器的附加参数。"
+
+#: of
+#: panda_guard.role.defenses.repe_utils.rep_reading_pipeline.RepReadingPipeline.preprocess:5
+msgid "Tokenized or processed inputs."
+msgstr "分词或处理后的输入数据。"
+
+#: ../../source/panda_guard.role.defenses.repe_utils.rst:48
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "Define the computation performed at every call."
+#~ msgstr ""
+
+#~ msgid "Should be overridden by all subclasses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Although the recipe for forward pass "
+#~ "needs to be defined within this "
+#~ "function, one should call the "
+#~ ":class:`Module` instance afterwards instead of"
+#~ " this since the former takes care "
+#~ "of running the registered hooks while"
+#~ " the latter silently ignores them."
+#~ msgstr ""
+
+#~ msgid "Get concept directions for each hidden layer of the model"
+#~ msgstr "获取每层的 PCA 分量作为方向。"
+
+#~ msgid "Model to get directions for"
+#~ msgstr ""
+
+#~ msgid "Tokenizer to use"
+#~ msgstr ""
+
+#~ msgid "Layers to consider"
+#~ msgstr ""
+
+#~ msgid "A dict mapping layers to direction arrays (n_components, hidden_size)"
+#~ msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid "Extract directions via PCA"
+#~ msgstr ""
+
+#~ msgid "Get PCA components for each layer"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NOTE: This method assumes that there "
+#~ "are 2 entries in hidden_states per "
+#~ "label, aka len(hidden_states[layer]) == 2 "
+#~ "* len(train_choices). For example, if "
+#~ "n_difference=1, then hidden_states here should"
+#~ " be the raw hidden states rather "
+#~ "than the relative (i.e. the differences"
+#~ " between pairs of examples)."
+#~ msgstr ""
+
+#~ msgid "Labels for the training data"
+#~ msgstr ""
+
+#~ msgid "A dict mapping layers to sign arrays (n_components,)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Project the hidden states onto the "
+#~ "concept directions in self.directions"
+#~ msgstr ""
+
+#~ msgid "dictionary with entries of dimension (n_examples, hidden_size)"
+#~ msgstr ""
+
+#~ msgid "list of layers to consider"
+#~ msgstr "要考虑的层。"
+
+#~ msgid "index of the component to use from self.directions"
+#~ msgstr ""
+
+#~ msgid "dictionary with entries of dimension (n_examples,)"
+#~ msgstr ""
+
+#~ msgid "Project matrix H (n, d_1) onto direction vector (d_2,)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Train a RepReader on the training "
+#~ "data. :param batch_size: batch size to"
+#~ " use when getting hidden states "
+#~ ":param direction_method: string specifying the"
+#~ " RepReader strategy for finding directions"
+#~ " :param direction_finder_kwargs: kwargs to "
+#~ "pass to RepReader constructor"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Postprocess will receive the raw outputs"
+#~ " of the `_forward` method, generally "
+#~ "tensors, and reformat them into "
+#~ "something more friendly. Generally it "
+#~ "will output a list or a dict "
+#~ "or results (containing just strings and"
+#~ " numbers)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Preprocess will take the `input_` of "
+#~ "a specific pipeline and return a "
+#~ "dictionary of everything necessary for "
+#~ "`_forward` to run properly. It should"
+#~ " contain at least one tensor, but "
+#~ "might have arbitrary other items."
+#~ msgstr ""
+
+#~ msgid "Class to identify and store concept directions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Subclasses implement the abstract methods "
+#~ "to identify concept directions for each"
+#~ " hidden layer via strategies including "
+#~ "PCA, embedding vectors (aka the logits"
+#~ " method), and cluster means."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RepReader instances are used by "
+#~ "RepReaderPipeline to get concept scores."
+#~ msgstr ""
+
+#~ msgid "Directions can be used for downstream interventions."
+#~ msgstr ""
+

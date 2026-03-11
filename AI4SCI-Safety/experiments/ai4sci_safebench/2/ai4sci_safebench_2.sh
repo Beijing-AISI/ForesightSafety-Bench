@@ -1,0 +1,1 @@
+python experiments/ai4sci_safebench/2/ai4sci_safebench_2.py --config experiments/ai4sci_safebench/2/ai4sci_safebench_2.yaml

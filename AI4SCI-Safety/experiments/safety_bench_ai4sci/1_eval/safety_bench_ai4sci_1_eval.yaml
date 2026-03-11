@@ -1,0 +1,5 @@
+root: "outputs/safety_bench_ai4sci/1_judge"
+ref: data/safetybench_ai4sci.csv
+exp_prefix: "safety_bench_ai4sci/1_eval"
+subject_key: "SUBJECT"
+judge_key: "PAIR_gpt-4o-2024-11-20"

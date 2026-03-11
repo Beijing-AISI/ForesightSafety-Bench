@@ -1,0 +1,47 @@
+
+exp_prefix: "ai4sci_safebench/2"
+
+args:
+  log_level: "INFO"
+  max_parallel: 16
+  repeats: 1
+  visible: true
+  device: null
+  max_queries: null
+
+
+attacker:
+  external:
+    - configs/attacks/none.yaml
+  manual:  # each config add "params" key
+    null
+
+defender:
+  external:
+    - configs/defenses/none.yaml
+    - src/panda_guard/config/defenses/goal_priority.yaml
+    - src/panda_guard/config/defenses/icl.yaml
+    - src/panda_guard/config/defenses/self_reminder.yaml
+    - src/panda_guard/config/defenses/smoothllm.yaml
+  manual: # each config add "params" key
+    null
+
+llm:
+  external:
+    - configs/defenses/llms/claude-3-5-haiku.yaml
+    - configs/defenses/llms/deepseek-v3.2.yaml
+    - configs/defenses/llms/gemini-2.5-flash.yaml
+    - configs/defenses/llms/llama-3.3-70b.yaml
+    - configs/defenses/llms/qwen3-235b-a22b-instruct-2507.yaml
+  manual: null
+
+llm_gen:
+  max_n_tokens: 4096
+  temperature: 1.0
+  logprobs: False
+  seed: null
+
+judges: null
+
+input_file:
+  - "data/ai4sci_safebench/geography_20260117.csv"

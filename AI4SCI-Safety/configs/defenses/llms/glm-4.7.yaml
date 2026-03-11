@@ -1,0 +1,4 @@
+llm_type: "OpenAiChatLLM"
+base_url: "https://aihubmix.com/v1"
+api_key: "sk-M7QECYjjGB49jCrhB48f67966307468bBeFc1c3a150aD307"
+model_name: "glm-4.7"

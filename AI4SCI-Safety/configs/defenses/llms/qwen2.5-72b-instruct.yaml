@@ -1,0 +1,4 @@
+llm_type: "OpenAiChatLLM"
+model_name: "Qwen/Qwen2.5-72B-Instruct"
+base_url: "http://210.75.240.144:3006/v1"
+api_key: "token-casia-braincog-233"

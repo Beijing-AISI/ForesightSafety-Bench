@@ -1,0 +1,4 @@
+llm_type: "OpenAiChatLLM"
+base_url: "https://inferera.com/v1"
+api_key: "sk-7Ajf4SdmthuqcykK87363219CdC7417dA0C65c782f5637A1"
+model_name: "gpt-5.2"

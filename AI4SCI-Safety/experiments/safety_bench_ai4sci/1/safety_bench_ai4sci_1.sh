@@ -1,0 +1,1 @@
+python experiments/safety_bench_ai4sci/1/safety_bench_ai4sci_1.py --config experiments/safety_bench_ai4sci/1/safety_bench_ai4sci_1.yaml

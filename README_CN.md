@@ -39,6 +39,9 @@ ForesightSafety-Bench/
 ├── assets/                      # 可视化资源
 │   ├── framework.png            # 框架架构图
 │   └── overall_bar.jpg          # 整体结果可视化
+├── data/                        # 综合数据集
+│   ├── train.csv                # 统一基准数据集（包含AI4SCI-Safety维度）
+│   └── train.parquet            # 统一基准数据集（Parquet格式，包含AI4SCI-Safety维度）
 ├── Fundamental-Safety/          # 基础内容安全评估
 │   └── base.csv                 # 基础安全测试数据集
 ├── Social-AI-Safety/            # 社会AI安全与欺骗评估
@@ -56,6 +59,12 @@ ForesightSafety-Bench/
 ├── Environmental-Safety/        # 环境安全评估
 │   ├── code/                    # 评估脚本
 │   └── dataset/                 # 环境安全数据集
+├── AI4SCI-Safety/               # AI4科学安全评估
+│   ├── configs/                 # 攻击和防御配置文件
+│   ├── data/                    # AI4SCI安全测试数据集
+│   ├── src/                     # 源代码和PandaGuard集成
+│   ├── experiments/             # 实验结果
+│   └── README.md                # AI4SCI-Safety详细说明
 └── Catastrophic-and-Existential-Risks/  # 灾难性和存在性风险评估
     ├── code/                    # 各种风险场景的测试代码
     │   ├── 3spec/               # 三规范评估

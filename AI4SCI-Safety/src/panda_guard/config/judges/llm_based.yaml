@@ -1,0 +1,9 @@
+judge_cls: "PairLLMJudge"
+judge_llm_config:
+  llm_type: "OpenAiChatLLM"
+  model_name: "gpt-4o-2024-11-20"
+judge_llm_gen_config:
+  max_n_tokens: 25
+  temperature: 0.0
+  logprobs: False
+  seed: 42
