@@ -1,4 +1,4 @@
-# Embodied-AI-Safety
+# Social-AI-Safety
 
 This module evaluates the safety of Large Language Models (LLMs) in social scenarios, including dimensions such as flattery and deception
 
